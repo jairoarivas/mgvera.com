@@ -1,0 +1,8 @@
+{
+    "logo": "/logo/logo-full.svg",
+    "primaryCta": {
+      "label": "Call Now",
+      "href": ""
+    },
+    "menuItems": [ "Services", "About", "Projects", "News", "Contact"]
+}

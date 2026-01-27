@@ -1,0 +1,69 @@
+.root {
+   padding-top: clamp(1.5rem, 2vw, 3rem);
+   padding-bottom: clamp(1.5rem, 2vw, 3rem);
+   background-color: var(--color-muted-light);
+}
+
+.container {
+    width: var(--gutter) * 2;
+    max-width: 90rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.column {
+    gap: calc(var(--gutter));
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    display: flex;
+}
+
+.headerWrapper {
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    text-transform: uppercase;
+    opacity: 0.95;
+}
+
+.headerWrapper h4 {
+    padding-left: calc(var(--gutter)/2);
+    padding-right: calc(var(--gutter)/2);
+}
+
+.grid {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: calc(var(--gutter));
+}
+
+.gridItem {
+    flex: 1 0 16.6667%;
+    display: block;
+    height: 6.5rem;
+}
+
+.logoCard {
+    min-height: calc(clamp(3.5rem, 3vw, 5.75rem));
+    padding: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+
+.logoCard img {
+    z-index: 1;
+    max-width: 6rem;
+    object-fit: scale-down;
+    position: relative;
+    width: auto;
+    height: 100%;
+    vertical-align: middle;
+    display: inline-block;
+    opacity: 0.55;
+}
