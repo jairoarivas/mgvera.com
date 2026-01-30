@@ -36,6 +36,11 @@
     --space-8: 4rem;     /* 64px */
 
     --gutter: clamp(1rem, 1vw, 1.5rem);
+    --var-15-25: clamp(1.5rem, 1rem + 1.5vw, 2.5rem);
+    --var-01-15: clamp(1rem,.76vw + .81rem, 1.5rem);
+    --var-p85-1p2: clamp(.85rem,.38vw + .75rem, 1.2rem);
+    --var-gutter: calc(var(--var-01-15) / 2);
+
 
     /* -----------------------------
         Palette (raw)
@@ -49,7 +54,6 @@
     --brand-700: #7f1f1f;
     --accent-500: #ff5f02;
     --accent-400: #ffb140;
-    --accent-0: #f0eee9;
 
     /* -----------------------------
         Semantic colors (USE THESE in components)
@@ -57,7 +61,10 @@
     --color-light: var(--ivory-0);
     --color-dark: var(--charcoal-900);
     --color-muted-light: #ebe9e4;
-    --color-muted-dark:  #3a3f44;
+    --color-muted-dark:  #0f2f33;
+
+    --color-light-hover: color-mix(in hsl, var(--ash-400) 55%, var(--color-light));
+    --color-dark-hover: color-mix(in hsl, var(--ash-400) 25%, var(--color-dark));
 
     --color-brand-light: var(--brand-600);
     --color-brand-dark: var(--brand-700);

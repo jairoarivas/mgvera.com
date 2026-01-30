@@ -1,0 +1,25 @@
+.sectionBox {
+    display: block;
+    padding: clamp(1.5rem, 2.3vw, 3rem) 1.5rem;
+    background-color: var(--color-muted-dark);
+    color: var(--color-light);
+}
+
+.row {
+    row-gap: 2rem;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.miniHeaderBox {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding-left: var(--var-gutter);
+    padding-right: var(--var-gutter);
+}
+
+.miniHeader {
+    font-size: var(--var-15-25);
+    text-wrap: balance;
+    display: block;
+}

@@ -1,0 +1,81 @@
+.root {
+    flex: 1 1 33.33%;
+    max-width: 33.3333%;
+    padding-left: var(--var-gutter);
+    padding-right: var(--var-gutter);
+    display: flex;
+}
+
+@media (max-width: 1024px) {
+    .root {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
+
+.col {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: var(--var-01-15);
+    flex: 1;
+}
+
+.iconBox {
+    height: clamp(2.5rem, 1vw, 3rem);
+    width: auto;
+    flex: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+.icon {
+    height: clamp(2.5rem, 1vw, 3rem);
+    width: clamp(2.5rem, 1vw, 3rem);
+    opacity: 0.6;
+    color: #5faeb5;
+}
+
+.textBox {
+    gap: .75rem;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+}
+
+.heading {
+    font-size: var(--var-p85-1p2);
+    text-wrap: balance;
+    display: block;
+}
+
+.subText {
+    font-size: clamp(.875rem,.38vw, 1.125rem);
+    text-wrap: balance;
+    display: block;
+    opacity: 0.3;
+}
+
+.description {
+    text-wrap: pretty;
+    max-width: 60ch;
+}
+
+.button {
+    background-color: transparent;
+    color: var(--color-light);
+    border-color: var(--color-light);
+    justify-self: flex-end;
+    margin-top: auto;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    border-color: var(--color-light);
+}

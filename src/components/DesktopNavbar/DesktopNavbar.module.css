@@ -41,6 +41,10 @@
     transition: color 250ms ease, opacity 250ms ease;
 }
 
+.logo:hover {
+    color: var(--brand-700);
+}
+
 .navMenu {
     flex-flow: column;
     flex: none;
@@ -134,4 +138,8 @@
     background-color: var(--color-dark);
     color: var(--color-light);
     border-color: var(--color-dark);
+}
+
+.nav[data-scrolled="true"] .logo:hover {
+    color: var(--brand-700);
 }

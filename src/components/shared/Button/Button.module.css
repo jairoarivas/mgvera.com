@@ -24,6 +24,7 @@
     letter-spacing: var(--ls-cta);
     text-decoration: none;
     text-align: center;
+    text-transform: uppercase;
 
     /* colors */
     color: var(--color-on-primary);
@@ -59,12 +60,14 @@
 }
 
 .button--md {
-    --btn-py: 0.75rem;
+    --btn-py: 0.55rem;
     --btn-px: 1.25rem;
+    --btn-font: clamp(.62rem, 2vw, .85rem);
+    --btn-icon: 1rem;
 }
 
 .button--lg {
-    --btn-py: 1.25rem;
+    --btn-py: 1.05rem;
     --btn-px: 1.75rem;
     --btn-font: 0.9rem;
     --btn-icon: 1.1rem;
