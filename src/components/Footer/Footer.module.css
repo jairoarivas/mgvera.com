@@ -1,8 +1,12 @@
 .root {
-    background-color: var(--color-muted-dark);
     color: var(--color-light);
     padding-top: 0;
     padding-bottom: 0;
+    background: linear-gradient(180deg,
+        var(--color-muted-dark) 0%,
+        #0e0e0e 60%,
+        var(--color-dark) 100%
+    );
 }
 
 .footerTop {

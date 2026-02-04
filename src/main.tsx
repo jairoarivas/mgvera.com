@@ -13,14 +13,16 @@ import { DesktopNavbar } from './components/DesktopNavbar/DesktopNavbar';
 import { SocialProof } from './components/SocialProof/SocialProof';
 import { Services } from './components/Services/Services';
 import { Footer } from './components/Footer/Footer';
+import { TrustSignals } from './components/TrustSignals/TrustSignals';
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
         <CustomSprites/>
         <DesktopNavbar content={desktopNavbarContent}/>
         <Hero content={heroContent}/>
-        <SocialProof content={socialProofContent}/>
+        {/* <TrustSignals/> */}
         <Services content={servicesContent}/>
+        <SocialProof content={socialProofContent}/>
         <Footer/>
     </StrictMode>
 )
