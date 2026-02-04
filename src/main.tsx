@@ -12,6 +12,7 @@ import { CustomSprites } from './components/CustomSprites';
 import { DesktopNavbar } from './components/DesktopNavbar/DesktopNavbar';
 import { SocialProof } from './components/SocialProof/SocialProof';
 import { Services } from './components/Services/Services';
+import { Footer } from './components/Footer/Footer';
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
@@ -20,5 +21,6 @@ createRoot(document.getElementById('root')!).render(
         <Hero content={heroContent}/>
         <SocialProof content={socialProofContent}/>
         <Services content={servicesContent}/>
+        <Footer/>
     </StrictMode>
 )

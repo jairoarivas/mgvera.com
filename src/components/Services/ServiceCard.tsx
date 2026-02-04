@@ -4,7 +4,6 @@ import styles from "./ServiceCard.module.css";
 type ServiceCardProps = {
     name: string;
     description: string;
-    subText: string;
     icon: string;
     cta?: {
         label: string;
@@ -26,9 +25,6 @@ export function ServiceCard(props: ServiceCardProps) {
                     <h1 className={styles.heading}>
                         {props.name}
                     </h1>
-                    <h3 className={styles.subText}>
-                        {props.subText}
-                    </h3>
                     <p className={styles.description}>
                         {props.description}
                     </p>

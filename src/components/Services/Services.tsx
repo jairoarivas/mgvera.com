@@ -1,12 +1,14 @@
-import { SectionTopper } from "../shared/SectionTopper/SectionTopper";
+import { SectionTopper } from "../shared/Section/SectionTopper";
 import { Section } from "../shared/Section/Section";
 import styles from "./Services.module.css";
 import { ServiceCard } from "./ServiceCard";
+import { SectionContent } from "../shared/Section/SectionContent";
 
 type ServicesContent = {
     sectionName: string;
     heading: string;
     subheading: string;
+    secondaryHeader: string;
     primaryCta: {
       label: string,
       href: string,
@@ -15,7 +17,6 @@ type ServicesContent = {
     categories: {
         name: string;
         description: string;
-        subText: string;
         icon: string;
         cta: {label: string, href: string, icon?: string}
         services: {
@@ -36,11 +37,11 @@ export function Services ({content}: {content: ServicesContent}){
                 subheading={content.subheading}
                 cta={content.primaryCta}
             />
-            <div className={styles.sectionBox}>
+            <SectionContent className={styles.servicesContent}>
                 <div className={styles.row}>
                     <div className={styles.miniHeaderBox}>
                         <h2 className={styles.miniHeader}>
-                            Everything you need
+                            {content.secondaryHeader}
                         </h2>
                     </div>
                     {content.categories.map((categories, i) => {
@@ -49,14 +50,13 @@ export function Services ({content}: {content: ServicesContent}){
                                 key={i}
                                 name={categories.name}
                                 description={categories.description}
-                                subText={categories.subText}
                                 icon={categories.icon}
                                 cta={categories.cta}
                             />
                         );
                     })}
                 </div>
-            </div>
+            </SectionContent>
         </Section>
     );
 }

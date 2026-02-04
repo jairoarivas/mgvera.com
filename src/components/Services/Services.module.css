@@ -1,6 +1,4 @@
-.sectionBox {
-    display: block;
-    padding: clamp(1.5rem, 2.3vw, 3rem) 1.5rem;
+.servicesContent {
     background-color: var(--color-muted-dark);
     color: var(--color-light);
 }

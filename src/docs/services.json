@@ -2,6 +2,7 @@
   "sectionName": "Services",
   "heading": "Professional Land Surveying",
   "subheading": "Accurate land, utility, and geospatial data supporting design, construction, and development.",
+  "secondaryHeader": "Everything you need",
   "primaryCta": {
         "label": "Call Now",
         "href": "",
@@ -11,8 +12,7 @@
             {
                 "name": "Surveying",
                 "description": "Accurate land and construction surveys supporting design, development, and legal requirements across all project phases.",
-                "subText": "Foundational services for landowners, engineers, and developers",
-                "icon": "#phone",
+                "icon": "#surveying",
                 "cta": {
                     "label": "Surveying Services",
                     "href": ""
@@ -57,10 +57,9 @@
                 ]
             },
             {
-                "name": "Utility Locates",
+                "name": "Utility Coordination",
                 "description": "Identify and map existing underground utilities to reduce risk, improve safety, and support informed design decisions.",
-                "subText": "Minimizing conflicts before excavation begins",
-                "icon": "#phone",
+                "icon": "#utility",
                 "cta": {
                     "label": "Utility Locate Services",
                     "href": ""
@@ -95,8 +94,7 @@
             {
                 "name": "3D Rendering & Advanced Data Collection",
                 "description": "High-resolution spatial data capture and modeling for complex environments and specialized applications.",
-                "subText": "Advanced solutions for complex sites",
-                "icon": "#phone",
+                "icon": "#3d",
                 "cta": {
                     "label": "Advanced Data Services",
                     "href": ""
