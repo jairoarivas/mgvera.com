@@ -8,7 +8,6 @@ type SectionTopperProps = {
     cta? : {
         label: string;
         href: string;
-        icon: string;
     };
 }
 
@@ -26,7 +25,6 @@ export function SectionTopper(props: SectionTopperProps){
                 { props.cta && <Button 
                     label={props.cta.label} 
                     href={props.cta.href}
-                    icon={`#${props.cta.icon}`}
                     size="lg"
                 />}
             </div>

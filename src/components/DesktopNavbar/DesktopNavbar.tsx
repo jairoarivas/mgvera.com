@@ -17,7 +17,7 @@ export function DesktopNavbar({content}: {content: DesktopNavbarContent}) {
             <div className={styles.navLayout}>
                 <a className={styles.logoLink} href="#hero">
                     <svg className={styles.logo}>
-                        <use href="#logo-full" />
+                        <use href="#logo-long" />
                     </svg>
                 </a>
                 <div className={styles.navMenu}>

@@ -1,130 +1,192 @@
 {
   "sectionName": "Services",
-  "heading": "Professional Land Surveying",
-  "subheading": "Accurate land, utility, and geospatial data supporting design, construction, and development.",
+  "heading": "From Start To Finish",
+  "subheading": "Comprehensive surveying services for every phase of your project.",
   "secondaryHeader": "Everything you need",
   "primaryCta": {
-        "label": "Call Now",
-        "href": "",
-        "icon": "phone"
+    "label": "Start the Process",
+    "href": ""
+  },
+  "categories": [
+    {
+      "name": "Surveying & Mapping",
+      "icon": "#surveying",
+      "cta": {
+        "label": "More surveying and mapping",
+        "href": ""
+      },
+      "services": [
+        {
+          "name": "Boundary & ALTA/NSPS Land Title Surveys",
+          "description": "Comprehensive boundary surveys meeting ALTA/NSPS standards for real estate transactions, title insurance, and development."
+        },
+        {
+          "name": "Topographic & Existing Conditions Surveys",
+          "description": "Detailed mapping of terrain, utilities, and site features to support engineering design and permitting."
+        },
+        {
+          "name": "Control Surveys (Horizontal & Vertical)",
+          "description": "Establish geodetic control networks using GNSS and conventional methods to ensure project-wide accuracy."
+        },
+        {
+          "name": "Right-of-Way & Easement Surveys",
+          "description": "Define transportation corridors, easements, and acquisition parcels for infrastructure projects."
+        },
+        {
+          "name": "As-Built & Record Surveys",
+          "description": "Verify constructed improvements against design plans for compliance and closeout documentation."
+        }
+      ]
     },
-        "categories": [
-            {
-                "name": "Surveying",
-                "description": "Accurate land and construction surveys supporting design, development, and legal requirements across all project phases.",
-                "icon": "#surveying",
-                "cta": {
-                    "label": "Surveying Services",
-                    "href": ""
-                },
-                "services": [
-                    {
-                        "name": "Horizontal & Vertical Control Surveys",
-                        "description": "Establish precise control networks to support boundary determination, construction layout, and geospatial accuracy.",
-                        "subText": "Baseline control for reliable survey data",
-                        "icon": "#control"
-                    },
-                    {
-                        "name": "GPS & RTK Surveys",
-                        "description": "High-accuracy positioning using GPS and Real-Time Kinematic methods for efficient and repeatable results.",
-                        "subText": "Ideal for large sites and rapid data collection",
-                        "icon": "#gps-rtk"
-                    },
-                    {
-                        "name": "Topographic Surveys",
-                        "description": "Detailed mapping of existing terrain, features, and improvements to support engineering and site design.",
-                        "subText": "Essential for planning and permitting",
-                        "icon": "#topographic"
-                    },
-                    {
-                        "name": "As-Built Surveys",
-                        "description": "Document completed construction to verify compliance with plans, specifications, and regulatory requirements.",
-                        "subText": "Construction verification and closeout",
-                        "icon": "#as-built"
-                    },
-                    {
-                        "name": "Boundary, Jurisdictional & Sectional Line Surveys",
-                        "description": "Determine property boundaries, jurisdictional limits, and sectional lines in accordance with legal standards.",
-                        "subText": "Critical for ownership and legal clarity",
-                        "icon": "#boundary"
-                    },
-                    {
-                        "name": "Construction & Right-of-Way Surveys",
-                        "description": "Provide layout, staking, and verification services throughout all stages of construction and roadway projects.",
-                        "subText": "Supporting infrastructure and transportation projects",
-                        "icon": "#construction"
-                    }
-                ]
-            },
-            {
-                "name": "Utility Coordination",
-                "description": "Identify and map existing underground utilities to reduce risk, improve safety, and support informed design decisions.",
-                "icon": "#utility",
-                "cta": {
-                    "label": "Utility Locate Services",
-                    "href": ""
-                },
-                "services": [
-                    {
-                        "name": "Subsurface Utility Engineering (SUE)",
-                        "description": "Utility designation and location services performed in accordance with ASCE 38 standards.",
-                        "subText": "Industry-standard utility data collection",
-                        "icon": "#sue"
-                    },
-                    {
-                        "name": "Ground Penetrating Radar (GPR)",
-                        "description": "Non-invasive subsurface scanning to detect utilities, structures, and anomalies below the surface.",
-                        "subText": "Effective where records are incomplete or unavailable",
-                        "icon": "#gpr"
-                    },
-                    {
-                        "name": "Electromagnetic Utility Detection",
-                        "description": "Locate conductive utilities using electromagnetic signals for accurate horizontal positioning.",
-                        "subText": "Reliable for metallic utilities",
-                        "icon": "#em-detection"
-                    },
-                    {
-                        "name": "Vacuum Excavation",
-                        "description": "Expose underground utilities safely to confirm depth and position without damaging existing infrastructure.",
-                        "subText": "Non-destructive verification method",
-                        "icon": "#vacuum"
-                    }
-                ]
-            },
-            {
-                "name": "3D Rendering & Advanced Data Collection",
-                "description": "High-resolution spatial data capture and modeling for complex environments and specialized applications.",
-                "icon": "#3d",
-                "cta": {
-                    "label": "Advanced Data Services",
-                    "href": ""
-                },
-                "services": [
-                    {
-                        "name": "Digital Terrain Modeling (DTM)",
-                        "description": "Create accurate digital representations of terrain for analysis, design, and visualization.",
-                        "subText": "Supports engineering and flood analysis",
-                        "icon": "#dtm"
-                    },
-                    {
-                        "name": "Hydrographic & Bathymetric Surveys",
-                        "description": "Survey submerged terrain and water bodies to determine depths, contours, and underwater features.",
-                        "subText": "Waterway and coastal applications",
-                        "icon": "#bathymetric"
-                    },
-                    {
-                        "name": "Digital Scanning Surveys",
-                        "description": "High-density 3D scanning of bridges, roadways, and structures for detailed measurement and documentation.",
-                        "subText": "Ideal for complex infrastructure",
-                        "icon": "#laser-scan"
-                    },
-                    {
-                        "name": "Aerial Photogrammetry Control",
-                        "description": "Establish horizontal and vertical control to support aerial mapping and photogrammetric surveys.",
-                        "subText": "Ensures accuracy in aerial data products",
-                        "icon": "#aerial"
-                    }
-                ]
-            }
+    {
+      "name": "Subsurface Utilities (SUE) ",
+      "icon": "#sue",
+      "cta": {
+        "label": "More SUE",
+        "href": ""
+      },
+      "services": [
+        {
+          "name": "ASCE 38 Utility Designation (Quality Level B)",
+          "description": "Surface geophysical mapping of underground utilities in accordance with ASCE 38 standards."
+        },
+        {
+          "name": "Utility Test Hole / Potholing (Quality Level A)",
+          "description": "Vacuum excavation to expose and verify utility depth and position."
+        },
+        {
+          "name": "Ground Penetrating Radar (GPR)",
+          "description": "Subsurface imaging to detect non-conductive utilities and underground anomalies."
+        },
+        {
+          "name": "Electromagnetic Utility Locating",
+          "description": "Detection of metallic and conductive utilities using active and passive EM methods."
+        },
+        {
+          "name": "Utility Mapping & GIS Integration",
+          "description": "Deliver georeferenced utility data in CAD and GIS formats for engineering workflows."
+        }
+      ]
+    },
+    {
+      "name": "Utility Coordination (UC)",
+      "icon": "#uc",
+      "cta": {
+        "label": "More utility coordination",
+        "href": ""
+      },
+      "services": [
+        {
+          "name": "Utility Conflict Analysis",
+          "description": "Identify and document conflicts between proposed improvements and existing utilities."
+        },
+        {
+          "name": "Relocation Design Coordination",
+          "description": "Coordinate with utility owners to plan relocations and minimize project impacts."
+        },
+        {
+          "name": "Utility Owner Liaison Services",
+          "description": "Serve as primary communication point between project teams and utility providers."
+        },
+        {
+          "name": "Permit & Agreement Management",
+          "description": "Assist with joint-use agreements, relocation agreements, and regulatory approvals."
+        },
+        {
+          "name": "Utility Schedule & Risk Tracking",
+          "description": "Monitor relocation timelines and manage utility-related construction risks."
+        }
+      ]
+    },
+    {
+      "name": "LiDar",
+      "icon": "#lidar",
+      "cta": {
+        "label": "More LiDAR",
+        "href": ""
+      },
+      "services": [
+        {
+          "name": "Aerial LiDAR Mapping",
+          "description": "High-resolution airborne LiDAR data acquisition for large-area terrain modeling."
+        },
+        {
+          "name": "Mobile LiDAR Scanning",
+          "description": "Vehicle-mounted LiDAR for roadway, corridor, and infrastructure documentation."
+        },
+        {
+          "name": "Terrestrial Laser Scanning (TLS)",
+          "description": "Ground-based 3D scanning for structures, facilities, and complex environments."
+        },
+        {
+          "name": "Digital Terrain & Surface Modeling",
+          "description": "Generate DTM and DSM deliverables from LiDAR datasets."
+        },
+        {
+          "name": "Point Cloud Processing & 3D Modeling",
+          "description": "Extract features, contours, and BIM-ready models from LiDAR point clouds."
+        }
+      ]
+    },
+    {
+      "name": "Construction",
+      "icon": "#construction",
+      "cta": {
+        "label": "More construction",
+        "href": ""
+      },
+      "services": [
+        {
+          "name": "Construction Layout & Staking",
+          "description": "Provide precise field staking for grading, utilities, foundations, and structures."
+        },
+        {
+          "name": "Machine Control Modeling",
+          "description": "Develop 3D models for GPS-guided grading and heavy equipment systems."
+        },
+        {
+          "name": "Progress & Quantity Surveys",
+          "description": "Track earthwork volumes and project progress through periodic surveys."
+        },
+        {
+          "name": "Structural & Deformation Monitoring",
+          "description": "Monitor settlement, movement, and structural integrity during construction."
+        },
+        {
+          "name": "Final Certification & Closeout Surveys",
+          "description": "Provide final grade certifications and record drawings for project completion."
+        }
+      ]
+    },
+    {
+      "name": "Residential/Commercial",
+      "icon": "#residential",
+      "cta": {
+        "label": "More residential & commercial",
+        "href": ""
+      },
+      "services": [
+        {
+          "name": "Mortgage Location Surveys",
+          "description": "Determine improvements relative to property boundaries for lending purposes."
+        },
+        {
+          "name": "Lot & Block Surveys",
+          "description": "Establish property corners and lot dimensions within platted subdivisions."
+        },
+        {
+          "name": "Elevation Certificates",
+          "description": "Provide FEMA-compliant elevation data for flood insurance requirements."
+        },
+        {
+          "name": "Site Planning Surveys",
+          "description": "Support commercial development with existing conditions and utility mapping."
+        },
+        {
+          "name": "Subdivision & Platting Services",
+          "description": "Prepare subdivision plats and coordinate approvals with local jurisdictions."
+        }
+      ]
+    }
   ]
 }

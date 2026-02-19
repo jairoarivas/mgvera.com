@@ -1,0 +1,134 @@
+.section {
+    padding-bottom: 0;
+}
+
+.contentRoot {
+    display: flex;
+    align-items: stretch;
+}
+
+.tabList {
+    gap: 1px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: var(--color-border-muted);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: var(--color-border-muted);
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-left-color: var(--color-border-muted);
+    background-color: var(--color-muted-light);
+    flex-flow: column;
+    width: 50%;
+    display: flex;
+    min-height: 100%;
+}
+
+.tabImagePane {
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--color-muted-light);
+    align-self: stretch;
+    aspect-ratio: 4 / 3;
+    min-height: clamp(18rem, 40vw, 28rem);
+}
+
+.tabImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.tabItem {
+    background-color: color-mix(in srgb, var(--color-muted-light) 86%, var(--accent-400) 5%);
+    opacity: 0.75;
+    padding: clamp(1rem,.76vw + .81rem, 1.5rem);
+    flex: 0 0 auto;
+    flex-flow: column;
+    justify-content: flex-end;
+    align-items: stretch;
+    display: flex;
+    vertical-align: top;
+    text-align: left;
+    cursor: pointer;
+    color: var(--color-dark);
+    text-decoration: none;
+    max-width: 100%;
+    position: relative;
+    border: none;
+}
+
+.tabItemSelected {
+    box-shadow: inset 2px 0 0 0 var(--accent-400), 0 2px 10px rgba(0,0,0,0.08);
+    background-clip: padding-box;
+    border: 1px solid var(--color-border-muted);
+    flex: 1;
+    background-color: var(--color-muted-light);
+    opacity: 1;
+}
+
+.tabItemHeading {
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.tabItemHeading h3 {
+    font-size: clamp(.875rem,.38vw + .78rem, 1.125rem);
+    text-wrap: balance;
+}
+
+.tabItemHeading div {
+    position: absolute;
+    top: clamp(1rem,.76vw + .81rem, 1.5rem);
+    right: clamp(1rem,.76vw + .81rem, 1.5rem);
+    font-size: clamp(.75rem,.38vw + .66rem, 1rem);
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+    display: block;
+}
+
+.tabItemSelected .tabItemHeading div {
+    transform: translateY(50%);
+}
+
+.tabItemContent {
+    max-height: 0px;
+    overflow: clip;
+}
+
+.tabItemSelected .tabItemContent {
+    max-height: 100%;
+}
+
+.tabItemContent p{
+    padding-top: 1rem;
+    word-break: normal;
+    font-size: clamp(.75rem,.38vw + .66rem, 1rem);
+    text-wrap: pretty;
+    max-width: 70ch;
+    opacity: 0.85;
+}
+
+.button {
+    background-color: transparent;
+    color: var(--color-dark);
+    border-color: var(--color-dark);
+    width: 100%;
+    display: none;
+    margin-top: 2rem;
+}
+
+.button:hover {
+    background-color: var(--color-dark);
+    color: var(--color-muted-light);
+    border-color: var(--color-dark);
+}
+
+.tabItemSelected a {
+    display: flex;
+}

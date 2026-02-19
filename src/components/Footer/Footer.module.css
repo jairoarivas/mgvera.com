@@ -69,8 +69,8 @@
 }
 
 .locationsBox {
-    flex:1 1 25%;
-    max-width: 25%;
+    flex:1 1 20%;
+    max-width: 20%;
     padding-right: var(--var-gutter);
     padding-left: var(--var-gutter);
 }

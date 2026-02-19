@@ -1,8 +1,8 @@
 import { SectionTopper } from "../shared/Section/SectionTopper";
 import { Section } from "../shared/Section/Section";
 import styles from "./Services.module.css";
-import { ServiceCard } from "./ServiceCard";
 import { SectionContent } from "../shared/Section/SectionContent";
+import { ServiceCardBulleted } from "./ServiceCardBulleted";
 
 type ServicesContent = {
     sectionName: string;
@@ -12,18 +12,14 @@ type ServicesContent = {
     primaryCta: {
       label: string,
       href: string,
-      icon: string
     },
     categories: {
         name: string;
-        description: string;
         icon: string;
         cta: {label: string, href: string, icon?: string}
         services: {
             name: string;
             description: string;
-            subText: string;
-            icon: string;
         }[]
     }[]
 }
@@ -46,11 +42,11 @@ export function Services ({content}: {content: ServicesContent}){
                     </div>
                     {content.categories.map((categories, i) => {
                         return (
-                            <ServiceCard
+                            <ServiceCardBulleted
                                 key={i}
                                 name={categories.name}
-                                description={categories.description}
                                 icon={categories.icon}
+                                services={categories.services.map((service) => service.name)}
                                 cta={categories.cta}
                             />
                         );

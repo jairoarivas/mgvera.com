@@ -1,0 +1,93 @@
+.section {
+    padding: 0;
+}
+
+.statGrid {
+    column-gap: 1px;
+    row-gap: 1px;
+    background-color: var(--color-light);
+    display: flex;
+    transition: background-color 250ms ease-out;
+}
+
+.trustLeadIn {
+    padding-top: clamp(1.5rem, 3vw, 3rem);
+    padding-bottom: clamp(1.5rem, 3vw, 3rem);
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    /* text-transform: uppercase; */
+    opacity: 0.55;
+    background-color: var(--color-light);
+    color: var(--color-dark);
+}
+
+.trustLeadIn h4 {
+    padding-left: calc(var(--gutter)/2);
+    padding-right: calc(var(--gutter)/2);
+    font-family: var(--font-mono);
+}
+
+
+.trustLeadIn[data-scrolled="true"] {
+  transition: opacity 250ms ease-out;
+  opacity: 1;
+}
+
+.statGridItem {
+    min-height: clamp(11rem, 3vw + 9rem, 13.5rem);
+    padding: clamp(0.9rem, 1vw + 1rem, 3rem);
+    flex-flow: column;
+    flex: auto;
+    justify-content: space-between;
+    align-items: stretch;
+    width: calc(33.3333% - 2px);
+    display: flex;
+    opacity: 0;
+    transition: opacity 450ms ease-out;
+    background-color: #0f2f33;
+    color: var(--color-muted-light);
+}
+
+.statGridItem h3 {
+    font-size: clamp(2.75rem, 3.5vw + 1.5rem, 4.25rem);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    margin: 0;
+    text-wrap: balance;
+}
+
+.statGridItem h4 {
+    font-size: clamp(0.9rem, 0.4vw + 0.8rem, 1rem);
+    line-height: 1.4;
+    margin: 0;
+    opacity: 0.65;
+}
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+    .statGrid[data-scrolled="true"] {
+        background-color: #5faeb5;
+        transition: background-color 2000ms ease-out;
+    }
+
+    .statGrid[data-scrolled="true"] .statGridItem {
+        opacity: 1;
+    }
+
+    .statGrid[data-scrolled="true"] .statGridItem:nth-child(1) { transition-delay: 0ms; }
+    .statGrid[data-scrolled="true"] .statGridItem:nth-child(2) { transition-delay: 50ms; }
+    .statGrid[data-scrolled="true"] .statGridItem:nth-child(3) { transition-delay: 100ms; }
+    .statGrid[data-scrolled="true"] .statGridItem:nth-child(4) { transition-delay: 150ms; }
+    .statGrid[data-scrolled="true"] .statGridItem:nth-child(5) { transition-delay: 200ms; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .statGridItem { opacity: 1; transition: none; }
+  .trustLeadIn { opacity: 1; transform: none; transition: none; }
+}
+
+
+

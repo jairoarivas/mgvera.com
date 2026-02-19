@@ -13,14 +13,18 @@ import { DesktopNavbar } from './components/DesktopNavbar/DesktopNavbar';
 import { SocialProof } from './components/SocialProof/SocialProof';
 import { Services } from './components/Services/Services';
 import { Footer } from './components/Footer/Footer';
-import { TrustSignals } from './components/TrustSignals/TrustSignals';
+import { About } from './components/About/About';
+import { LogoSprites } from './components/shared/LogoComponents/LogoSprites';
+import { TrustBadges } from './components/TrustBadges/TrustBadges';
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
         <CustomSprites/>
+        <LogoSprites/>
         <DesktopNavbar content={desktopNavbarContent}/>
         <Hero content={heroContent}/>
-        {/* <TrustSignals/> */}
+        <TrustBadges/>
+        <About/>
         <Services content={servicesContent}/>
         <SocialProof content={socialProofContent}/>
         <Footer/>

@@ -34,7 +34,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.40);
+  background: rgba(0,0,0,0.30);
   z-index: 1;
 }
 
@@ -74,10 +74,51 @@
   font-size: clamp(2.5rem, 4vw, 4.5rem);
   color: var(--color-light);
   text-wrap: balance;
+  text-shadow:
+    0 2px 6px rgba(0,0,0,0.4),
+    0 8px 24px rgba(0,0,0,0.2);
 }
 
 .subheading {
   font-size: 1.25rem;
-  color: var(--color-muted-light);
+  color: var(--color-light);
+  opacity: 65%;
   text-wrap: pretty;
+}
+
+.logoBox {
+    flex: none;
+    max-width: 100%;
+    display: inline-block;
+    transition: opacity 750ms ease;
+}
+
+.logo {
+    width: auto;
+    height: 100%;
+    color: var(--color-light);
+}
+
+.logoBox[data-scrolled="true"] {
+    opacity: 0;
+}
+
+.textContent::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  width: min(56rem, 92vw);
+  height: 28rem;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0,0,0,0.30) 0%,
+    rgba(0,0,0,0.18) 35%,
+    rgba(0,0,0,0.08) 55%,
+    rgba(0,0,0,0.00) 75%
+  );
+  filter: blur(18px);
+  z-index: -1;
+  pointer-events: none;
 }

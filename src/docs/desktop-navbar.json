@@ -1,8 +1,8 @@
 {
     "logo": "/logo/logo-full.svg",
     "primaryCta": {
-      "label": "Call Now",
-      "href": ""
+      "label": "Contact",
+      "href": "mailto:myemail@gmail.com"
     },
-    "menuItems": [ "Services", "About", "Projects", "News", "Contact"]
+    "menuItems": [ "Services", "About", "Projects", "News"]
 }
