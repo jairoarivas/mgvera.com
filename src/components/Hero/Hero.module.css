@@ -8,7 +8,7 @@
   padding-bottom: clamp(1rem, 3vw , 3rem);
   align-items: stretch;
   overflow: hidden;
-  padding-top: calc(clamp(4rem, 8vw, 8rem) + var(--nav-h-desktop));
+  padding-top: calc(clamp(1rem, 3vw, 3rem) + var(--nav-h-desktop));
 }
 
 .navSentinel {
@@ -91,12 +91,15 @@
     max-width: 100%;
     display: inline-block;
     transition: opacity 750ms ease;
+    line-height: 0;
+    /* margin-bottom: clamp(1rem, 3vw , 3rem); */
 }
 
 .logo {
-    width: auto;
-    height: 100%;
+    width: clamp(18rem, 60vw, 39rem);
+    min-height: clamp(6rem, 20vw, 13rem);
     color: var(--color-light);
+    display: block;
 }
 
 .logoBox[data-scrolled="true"] {

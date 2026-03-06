@@ -14,9 +14,9 @@ export function SocialProof({content} : {content: SocialProofContent}){
                         <h4>{content.heading}</h4>
                     </div>
                     <div className={styles.grid}>
-                        {content.logoFileNames.map((logo) => {
+                        {content.logoFileNames.map((logo, index) => {
                             return (
-                                <div className={styles.gridItem}>
+                                <div className={styles.gridItem} key={index}>
                                     <div className={styles.logoCard}>
                                         <img
                                             src={`/images/social-proof-logos/${logo}.svg`}

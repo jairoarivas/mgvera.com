@@ -14,24 +14,28 @@ export function TrustBadges (){
             </div>
             <div className={styles.statGrid} data-scrolled={scrolled ? "true" : "false"}>
                 <div className={styles.statGridItem}>
-                    <h3>104</h3>
-                    <h4>Years of Combined Experience</h4>
+                    <h3>40+</h3>
+                    <h4>Years of Professional and Senior Personnel Experience</h4>
                 </div>
                 <div className={styles.statGridItem}>
-                    <h3>49</h3>
+                    <h3>8</h3>
                     <h4>Licensed Surveyors (PSM)</h4>
                 </div>
                 <div className={styles.statGridItem}>
-                    <h3>7</h3>
+                    <h3>19</h3>
                     <h4>Fully Equipped Field Crews</h4>
                 </div>
                 <div className={styles.statGridItem}>
-                    <h3>51</h3>
+                    <h3>2</h3>
+                    <h4>Vac Trucks (SUE)</h4>
+                </div>
+                <div className={styles.statGridItem}>
+                    <h3>250+</h3>
                     <h4>Corporate & Municipal Clients</h4>
                 </div>
                 <div className={styles.statGridItem}>
-                    <h3>238</h3>
-                    <h4>Projects Successfully Delivered</h4>
+                    <h3>200+</h3>
+                    <h4>Projects Delivered Every Year</h4>
                 </div>
             </div>
         </section>

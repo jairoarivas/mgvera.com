@@ -35,14 +35,14 @@ export function Hero({ content } : { content: HeroContent }) {
                                     <use href="#logo-full" />
                                 </svg>
                             </div>
-                                <h1 className={styles.header}>{content.heading}</h1>
-                                <p className={styles.subheading}>{content.subheading}</p>
-                                
-                                <Button 
-                                    label={content.primaryCta.label} 
-                                    href={content.primaryCta.href}
-                                    size="lg"
-                                />
+                            <h1 className={styles.header}>{content.heading}</h1>
+                            <p className={styles.subheading}>{content.subheading}</p>
+                            
+                            <Button 
+                                label={content.primaryCta.label} 
+                                href={content.primaryCta.href}
+                                size="lg"
+                            />
                         </div>
                     </div>
                 </div>

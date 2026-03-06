@@ -77,7 +77,7 @@
 
 .locationText {
     text-wrap: pretty;
-    font-size: 1.25rem;
+    font-size: clamp(.8rem, 1.1vw + .35rem, 1rem);
     opacity: 65%;
     max-width: 60ch;
 }
@@ -97,8 +97,8 @@
     display: flex;
     color: var(--color-light);
     font-style: normal;
-    opacity: 65%;
     line-height: var(--lh-base);
+    font-size: clamp(.75rem, 1vw + .3rem, .95rem);
 }
 
 .locationCard h3 {
@@ -106,6 +106,93 @@
     text-wrap: balance;
     text-transform: uppercase;
     letter-spacing: var(--ls-cta);
+}
+
+.phoneLine {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.25rem;
+    text-decoration: none;
+    color: var(--color-light);
+    opacity: 65%;
+    transition: opacity 0.2s ease;
+}
+
+a.phoneLine:hover,
+a.phoneLine:focus-visible {
+    opacity: 1;
+}
+
+.phoneIcon {
+    width: 1em;
+    height: 1em;
+    display: block;
+    flex: 0 0 auto;
+}
+
+.emailLine {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.25rem;
+    text-decoration: none;
+    color: var(--color-light);
+    opacity: 65%;
+    transition: opacity 0.2s ease;
+}
+
+.emailLine:hover,
+.emailLine:focus-visible {
+    opacity: 1;
+}
+
+.emailIcon {
+    width: 1em;
+    height: 1em;
+    display: block;
+    flex: 0 0 auto;
+}
+
+.addressLink {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-decoration: none;
+    color: var(--color-light);
+    opacity: 65%;
+    transition: opacity 0.2s ease;
+}
+
+.addressLine {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.mapPinIcon {
+    width: 1em;
+    height: 1em;
+    display: block;
+    flex: 0 0 auto;
+    margin-top: 0.2em;
+}
+
+.addressSubline {
+    padding-left: calc(1em + 0.5rem);
+}
+
+.addressLink:hover {
+    opacity: 1;
+}
+
+.phonePlaceholder {
+    display: inline-flex;
+    align-items: center;
+}
+
+.phoneLine svg[aria-hidden="true"] {
+    visibility: hidden;
 }
 
 .footerMenuBox {
@@ -158,7 +245,7 @@
     width: 100%;
     height: 2px;
     background-color: var(--color-light);
-    opacity: 15%;
+    opacity: 10%;
 }
 
 .copyrightBox {
@@ -166,6 +253,7 @@
     display: flex;
     row-gap: 2rem;
     justify-content: space-between;
+    align-items: center;
 }
 
 .copyright {
@@ -176,7 +264,7 @@
 
 .copyright p {
     font-size: .75rem;
-    opacity: 65%;
+    opacity: 55%;
 }
 
 
@@ -188,12 +276,44 @@
 
 .credLink a {
     font-size: .75rem;
-    opacity: 65%;
-    transition: opacity 0.25s color .25s;
+    opacity: 55%;
+    transition: opacity 0.25s ease, color 0.25s ease;
 }
 
 .credLink a:hover {
     opacity: 1;
     color: var(--brand-600);
     cursor: pointer;
+}
+
+.socialLinks {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding-right: var(--var-gutter);
+    padding-left: var(--var-gutter);
+}
+
+.socialLink {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: var(--color-light);
+    opacity: 65%;
+    transition: opacity 0.2s ease, color 0.2s ease;
+    text-decoration: none;
+}
+
+.socialLink:hover,
+.socialLink:focus-visible {
+    opacity: 1;
+    color: var(--brand-600);
+}
+
+.socialIcon {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: block;
 }

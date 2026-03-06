@@ -27,7 +27,7 @@
 .logoLink {
     z-index: 2;
     flex: none;
-    width: 12rem;
+    max-width: 100%;
     position: absolute;
     max-width: 100%;
     display: inline-block;
@@ -38,11 +38,12 @@
 }
 
 .logo {
-    width: auto;
-    height: 100%;
+    padding-top: 10px;
+    width: 12rem;
+    height: 4rem;
     color: var(--color-light);
     opacity: 0;
-    transition: color 250ms ease, opacity 800ms ease;
+    transition: color 250ms ease, opacity 250ms ease;
 }
 
 .logo:hover {

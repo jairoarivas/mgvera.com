@@ -47,11 +47,10 @@
     opacity: 0.75;
     padding: clamp(1rem,.76vw + .81rem, 1.5rem);
     flex: 0 0 auto;
-    flex-flow: column;
-    justify-content: flex-end;
-    align-items: stretch;
-    display: flex;
-    vertical-align: top;
+    display: grid;
+    grid-template-rows: auto 0fr auto;
+    align-content: start;
+    transition: grid-template-rows 260ms ease;
     text-align: left;
     cursor: pointer;
     color: var(--color-dark);
@@ -61,13 +60,32 @@
     border: none;
 }
 
+.tabItem::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: none;
+    opacity: 0;
+    pointer-events: none;
+}
+
 .tabItemSelected {
+    gap: 1rem;
     box-shadow: inset 2px 0 0 0 var(--accent-400), 0 2px 10px rgba(0,0,0,0.08);
     background-clip: padding-box;
     border: 1px solid var(--color-border-muted);
     flex: 1;
+    grid-template-rows: auto 1fr auto;
     background-color: var(--color-muted-light);
     opacity: 1;
+    cursor: default;
+}
+
+.tabItemSelected::after {
+    background: url('/images/about/topo.svg') no-repeat center / cover;
+    opacity: 0.15;
+    mask-image: linear-gradient(to top, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 65%);
+    -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 65%);
 }
 
 .tabItemHeading {
@@ -80,29 +98,20 @@
 .tabItemHeading h3 {
     font-size: clamp(.875rem,.38vw + .78rem, 1.125rem);
     text-wrap: balance;
+    transform: translateY(0);
+    transition: transform 220ms ease;
+    will-change: transform;
 }
 
-.tabItemHeading div {
-    position: absolute;
-    top: clamp(1rem,.76vw + .81rem, 1.5rem);
-    right: clamp(1rem,.76vw + .81rem, 1.5rem);
-    font-size: clamp(.75rem,.38vw + .66rem, 1rem);
-    font-family: var(--font-mono);
-    text-transform: uppercase;
-    display: block;
-}
-
-.tabItemSelected .tabItemHeading div {
+.tabItemSelected .tabItemHeading h3 {
     transform: translateY(50%);
 }
 
 .tabItemContent {
-    max-height: 0px;
-    overflow: clip;
-}
-
-.tabItemSelected .tabItemContent {
-    max-height: 100%;
+    min-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 200ms ease;
 }
 
 .tabItemContent p{
@@ -114,13 +123,17 @@
     opacity: 0.85;
 }
 
+.tabItemSelected .tabItemContent {
+    opacity: 1;
+}
+
 .button {
     background-color: transparent;
     color: var(--color-dark);
     border-color: var(--color-dark);
     width: 100%;
     display: none;
-    margin-top: 2rem;
+    margin-top: auto;
 }
 
 .button:hover {
@@ -131,4 +144,5 @@
 
 .tabItemSelected a {
     display: flex;
+    transform: translateY(-30%);
 }

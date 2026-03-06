@@ -5,41 +5,37 @@
   "secondaryHeader": "Everything you need",
   "primaryCta": {
     "label": "Start the Process",
-    "href": ""
+    "href": "mailto:avera@mgvera.com"
   },
   "categories": [
     {
       "name": "Surveying & Mapping",
       "icon": "#surveying",
       "cta": {
-        "label": "More surveying and mapping",
+        "label": "More surveying & mapping",
         "href": ""
       },
       "services": [
         {
-          "name": "Boundary & ALTA/NSPS Land Title Surveys",
+          "name": "Geodetic & Control Surveying",
           "description": "Comprehensive boundary surveys meeting ALTA/NSPS standards for real estate transactions, title insurance, and development."
         },
         {
-          "name": "Topographic & Existing Conditions Surveys",
+          "name": "Right-of-Way Surveys and Mapping",
           "description": "Detailed mapping of terrain, utilities, and site features to support engineering design and permitting."
         },
         {
-          "name": "Control Surveys (Horizontal & Vertical)",
+          "name": "Topographic / As-built / 3D (DTM) Surveys",
           "description": "Establish geodetic control networks using GNSS and conventional methods to ensure project-wide accuracy."
         },
         {
-          "name": "Right-of-Way & Easement Surveys",
+          "name": "Bridge Surveys",
           "description": "Define transportation corridors, easements, and acquisition parcels for infrastructure projects."
-        },
-        {
-          "name": "As-Built & Record Surveys",
-          "description": "Verify constructed improvements against design plans for compliance and closeout documentation."
         }
       ]
     },
     {
-      "name": "Subsurface Utilities (SUE) ",
+      "name": "Subsurface Utility Engineering (SUE)",
       "icon": "#sue",
       "cta": {
         "label": "More SUE",
@@ -47,24 +43,20 @@
       },
       "services": [
         {
-          "name": "ASCE 38 Utility Designation (Quality Level B)",
+          "name": "Quality Level A (QLA) - Utility Locates",
           "description": "Surface geophysical mapping of underground utilities in accordance with ASCE 38 standards."
         },
         {
-          "name": "Utility Test Hole / Potholing (Quality Level A)",
+          "name": "Quality Level B (QLB) – Utility Designates",
           "description": "Vacuum excavation to expose and verify utility depth and position."
         },
         {
-          "name": "Ground Penetrating Radar (GPR)",
+          "name": "Quality Level C (QLC)  – Correlated Records to Surveyed Features",
           "description": "Subsurface imaging to detect non-conductive utilities and underground anomalies."
         },
         {
-          "name": "Electromagnetic Utility Locating",
+          "name": "Quality Level D (QLD) – Existing Records",
           "description": "Detection of metallic and conductive utilities using active and passive EM methods."
-        },
-        {
-          "name": "Utility Mapping & GIS Integration",
-          "description": "Deliver georeferenced utility data in CAD and GIS formats for engineering workflows."
         }
       ]
     },
@@ -72,34 +64,30 @@
       "name": "Utility Coordination (UC)",
       "icon": "#uc",
       "cta": {
-        "label": "More utility coordination",
+        "label": "More UC",
         "href": ""
       },
       "services": [
         {
-          "name": "Utility Conflict Analysis",
+          "name": "Utility Identification and Coordination",
           "description": "Identify and document conflicts between proposed improvements and existing utilities."
         },
         {
-          "name": "Relocation Design Coordination",
+          "name": "Management of Relocations and Adjustments",
           "description": "Coordinate with utility owners to plan relocations and minimize project impacts."
         },
         {
-          "name": "Utility Owner Liaison Services",
+          "name": "Permit Coordination Services",
           "description": "Serve as primary communication point between project teams and utility providers."
         },
         {
-          "name": "Permit & Agreement Management",
+          "name": "Regulatory Compliance (Federal, State, and Local)",
           "description": "Assist with joint-use agreements, relocation agreements, and regulatory approvals."
-        },
-        {
-          "name": "Utility Schedule & Risk Tracking",
-          "description": "Monitor relocation timelines and manage utility-related construction risks."
         }
       ]
     },
     {
-      "name": "LiDar",
+      "name": "3D Laser Scanning (LiDAR)",
       "icon": "#lidar",
       "cta": {
         "label": "More LiDAR",
@@ -107,24 +95,20 @@
       },
       "services": [
         {
-          "name": "Aerial LiDAR Mapping",
+          "name": "Static LiDar (Topo/DTM)",
           "description": "High-resolution airborne LiDAR data acquisition for large-area terrain modeling."
         },
         {
-          "name": "Mobile LiDAR Scanning",
+          "name": "Mobile LiDAR (Topo/DTM)",
           "description": "Vehicle-mounted LiDAR for roadway, corridor, and infrastructure documentation."
         },
         {
-          "name": "Terrestrial Laser Scanning (TLS)",
+          "name": "Point Cloud Modeling (TopoDOT)",
           "description": "Ground-based 3D scanning for structures, facilities, and complex environments."
         },
         {
-          "name": "Digital Terrain & Surface Modeling",
+          "name": "Aerial-Drones",
           "description": "Generate DTM and DSM deliverables from LiDAR datasets."
-        },
-        {
-          "name": "Point Cloud Processing & 3D Modeling",
-          "description": "Extract features, contours, and BIM-ready models from LiDAR point clouds."
         }
       ]
     },
@@ -141,20 +125,16 @@
           "description": "Provide precise field staking for grading, utilities, foundations, and structures."
         },
         {
-          "name": "Machine Control Modeling",
+          "name": "As-Built Surveys",
           "description": "Develop 3D models for GPS-guided grading and heavy equipment systems."
         },
         {
-          "name": "Progress & Quantity Surveys",
+          "name": "Settlement Monitoring",
           "description": "Track earthwork volumes and project progress through periodic surveys."
         },
         {
-          "name": "Structural & Deformation Monitoring",
+          "name": "Earthwork Calculations",
           "description": "Monitor settlement, movement, and structural integrity during construction."
-        },
-        {
-          "name": "Final Certification & Closeout Surveys",
-          "description": "Provide final grade certifications and record drawings for project completion."
         }
       ]
     },
@@ -167,24 +147,20 @@
       },
       "services": [
         {
-          "name": "Mortgage Location Surveys",
+          "name": "Boundary Survey and Elevation(FEMA) Certificate",
           "description": "Determine improvements relative to property boundaries for lending purposes."
         },
         {
-          "name": "Lot & Block Surveys",
+          "name": "Platting Survey",
           "description": "Establish property corners and lot dimensions within platted subdivisions."
         },
         {
-          "name": "Elevation Certificates",
+          "name": "ALTA/NSPS Land Title Survey",
           "description": "Provide FEMA-compliant elevation data for flood insurance requirements."
         },
         {
-          "name": "Site Planning Surveys",
+          "name": "FDEP / Mean High Water Survey",
           "description": "Support commercial development with existing conditions and utility mapping."
-        },
-        {
-          "name": "Subdivision & Platting Services",
-          "description": "Prepare subdivision plats and coordinate approvals with local jurisdictions."
         }
       ]
     }

@@ -22,7 +22,7 @@ export function About (){
             },
             body: (
                 <>
-                    <p>Since 1973, Manuel G. Vera & Associates, Inc. (MGV) has delivered trusted Surveying and Mapping services across Florida. Built on precision, innovation, and enduring partnerships, we've earned decades-long partnerships—including continuous selection by FDOT District Six since 1997.</p>
+                    <p>Since 1977, Manuel G. Vera & Associates, Inc. (MGV) has delivered trusted Surveying and Mapping, Subsurface Utility Engineering (SUE), Utility Coordination (UC), and Permitting services throughout Florida. With a staff of over 80 professionals and senior personnel averaging 10 to 40+ years of experience, MGV combines the technical depth of a large firm with the responsiveness of a family-owned business.</p>
                     <p>Learn how our experience drives project success.</p>
                 </>
             ),
@@ -40,7 +40,7 @@ export function About (){
             },
             body: (
                 <>
-                    <p>Founded by Manuel G. Vera, MGV was built on integrity, reliability, and hands-on leadership. His commitment to quality and relationships continues to guide the company today.</p>
+                    <p>Manuel G. Vera Sr. learned the practices of surveying while serving in the United States Air Force during the Vietnam War. After completing his service, he carried forward the discipline, precision, and leadership instilled in him and founded M.G. Vera & Associates in 1973. Beginning with a single crew, Manuel served as both party chief and draftsman, laying the foundation for the respected surveying and mapping firm the company is today.</p>
                     <p>Meet the rest of the team who carry that legacy forward.</p>
                 </>
             ),
@@ -53,10 +53,6 @@ export function About (){
                 name="About"
                 heading="Surveying Florida for Over 50 Years"
                 subheading="Family-owned. Technology-driven. Trusted by Florida's largest agencies."
-                // cta={{
-                //     "label": "Discuss your project",
-                //     "href": "",
-                // }}
             />
             <div className={styles.contentRoot}>
                 <div className={styles.tabList}>
@@ -79,7 +75,6 @@ export function About (){
                             >
                                 <div className={styles.tabItemHeading}>
                                     <h3>{tab.heading}</h3>
-                                    <div>{tab.index}</div>
                                 </div>
                                 <div className={styles.tabItemContent}>
                                     {tab.body}

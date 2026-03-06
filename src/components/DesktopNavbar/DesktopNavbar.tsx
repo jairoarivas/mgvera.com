@@ -17,14 +17,14 @@ export function DesktopNavbar({content}: {content: DesktopNavbarContent}) {
             <div className={styles.navLayout}>
                 <a className={styles.logoLink} href="#hero">
                     <svg className={styles.logo}>
-                        <use href="#logo-long" />
+                        <use href="#logo-full" />
                     </svg>
                 </a>
                 <div className={styles.navMenu}>
                     <ul className={styles.list}>
-                        {content.menuItems.map((item)=> {
+                        {content.menuItems.map((item, index)=> {
                             return (
-                                <li className={styles.listItem}>
+                                <li className={styles.listItem} key={index}>
                                     <a className={styles.navLink}>
                                         {item}
                                     </a>

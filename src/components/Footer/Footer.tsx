@@ -16,7 +16,7 @@ export function Footer({content}: {content?: FooterContent}) {
                         <div className={styles.footerTopColSm}>
                             <Button 
                                 label={"Partner With Us"} 
-                                href={""}
+                                href={"mailto:avera@mgvera.com"}
                                 size="lg"
                             />
                         </div>
@@ -41,8 +41,33 @@ export function Footer({content}: {content?: FooterContent}) {
                             <div className={styles.locationCard}>
                                 <h3>Miami (Corporate)</h3>
                                 <address>
-                                    <span>13960 SW 47 Street, Suite 4404</span>
-                                    <span>Miami, Florida  33175</span>
+                                    <a className={styles.phoneLine} href="tel:3052216210">
+                                        <svg className={styles.phoneIcon}>
+                                            <use href="#phone"/>
+                                        </svg>
+                                        (305) 221-6210
+                                    </a>
+                                    <a className={styles.emailLine} href="mailto:avera@mgvera.com">
+                                        <svg className={styles.emailIcon}>
+                                            <use href="#email" />
+                                        </svg>
+                                        avera@mgvera.com
+                                    </a>
+                                    <a
+                                        className={styles.addressLink}
+                                        href="https://www.google.com/maps/search/?api=1&query=13960%20SW%2047%20Street%2C%20Suite%204404%2C%20Miami%2C%20FL%2033175"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        <span className={styles.addressLine}>
+                                            <svg className={styles.mapPinIcon}>
+                                                <use href="#map-pin" />
+                                            </svg>
+                                            13960 SW 47 Street
+                                        </span>
+                                        <span className={styles.addressSubline}>Suite 4404</span>
+                                        <span className={styles.addressSubline}>Miami, Florida  33175</span>
+                                    </a>
                                 </address>
                             </div>
                         </div>
@@ -50,8 +75,27 @@ export function Footer({content}: {content?: FooterContent}) {
                             <div className={styles.locationCard}>
                                 <h3>Jupiter</h3>
                                 <address>
-                                    <span>1562 Park Lane South, Suite 400</span>
-                                    <span>Jupiter, Florida  33458</span>
+                                    <a className={styles.phoneLine} href="tel:5612032704">
+                                        <svg className={styles.phoneIcon}>
+                                            <use href="#phone"/>
+                                        </svg>
+                                        (561) 203-2704
+                                    </a>
+                                    <a
+                                        className={styles.addressLink}
+                                        href="https://www.google.com/maps/search/?api=1&query=1562%20Park%20Lane%20South%2C%20Suite%20400%2C%20Jupiter%2C%20FL%2033458"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        <span className={styles.addressLine}>
+                                            <svg className={styles.mapPinIcon}>
+                                                <use href="#map-pin" />
+                                            </svg>
+                                            1562 Park Lane South
+                                        </span>
+                                        <span className={styles.addressSubline}>Suite 400</span>
+                                        <span className={styles.addressSubline}>Jupiter, Florida  33458</span>
+                                    </a>
                                 </address>
                             </div>
                         </div>
@@ -59,8 +103,26 @@ export function Footer({content}: {content?: FooterContent}) {
                             <div className={styles.locationCard}>
                                 <h3>Orlando</h3>
                                 <address>
-                                    <span>1414 Lexington Green Lane</span>
-                                    <span>Sanford, Florida  32771</span>
+                                    <a className={styles.phoneLine} href="tel:4078785409">
+                                        <svg className={styles.phoneIcon}>
+                                            <use href="#phone"/>
+                                        </svg>
+                                        (407) 878-5409
+                                    </a>
+                                    <a
+                                        className={styles.addressLink}
+                                        href="https://www.google.com/maps/search/?api=1&query=1414%20Lexington%20Green%20Lane%2C%20Sanford%2C%20FL%2032771"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        <span className={styles.addressLine}>
+                                            <svg className={styles.mapPinIcon}>
+                                                <use href="#map-pin" />
+                                            </svg>
+                                            1414 Lexington Green Lane
+                                        </span>
+                                        <span className={styles.addressSubline}>Sanford, Florida  32771</span>
+                                    </a>
                                 </address>
                             </div>
                         </div>
@@ -68,7 +130,12 @@ export function Footer({content}: {content?: FooterContent}) {
                             <div className={styles.locationCard}>
                                 <h3>Jacksonville</h3>
                                 <address>
-                                    <span>Coming Soon</span>
+                                    <span className={styles.phoneLine}>
+                                        <svg className={styles.phoneIcon} aria-hidden="true">
+                                            <use href="#phone"/>
+                                        </svg>
+                                        <span className={styles.phonePlaceholder}>Coming Soon</span>
+                                    </span>
                                 </address>
                             </div>
                         </div>
@@ -109,6 +176,41 @@ export function Footer({content}: {content?: FooterContent}) {
                     <div className={styles.copyrightBox}>
                         <div className={styles.copyright}>
                             <p>© M.G. Vera & Associates 2026</p>
+                        </div>
+                        <div className={styles.socialLinks}>
+                            <a
+                                className={styles.socialLink}
+                                href="https://www.facebook.com/MGVera.inc/"
+                                target="_blank"
+                                rel="noreferrer"
+                                aria-label="M.G. Vera on Facebook"
+                            >
+                                <svg className={styles.socialIcon}>
+                                    <use href="#facebook" />
+                                </svg>
+                            </a>
+                            <a
+                                className={styles.socialLink}
+                                href="https://www.instagram.com/mgvera_survey/"
+                                target="_blank"
+                                rel="noreferrer"
+                                aria-label="M.G. Vera on Instagram"
+                            >
+                                <svg className={styles.socialIcon}>
+                                    <use href="#instagram" />
+                                </svg>
+                            </a>
+                            <a
+                                className={styles.socialLink}
+                                href="https://www.linkedin.com/company/mgvera"
+                                target="_blank"
+                                rel="noreferrer"
+                                aria-label="M.G. Vera on LinkedIn"
+                            >
+                                <svg className={styles.socialIcon}>
+                                    <use href="#linkedin" />
+                                </svg>
+                            </a>
                         </div>
                         <div className={styles.credLink}>
                             <a>Site by JR Forge Studios</a>

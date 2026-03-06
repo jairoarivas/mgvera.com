@@ -80,8 +80,9 @@
     .statGrid[data-scrolled="true"] .statGridItem:nth-child(1) { transition-delay: 0ms; }
     .statGrid[data-scrolled="true"] .statGridItem:nth-child(2) { transition-delay: 50ms; }
     .statGrid[data-scrolled="true"] .statGridItem:nth-child(3) { transition-delay: 100ms; }
-    .statGrid[data-scrolled="true"] .statGridItem:nth-child(4) { transition-delay: 150ms; }
-    .statGrid[data-scrolled="true"] .statGridItem:nth-child(5) { transition-delay: 200ms; }
+    .statGrid[data-scrolled="true"] .statGridItem:nth-child(4) { transition-delay: 100ms; }
+    .statGrid[data-scrolled="true"] .statGridItem:nth-child(5) { transition-delay: 50ms; }
+    .statGrid[data-scrolled="true"] .statGridItem:nth-child(6) { transition-delay: 0ms; }
 }
 
 @media (prefers-reduced-motion: reduce) {
