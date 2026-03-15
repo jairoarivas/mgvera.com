@@ -1,7 +1,8 @@
 .hero {
   position: relative;
+  min-height: 85vh;
   min-height: 85svh;
-  max-height: 64rem;
+  min-height: 85dvh;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -74,6 +75,7 @@
   font-size: clamp(2.5rem, 4vw, 4.5rem);
   color: var(--color-light);
   text-wrap: balance;
+  text-transform: capitalize;
   text-shadow:
     0 2px 6px rgba(0,0,0,0.4),
     0 8px 24px rgba(0,0,0,0.2);

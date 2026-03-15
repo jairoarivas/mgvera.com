@@ -16,7 +16,7 @@ export function Footer({content}: {content?: FooterContent}) {
                         <div className={styles.footerTopColSm}>
                             <Button 
                                 label={"Partner With Us"} 
-                                href={"mailto:avera@mgvera.com"}
+                                href={"mailto:cbustos@mgvera.com"}
                                 size="lg"
                             />
                         </div>
@@ -26,7 +26,7 @@ export function Footer({content}: {content?: FooterContent}) {
                     <div className={styles.logo}>
                         <svg 
                             className={styles.logoSvg} 
-                            viewBox="0 0 620 100"
+                            viewBox="0 0 757.28223 311.3251"
                         >
                             <use href="#logo-full" />
                         </svg>
@@ -47,11 +47,11 @@ export function Footer({content}: {content?: FooterContent}) {
                                         </svg>
                                         (305) 221-6210
                                     </a>
-                                    <a className={styles.emailLine} href="mailto:avera@mgvera.com">
+                                    <a className={styles.emailLine} href="mailto:cbustos@mgvera.com">
                                         <svg className={styles.emailIcon}>
                                             <use href="#email" />
                                         </svg>
-                                        avera@mgvera.com
+                                        cbustos@mgvera.com
                                     </a>
                                     <a
                                         className={styles.addressLink}
@@ -65,7 +65,6 @@ export function Footer({content}: {content?: FooterContent}) {
                                             </svg>
                                             13960 SW 47 Street
                                         </span>
-                                        <span className={styles.addressSubline}>Suite 4404</span>
                                         <span className={styles.addressSubline}>Miami, Florida  33175</span>
                                     </a>
                                 </address>
@@ -130,11 +129,11 @@ export function Footer({content}: {content?: FooterContent}) {
                             <div className={styles.locationCard}>
                                 <h3>Jacksonville</h3>
                                 <address>
-                                    <span className={styles.phoneLine}>
-                                        <svg className={styles.phoneIcon} aria-hidden="true">
-                                            <use href="#phone"/>
+                                    <span className={styles.addressLine}>
+                                        <svg className={styles.mapPinIcon} aria-hidden="true">
+                                            <use href="#location-pin"/>
                                         </svg>
-                                        <span className={styles.phonePlaceholder}>Coming Soon</span>
+                                        <span className={styles.phonePlaceholder}>Coming Soon!</span>
                                     </span>
                                 </address>
                             </div>

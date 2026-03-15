@@ -27,7 +27,7 @@
     opacity: 0.6;
     font-family: var(--font-mono);
     letter-spacing: var(--ls-cta);
-    font-size: clamp(.62rem, 0.7vw, 1rem);
+    font-size: clamp(.90rem, 0.7vw, 1rem);
     text-transform: uppercase;
     text-wrap: balance;
     margin-top: 0;
@@ -47,4 +47,12 @@
     max-width: 60ch;
     color: var(--color-dark);
     opacity: 0.6;
+}
+
+@media (max-width: 899px) {
+    .textBox {
+        flex-basis: 100%;
+        max-width: 100%;
+        padding-right: 0;
+    }
 }

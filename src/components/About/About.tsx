@@ -22,13 +22,13 @@ export function About (){
             },
             body: (
                 <>
-                    <p>Since 1977, Manuel G. Vera & Associates, Inc. (MGV) has delivered trusted Surveying and Mapping, Subsurface Utility Engineering (SUE), Utility Coordination (UC), and Permitting services throughout Florida. With a staff of over 80 professionals and senior personnel averaging 10 to 40+ years of experience, MGV combines the technical depth of a large firm with the responsiveness of a family-owned business.</p>
+                    <p>Manuel G. Vera & Associates, Inc. (MGV) has provided trusted Surveying and Mapping services since 1977. Over the past 45+ years, our firm has grown to include more than 80 experienced professionals and senior personnel, many with 10 to over 45 years of industry expertise. This depth of experience has enabled us to expand beyond traditional surveying to include Subsurface Utility Engineering (SUE), Utility Coordination (UC), and permitting services—allowing us to deliver comprehensive solutions for surveying and infrastructure needs throughout the State of Florida.</p>
                     <p>Learn how our experience drives project success.</p>
                 </>
             ),
         },
         {
-            heading: "Family-Led. Proven Results.",
+            heading: "Family-Led",
             index: "02",
             imageAlt: "MGV family team portrait",
             imageAvifSrcSet: "/images/about/family-480.avif 480w, /images/about/family-960.avif 960w, /images/about/family-1440.avif 1440w",
@@ -40,7 +40,7 @@ export function About (){
             },
             body: (
                 <>
-                    <p>Manuel G. Vera Sr. learned the practices of surveying while serving in the United States Air Force during the Vietnam War. After completing his service, he carried forward the discipline, precision, and leadership instilled in him and founded M.G. Vera & Associates in 1973. Beginning with a single crew, Manuel served as both party chief and draftsman, laying the foundation for the respected surveying and mapping firm the company is today.</p>
+                    <p>Manuel G. Vera Sr. first learned the principles and practices of surveying while serving in the United States Air Force during the Vietnam War. Following his military service, he carried forward the discipline, precision, and leadership he developed in the Air Force and founded M.G. Vera & Associates in 1973. Today, the company is led by his children, Maria Vera and Manny Vera Jr., who proudly continue their father’s legacy. Under their leadership, the firm has grown into the largest survey-only company in the State of Florida, built on a foundation of integrity, expertise, and dedication to the surveying profession.</p>
                     <p>Meet the rest of the team who carry that legacy forward.</p>
                 </>
             ),
@@ -75,6 +75,15 @@ export function About (){
                             >
                                 <div className={styles.tabItemHeading}>
                                     <h3>{tab.heading}</h3>
+                                    {!isSelected ? (
+                                        <svg
+                                            className={styles.tabItemToggleIcon}
+                                            aria-hidden="true"
+                                            focusable="false"
+                                        >
+                                            <use href="#+" />
+                                        </svg>
+                                    ) : null}
                                 </div>
                                 <div className={styles.tabItemContent}>
                                     {tab.body}
@@ -94,7 +103,7 @@ export function About (){
                         webpSrcSet={tabs[selectedTab].imageWebpSrcSet}
                         fallbackJpg={tabs[selectedTab].imageFallbackJpg}
                         alt={tabs[selectedTab].imageAlt}
-                        sizes="(max-width: 1024px) 100vw, 50vw"
+                        sizes="(max-width: 899px) 100vw, 50vw"
                         position="50% 50%"
                     />
                 </div>

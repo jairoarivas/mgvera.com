@@ -11,6 +11,19 @@ export function BaseMobileNavbar({
 }: BaseNavbarProps) {
     const [open, setOpen] = React.useState(false);
 
+    React.useEffect(() => {
+        if (!open) {
+            return;
+        }
+
+        const { overflow } = document.body.style;
+        document.body.style.overflow = "hidden";
+
+        return () => {
+            document.body.style.overflow = overflow;
+        };
+    }, [open]);
+
     return (
         <>
             <nav className={styles.mobileRoot}>

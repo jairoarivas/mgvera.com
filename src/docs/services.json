@@ -5,7 +5,7 @@
   "secondaryHeader": "Everything you need",
   "primaryCta": {
     "label": "Start the Process",
-    "href": "mailto:avera@mgvera.com"
+    "href": "mailto:cbustos@mgvera.com"
   },
   "categories": [
     {
@@ -147,7 +147,7 @@
       },
       "services": [
         {
-          "name": "Boundary Survey and Elevation(FEMA) Certificate",
+          "name": "Boundary Survey and Elevation (FEMA) Certificate",
           "description": "Determine improvements relative to property boundaries for lending purposes."
         },
         {

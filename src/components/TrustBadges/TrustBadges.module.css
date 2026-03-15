@@ -8,6 +8,10 @@
     background-color: var(--color-light);
     display: flex;
     transition: background-color 250ms ease-out;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
 }
 
 .trustLeadIn {
@@ -38,7 +42,7 @@
     min-height: clamp(11rem, 3vw + 9rem, 13.5rem);
     padding: clamp(0.9rem, 1vw + 1rem, 3rem);
     flex-flow: column;
-    flex: auto;
+    flex: 1 1 0;
     justify-content: space-between;
     align-items: stretch;
     width: calc(33.3333% - 2px);
@@ -90,5 +94,15 @@
   .trustLeadIn { opacity: 1; transform: none; transition: none; }
 }
 
+@media (max-width: 1023px) {
+    .statGrid {
+        padding-inline: var(--gutter);
+        scroll-snap-type: x proximity;
+    }
 
-
+    .statGridItem {
+        flex: 0 0 clamp(15rem, 72vw, 18rem);
+        width: auto;
+        scroll-snap-align: start;
+    }
+}

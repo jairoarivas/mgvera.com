@@ -19,35 +19,6 @@
     --navbar-link-hover-opacity: 1;
 
     --navbar-border-color: var(--color-border-muted);
-
-/* 
-
-    --navbar-link-color: var(--color-light);
-    --navbar-link-scrolled-color: var(--color-dark);
-
-    --navbar-cta-bg: transparent;
-    --navbar-cta-color: var(--color-light);
-    --navbar-cta-border-color: var(--color-light);
-
-    --navbar-cta-hover-bg: var(--color-light);
-    --navbar-cta-hover-color: var(--color-dark);
-    --navbar-cta-hover-border-color: var(--color-light);
-
-    --navbar-scrolled-bg: var(--color-light);
-    --navbar-scrolled-border-color: var(--color-border-muted);
-
-    --navbar-text-scrolled-color: var(--color-dark);
-    --navbar-logo-scrolled-hover-color: var(--navbar-logo-hover-color);
-
-    --navbar-cta-scrolled-bg: transparent;
-    --navbar-cta-scrolled-color: var(--color-dark);
-    --navbar-cta-scrolled-border-color: var(--color-dark);
-
-    --navbar-cta-scrolled-hover-bg: var(--color-dark);
-    --navbar-cta-scrolled-hover-color: var(--color-light);
-    --navbar-cta-scrolled-hover-border-color: var(--color-dark);
-
-     */
 }
 
 .desktopRoot {
