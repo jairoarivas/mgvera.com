@@ -1,3 +1,4 @@
+import type { MouseEventHandler } from "react";
 import styles from "./Button.module.css";
 
 type ButtonProps = {
@@ -6,6 +7,7 @@ type ButtonProps = {
     icon?: string;
     size?: "sm" | "md" | "lg"; 
     className?: string;
+    onClick?: MouseEventHandler<HTMLAnchorElement>;
 }
 
 export function Button(props: ButtonProps) {
@@ -15,7 +17,11 @@ export function Button(props: ButtonProps) {
     styles["button--md"];
 
     return (
-        <a className={`${styles.button} ${sizeClass} ${props.className ?? ""}`} href={props.href}>
+        <a
+            className={`${styles.button} ${sizeClass} ${props.className ?? ""}`}
+            href={props.href}
+            onClick={props.onClick}
+        >
             {props.icon && (
                 <svg>
                     <use href={props.icon}/>

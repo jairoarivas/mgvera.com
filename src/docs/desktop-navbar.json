@@ -1,8 +1,0 @@
-{
-    "logo": "/logo/logo-full.svg",
-    "primaryCta": {
-      "label": "Contact",
-      "href": "mailto:avera@mgvera.com"
-    },
-    "menuItems": [ "Services", "About", "Projects", "News"]
-}

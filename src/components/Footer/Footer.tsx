@@ -61,7 +61,7 @@ export function Footer({content}: {content?: FooterContent}) {
                                     >
                                         <span className={styles.addressLine}>
                                             <svg className={styles.mapPinIcon}>
-                                                <use href="#map-pin" />
+                                                <use href="#location-pin" />
                                             </svg>
                                             13960 SW 47 Street
                                         </span>
@@ -89,7 +89,7 @@ export function Footer({content}: {content?: FooterContent}) {
                                     >
                                         <span className={styles.addressLine}>
                                             <svg className={styles.mapPinIcon}>
-                                                <use href="#map-pin" />
+                                                <use href="#location-pin" />
                                             </svg>
                                             1562 Park Lane South
                                         </span>
@@ -117,7 +117,7 @@ export function Footer({content}: {content?: FooterContent}) {
                                     >
                                         <span className={styles.addressLine}>
                                             <svg className={styles.mapPinIcon}>
-                                                <use href="#map-pin" />
+                                                <use href="#location-pin" />
                                             </svg>
                                             1414 Lexington Green Lane
                                         </span>

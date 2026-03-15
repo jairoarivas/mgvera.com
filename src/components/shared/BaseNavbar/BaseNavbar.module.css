@@ -1,0 +1,345 @@
+.root {
+    /* component defaults */
+    --desktop-navbar-bg: transparent;
+    --desktop-navbar-text-color: var(--color-light);
+    --desktop-navbar-scrolled-bg: var(--color-light);
+    --desktop-navbar-scrolled-text-color: var(--color-dark);
+
+    --mobile-navbar-bg: var(--color-light);
+    --mobile-navbar-text-color: var(--color-dark);
+    --mobile-navbar-scrolled-bg: var(--color-light);
+    --mobile-navbar-scrolled-text-color: var(--color-dark);
+
+
+    --overlay-bg-color: var(--color-light);
+    --overlay-text-color: var(--color-dark);
+
+    --navbar-logo-hover-color: var(--color-brand-light);
+    --navbar-link-opacity: 0.6;
+    --navbar-link-hover-opacity: 1;
+
+    --navbar-border-color: var(--color-border-muted);
+
+/* 
+
+    --navbar-link-color: var(--color-light);
+    --navbar-link-scrolled-color: var(--color-dark);
+
+    --navbar-cta-bg: transparent;
+    --navbar-cta-color: var(--color-light);
+    --navbar-cta-border-color: var(--color-light);
+
+    --navbar-cta-hover-bg: var(--color-light);
+    --navbar-cta-hover-color: var(--color-dark);
+    --navbar-cta-hover-border-color: var(--color-light);
+
+    --navbar-scrolled-bg: var(--color-light);
+    --navbar-scrolled-border-color: var(--color-border-muted);
+
+    --navbar-text-scrolled-color: var(--color-dark);
+    --navbar-logo-scrolled-hover-color: var(--navbar-logo-hover-color);
+
+    --navbar-cta-scrolled-bg: transparent;
+    --navbar-cta-scrolled-color: var(--color-dark);
+    --navbar-cta-scrolled-border-color: var(--color-dark);
+
+    --navbar-cta-scrolled-hover-bg: var(--color-dark);
+    --navbar-cta-scrolled-hover-color: var(--color-light);
+    --navbar-cta-scrolled-hover-border-color: var(--color-dark);
+
+     */
+}
+
+.desktopRoot {
+    background-color: var(--desktop-navbar-bg);
+    color: var(--desktop-navbar-text-color);
+    z-index: 10;
+    height: var(--desktop-navbar-h);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: stretch;
+    position: fixed;
+    inset: 0% 0% auto;
+    transition: 
+        background-color 250ms ease,
+        border-bottom-color 250ms ease;
+    border-bottom: 1px solid var(--desktop-navbar-bg);
+}
+
+.mobileRoot {
+    background-color: var(--mobile-navbar-bg);
+    color: var(--mobile-navbar-text-color);
+    z-index: 10;
+    height: var(--mobile-navbar-h);
+    display: none;
+    flex-flow: column;
+    justify-content: center;
+    align-items: stretch;
+    position: fixed;
+    inset: 0% 0% auto;
+    transition: 
+        background-color 250ms ease,
+        border-bottom-color 250ms ease;
+    border-bottom: 1px solid var(--mobile-navbar-bg);
+}
+
+.inner {
+    z-index: 2;
+    width: calc(100% - var(--gutter) * 2);
+    max-width: 90rem;
+    margin-left: auto;
+    margin-right: auto;
+    gap: .75rem;
+    display: flex;
+    justify-content: space-between;
+    place-items: center start;
+    position: relative;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 30;
+    display: flex;
+    flex-direction: column;
+    background: var(--overlay-bg-color)
+}
+
+.overlayBar {
+    z-index: 2;
+    width: calc(100% - var(--gutter) * 2);
+    max-width: 90rem;
+    margin-left: auto;
+    margin-right: auto;
+    gap: .75rem;
+    display: flex;
+    justify-content: space-between;
+    place-items: center start;
+    position: relative;
+    height: var(--mobile-navbar-h);
+}
+
+.overlayContent {
+    flex: 1;
+    width: calc(100% - var(--gutter) * 2);
+    max-width: 90rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.overlayMenuList {
+    width: 100%;
+    flex: 1;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    align-content: center;
+    gap: 1.25rem;
+}
+
+.overlayActions {
+    width: 100%;
+    display: flex;
+    justify-content: stretch;
+}
+
+.overlayMenuListItem {
+    display: flex;
+}
+
+.overlayMenuLink {
+    color: currentColor;
+    font-family: var(--font-mono);
+    opacity: 0.8;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: clamp(2rem, 5vw, 3.25rem);
+    line-height: 1;
+    letter-spacing: var(--ls-tight);
+}
+
+.brandLink {
+    z-index: 2;
+    flex: none;
+    max-width: 100%;
+    position: absolute;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    pointer-events: auto;
+    color: inherit;
+}
+
+.brandLogo {
+    width: 12rem;
+    height: 4rem;
+    padding: 5px;
+    color: currentColor;
+    opacity: 1;
+    transition:
+        color 250ms ease,
+        opacity 250ms ease;
+}
+
+.brandLogo:hover {
+    color: var(--navbar-logo-hover-color);
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    flex: none;
+    justify-content: center;
+    align-items: stretch;
+    position: relative;
+}
+
+.menuList {
+    display: flex;
+    position: absolute;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 0;
+    padding-left: 0;
+}
+
+.menuItem {
+    display: flex;
+    flex-flow: row;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.menuLink {
+    color: currentColor;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    opacity: var(--navbar-link-opacity);
+    text-decoration: none;
+    cursor: pointer;
+    font-family: var(--font-mono);
+    font-size: clamp(.62rem, 2vw, .85rem);
+    font-weight: 700;
+    line-height: var(--lh-tight);
+    letter-spacing: var(--ls-cta);
+    text-transform: uppercase;
+    text-wrap: balance;
+    transition:
+        color 250ms ease,
+        opacity 250ms ease;
+}
+
+.menuLink:hover {
+    opacity: var(--navbar-link-hover-opacity);
+}
+
+.menuButton {
+    z-index: 2;
+    flex: none;
+    position: absolute;
+    right: 0px;
+    display: inline-block;
+    width: 2.75rem;
+    height: 2.75rem;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.menuButton:hover {
+    color: var(--mobile-navbar-hover-cta-text-color);
+}
+
+.menuButtonIcon {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: block;
+}
+
+.actions {
+    justify-content: flex-end;
+    align-self: flex-end;
+    align-items: center;
+    display: flex;
+}
+
+.desktopPrimaryCta {
+    background-color: var(--desktop-navbar-bg);
+    color: var(--desktop-navbar-text-color);
+    border-color: var(--desktop-navbar-text-color);
+    text-transform: uppercase;
+}
+
+.desktopPrimaryCta:hover {
+    background-color: var(--desktop-navbar-text-color);
+    color: var(--desktop-navbar-scrolled-text-color);
+    border-color: var(--desktop-navbar-text-color);
+}
+
+.mobilePrimaryCta {
+    width: 100%;
+}
+
+/* resolved presentation state: logo visibility */
+.root[data-logo-visible="false"] .brandLogo {
+  opacity: 0;
+}
+
+/* resolved presentation state: logo interactivity */
+.root[data-logo-interactive="false"] .brandLink {
+  cursor: default;
+  pointer-events: none;
+}
+
+.root[data-logo-interactive="true"] .brandLink {
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+/* resolved presentation state: scrolled */
+.root[data-scrolled="true"] .desktopRoot{
+  background-color: var(--desktop-navbar-scrolled-bg);
+  border-bottom-color: var(--navbar-border-color);
+  color: var(--desktop-navbar-scrolled-text-color);
+}
+
+.root[data-scrolled="true"] .mobileRoot{
+  background-color: var(--mobile-navbar-scrolled-bg);
+  border-bottom-color: var(--navbar-border-color);
+  color: var(--mobile-navbar-scrolled-text-color);
+}
+
+.root[data-scrolled="true"] .desktopPrimaryCta {
+  background-color: var(--desktop-navbar-scrolled-bg);
+  color: var(--desktop-navbar-scrolled-text-col);
+  border-color: var(--desktop-navbar-scrolled-text-col);
+}
+
+.root[data-scrolled="true"] .desktopPrimaryCta:hover {
+  background-color: var(--mobile-navbar-scrolled-text-color);
+  color: var(--mobile-navbar-scrolled-bg);
+}
+
+@media (max-width: 1023px) {
+  .desktopRoot {
+    display: none;
+  }
+
+  .mobileRoot {
+    display: flex;
+  }
+
+  .brandLogo {
+    padding: 12px;
+  }
+}

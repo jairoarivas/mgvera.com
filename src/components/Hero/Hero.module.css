@@ -8,12 +8,12 @@
   padding-bottom: clamp(1rem, 3vw , 3rem);
   align-items: stretch;
   overflow: hidden;
-  padding-top: calc(clamp(1rem, 3vw, 3rem) + var(--nav-h-desktop));
+  padding-top: calc(clamp(1rem, 3vw, 3rem) + var(--desktop-navbar-h));
 }
 
 .navSentinel {
   position: absolute;
-  top: 25%;
+  top: 0%;
   width: 1px;
   height: 1px;
 }

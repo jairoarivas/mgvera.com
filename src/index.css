@@ -2,8 +2,8 @@
     /* -----------------------------
         Layout (site primitives)
     ------------------------------*/
-    --nav-h-desktop: clamp(3.5rem, 3.43vw + 2.66rem, 5.75rem);
-    --nav-h-mobile: 3.5rem;
+    --desktop-navbar-h: clamp(3.5rem, 3.43vw + 2.66rem, 5.75rem);
+    --mobile-navbar-h: 3.5rem;
 
     /* -----------------------------
         Typography
