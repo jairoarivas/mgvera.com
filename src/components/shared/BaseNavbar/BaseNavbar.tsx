@@ -4,7 +4,8 @@ import styles from "./BaseNavbar.module.css";
 
 export type NavbarLinkItem = {
     label: string
-    href: string
+    href?: string
+    items?: NavbarLinkItem[]
 }
 
 export type NavbarCta = {

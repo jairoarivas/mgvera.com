@@ -1,7 +1,11 @@
 import React from "react";
 import { Button } from "../Button/Button";
-import { BaseNavbarProps } from "./BaseNavbar";
+import { BaseNavbarProps, NavbarLinkItem } from "./BaseNavbar";
 import styles from "./BaseNavbar.module.css";
+
+function getItemKey(item: NavbarLinkItem) {
+    return `${item.label}-${item.href ?? "group"}`
+}
 
 export function BaseMobileNavbar({
     menuItems,
@@ -10,6 +14,7 @@ export function BaseMobileNavbar({
     logoHref = "#hero",
 }: BaseNavbarProps) {
     const [open, setOpen] = React.useState(false);
+    const [openItemKey, setOpenItemKey] = React.useState<string | null>(null);
 
     React.useEffect(() => {
         if (!open) {
@@ -22,6 +27,12 @@ export function BaseMobileNavbar({
         return () => {
             document.body.style.overflow = overflow;
         };
+    }, [open]);
+
+    React.useEffect(() => {
+        if (!open) {
+            setOpenItemKey(null);
+        }
     }, [open]);
 
     return (
@@ -71,17 +82,60 @@ export function BaseMobileNavbar({
                     </div>
                     <div className={styles.overlayContent}>
                         <ul className={styles.overlayMenuList}>
-                            {menuItems.map((item) => (
-                                <li className={styles.overlayMenuListItem} key={item.label}>
-                                    <a
-                                        href={item.href}
-                                        className={styles.overlayMenuLink}
-                                        onClick={() => setOpen(false)}
-                                    >
-                                        {item.label}
-                                    </a>
+                            {menuItems.map((item) => {
+                                const itemKey = getItemKey(item);
+                                const childItems = item.items ?? [];
+                                const hasChildren = childItems.length > 0;
+                                const isOpen = openItemKey === itemKey;
+
+                                return (
+                                <li
+                                    className={styles.overlayMenuListItem}
+                                    data-open={isOpen ? "true" : "false"}
+                                    key={itemKey}
+                                >
+                                    {hasChildren ? (
+                                        <button
+                                            type="button"
+                                            className={styles.overlayMenuTrigger}
+                                            aria-expanded={isOpen}
+                                            onClick={() => setOpenItemKey(isOpen ? null : itemKey)}
+                                        >
+                                            {item.label}
+                                            <svg className={styles.overlayMenuTriggerIcon}>
+                                                <use href={isOpen ? "#chevron-up" : "#chevron-down"} />
+                                            </svg>
+                                        </button>
+                                    ) : item.href ? (
+                                        <a
+                                            href={item.href}
+                                            className={styles.overlayMenuLink}
+                                            onClick={() => setOpen(false)}
+                                        >
+                                            {item.label}
+                                        </a>
+                                    ) : (
+                                        <span className={styles.overlayMenuLink}>{item.label}</span>
+                                    )}
+
+                                    {hasChildren ? (
+                                        <ul className={styles.overlaySubmenuList}>
+                                            {childItems.map((child) => (
+                                                <li className={styles.overlaySubmenuListItem} key={getItemKey(child)}>
+                                                    <a
+                                                        href={child.href}
+                                                        className={styles.overlaySubmenuLink}
+                                                        onClick={() => setOpen(false)}
+                                                    >
+                                                        {child.label}
+                                                    </a>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    ) : null}
                                 </li>
-                            ))}
+                                )
+                            })}
                         </ul>
 
                         <div className={styles.overlayActions}>

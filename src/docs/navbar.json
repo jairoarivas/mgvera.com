@@ -6,19 +6,44 @@
     "menuItems": [
         {
             "label": "Services",
-            "href": "#services"
+            "items": [
+                {
+                    "label": "Surveying & Mapping",
+                    "href": "/surveying-mapping"
+                },
+                {
+                    "label": "Subsurface Utility Engineering (SUE)",
+                    "href": "/sue"
+                },
+                {
+                    "label": "Utility Coordination (UC)",
+                    "href": "/uc"
+                },
+                {
+                    "label": "3D Laser Scanning (LiDAR)",
+                    "href": "/lidar"
+                },
+                {
+                    "label": "Construction",
+                    "href": "/construction"
+                },
+                {
+                    "label": "Residential/Commercial",
+                    "href": "/residential-commercial"
+                }
+            ]
         },
         {
             "label": "About",
-            "href": "#about"
+            "href": "/about"
         },
         {
             "label": "Projects",
-            "href": "#projects"
+            "href": "/projects"
         },
         {
           "label": "News",
-          "href": "#news"
+          "href": "/news"
         }
     ]
 }

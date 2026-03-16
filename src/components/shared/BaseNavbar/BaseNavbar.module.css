@@ -122,17 +122,89 @@
 
 .overlayMenuListItem {
     display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
 }
 
 .overlayMenuLink {
     color: currentColor;
     font-family: var(--font-mono);
+    display: inline-flex;
     opacity: 0.8;
     text-transform: uppercase;
     text-decoration: none;
     font-size: clamp(2rem, 5vw, 3.25rem);
     line-height: 1;
     letter-spacing: var(--ls-tight);
+}
+
+.overlayMenuTrigger {
+    color: currentColor;
+    font-family: var(--font-mono);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: fit-content;
+    opacity: 0.8;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: clamp(2rem, 5vw, 3.25rem);
+    line-height: 1;
+    letter-spacing: var(--ls-tight);
+    border: 0;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+.overlayMenuTriggerIcon {
+    width: 1.25rem;
+    height: 1.25rem;
+    flex: none;
+}
+
+.overlaySubmenuList {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 1rem;
+    display: grid;
+    gap: 0.75rem;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+    transition:
+        max-height 250ms ease,
+        opacity 250ms ease;
+}
+
+.overlayMenuListItem[data-open="true"] .overlaySubmenuList {
+    max-height: 18rem;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.overlaySubmenuListItem {
+    display: flex;
+}
+
+.overlaySubmenuLink {
+    color: currentColor;
+    text-decoration: none;
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+    letter-spacing: var(--ls-cta);
+    opacity: 0.7;
+    font-size: clamp(1rem, 3vw, 1.25rem);
+}
+
+.overlaySubmenuLink:hover {
+    opacity: 1;
+}
+
+.overlayMenuTrigger:hover,
+.overlayMenuTrigger[aria-expanded="true"] {
+    opacity: 1;
 }
 
 .brandLink {
@@ -188,10 +260,13 @@
     flex-flow: row;
     margin-bottom: 0;
     list-style: none;
+    position: relative;
 }
 
 .menuLink {
     color: currentColor;
+    display: inline-flex;
+    align-items: center;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     opacity: var(--navbar-link-opacity);
@@ -209,8 +284,91 @@
         opacity 250ms ease;
 }
 
+.menuTrigger {
+    color: currentColor;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    opacity: var(--navbar-link-opacity);
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    font-family: var(--font-mono);
+    font-size: clamp(.62rem, 2vw, .85rem);
+    font-weight: 700;
+    line-height: var(--lh-tight);
+    letter-spacing: var(--ls-cta);
+    text-transform: uppercase;
+    text-wrap: balance;
+    transition:
+        color 250ms ease,
+        opacity 250ms ease;
+}
+
+.menuTriggerIcon {
+    width: 0.9rem;
+    height: 0.9rem;
+    flex: none;
+}
+
 .menuLink:hover {
     opacity: var(--navbar-link-hover-opacity);
+}
+
+.menuTrigger:hover,
+.menuTrigger[aria-expanded="true"] {
+    opacity: var(--navbar-link-hover-opacity);
+}
+
+.dropdownMenu {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    left: 180%;
+    transform: translateX(-50%) translateY(0.25rem);
+    min-width: 22rem;
+    list-style: none;
+    margin: 0;
+    padding: 0.5rem 0;
+    background-color: transparent;
+    border: 1px solid transparent;
+    opacity: 0;
+    pointer-events: none;
+    transition:
+        opacity 250ms ease,
+        transform 250ms ease;
+}
+
+.menuItem[data-open="true"] .dropdownMenu {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(-50%) translateY(0);
+}
+
+.dropdownMenuItem {
+    list-style: none;
+    background-color: var(--desktop-navbar-bg);
+    color: var(--desktop-navbar-text-color);
+    border: 1px solid var(--navbar-border-color);
+}
+
+.dropdownMenuLink {
+    color: currentColor;
+    display: block;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: var(--ls-cta);
+    opacity: 0.65;
+    transition: opacity 250ms ease;
+}
+
+.dropdownMenuLink:hover {
+    opacity: 1;
 }
 
 .menuButton {
