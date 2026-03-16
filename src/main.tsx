@@ -3,32 +3,54 @@ import { createRoot } from 'react-dom/client'
 
 import './index.css'
 
-import { Hero } from './components/Hero/Hero'
-import * as heroContent from "../src/docs/hero.json";
-import * as navbarContent from "../src/docs/navbar.json";
-import * as socialProofContent from "../src/docs/social-proof.json";
-import * as servicesContent from "../src/docs/services.json";
 import { CustomSprites } from './components/CustomSprites';
-import { Navbar } from './components/Navbar';
-import { SocialProof } from './components/SocialProof/SocialProof';
-import { Services } from './components/Services/Services';
 import { Footer } from './components/Footer/Footer';
-import { About } from './components/About/About';
 import { LogoSprites } from './components/shared/LogoComponents/LogoSprites';
-import { TrustBadges } from './components/TrustBadges/TrustBadges';
 import { CommonSprites } from './components/shared/CommonSprites';
+import { BrowserRouter, Outlet, Route, Routes } from 'react-router-dom';
+import { HomePage } from './pages/HomePage';
+import { HomeNavbar } from './components/HomeNavbar';
+import { InteriorNavbar } from './components/InteriorNavbar';
+
+import * as navbarContent from "../src/docs/navbar.json";
+
+function LandingPage() {
+    return (
+        <>
+            <CommonSprites/>
+            <CustomSprites/>
+            <LogoSprites/>
+            <HomeNavbar content={navbarContent}/>
+            <Outlet />
+            <Footer/>
+        </>
+    );
+}
+
+function InteriorPages() {
+    return (
+        <>
+            <CommonSprites/>
+            <CustomSprites/>
+            <LogoSprites/>
+            <InteriorNavbar content={navbarContent}/>
+            <Outlet />
+            <Footer/>
+        </>
+    );
+}
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
-        <CommonSprites/>
-        <CustomSprites/>
-        <LogoSprites/>
-        <Navbar content={navbarContent}/>
-        <Hero content={heroContent}/>
-        <TrustBadges/>
-        <About/>
-        <Services content={servicesContent}/>
-        <SocialProof content={socialProofContent}/>
-        <Footer/>
+        <BrowserRouter>
+            <Routes>
+                <Route element={<LandingPage />}>
+                    <Route path="/" element={<HomePage />} />
+                </Route>
+                <Route element={<InteriorPages />}>
+                    <Route path="/surveying-mapping" element={<HomePage />} />
+                </Route>
+            </Routes>
+        </BrowserRouter>
     </StrictMode>
 )

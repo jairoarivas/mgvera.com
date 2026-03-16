@@ -20,12 +20,14 @@ export type BaseNavbarProps = {
     scrolled?: boolean
     logoVisible?: boolean
     logoInteractive?: boolean
+    startTransparent?: boolean
 }
 
 export function BaseNavbar({
     scrolled = false,
     logoVisible = true,
     logoInteractive = true,
+    startTransparent = true,
     ...props
 }: BaseNavbarProps) {
   return (
@@ -34,6 +36,7 @@ export function BaseNavbar({
         data-scrolled={scrolled ? "true" : "false"}
         data-logo-visible={logoVisible ? "true" : "false"}
         data-logo-interactive={logoInteractive ? "true" : "false"}
+        data-start-transparent={startTransparent ? "true" : "false"}
     >
       <BaseDesktopNavbar {...props} />
       <BaseMobileNavbar {...props} />

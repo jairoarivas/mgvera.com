@@ -9,18 +9,17 @@ type NavbarContent = {
   }[]
 }
 
-export function Navbar({ content }: { content: NavbarContent }) {
-  const scrolled = useNavbarScrolled()
-
+export function InteriorNavbar({ content }: { content: NavbarContent }) {
   return (
     <BaseNavbar
       menuItems={content.menuItems}
       primaryCta={content.primaryCta}
       logoSprite="#logo-full"
       logoHref="#hero"
-      scrolled={scrolled}
-      logoVisible={scrolled}
+      scrolled={false}
+      logoVisible={true}
       logoInteractive={true}
+      startTransparent={false}
     />
   )
 }

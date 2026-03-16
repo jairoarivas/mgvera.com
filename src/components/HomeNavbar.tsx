@@ -1,0 +1,27 @@
+import { useNavbarScrolled } from "./hooks/useNavbarScrolled"
+import { BaseNavbar } from "./shared/BaseNavbar/BaseNavbar";
+
+type NavbarContent = {
+  primaryCta: { label: string; href: string }
+  menuItems: {
+    label: string
+    href: string
+  }[]
+}
+
+export function HomeNavbar({ content }: { content: NavbarContent }) {
+  const scrolled = useNavbarScrolled()
+
+  return (
+    <BaseNavbar
+      menuItems={content.menuItems}
+      primaryCta={content.primaryCta}
+      logoSprite="#logo-full"
+      logoHref="#hero"
+      scrolled={scrolled}
+      logoVisible={scrolled}
+      logoInteractive={true}
+      startTransparent={true}
+    />
+  )
+}

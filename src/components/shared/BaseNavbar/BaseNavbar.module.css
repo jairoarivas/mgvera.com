@@ -1,7 +1,7 @@
 .root {
     /* component defaults */
-    --desktop-navbar-bg: transparent;
-    --desktop-navbar-text-color: var(--color-light);
+    --desktop-navbar-bg: var(--color-light);
+    --desktop-navbar-text-color: var(--color-dark);
     --desktop-navbar-scrolled-bg: var(--color-light);
     --desktop-navbar-scrolled-text-color: var(--color-dark);
 
@@ -253,7 +253,7 @@
 
 .desktopPrimaryCta:hover {
     background-color: var(--desktop-navbar-text-color);
-    color: var(--desktop-navbar-scrolled-text-color);
+    color: var(--desktop-navbar-bg);
     border-color: var(--desktop-navbar-text-color);
 }
 
@@ -263,54 +263,72 @@
 
 /* resolved presentation state: logo visibility */
 .root[data-logo-visible="false"] .brandLogo {
-  opacity: 0;
+    opacity: 0;
 }
 
 /* resolved presentation state: logo interactivity */
 .root[data-logo-interactive="false"] .brandLink {
-  cursor: default;
-  pointer-events: none;
+    cursor: default;
+    pointer-events: none;
 }
 
 .root[data-logo-interactive="true"] .brandLink {
-  cursor: pointer;
-  pointer-events: auto;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.root[data-start-transparent="true"] .desktopRoot {
+    background-color: transparent;
+    border-bottom-color: transparent;
+    color: var(--desktop-navbar-bg);
+}
+
+.root[data-start-transparent="true"] .desktopPrimaryCta {
+    background-color: transparent;
+    border-color: var(--desktop-navbar-bg);
+    color: var(--desktop-navbar-bg);
+}
+
+.root[data-start-transparent="true"] .desktopPrimaryCta:hover {
+    background-color: var(--desktop-navbar-bg);
+    border-color: var(--desktop-navbar-bg);
+    color: var(--desktop-navbar-text-color);
 }
 
 /* resolved presentation state: scrolled */
 .root[data-scrolled="true"] .desktopRoot{
-  background-color: var(--desktop-navbar-scrolled-bg);
-  border-bottom-color: var(--navbar-border-color);
-  color: var(--desktop-navbar-scrolled-text-color);
+    background-color: var(--desktop-navbar-scrolled-bg);
+    border-bottom-color: var(--navbar-border-color);
+    color: var(--desktop-navbar-scrolled-text-color);
 }
 
 .root[data-scrolled="true"] .mobileRoot{
-  background-color: var(--mobile-navbar-scrolled-bg);
-  border-bottom-color: var(--navbar-border-color);
-  color: var(--mobile-navbar-scrolled-text-color);
+    background-color: var(--mobile-navbar-scrolled-bg);
+    border-bottom-color: var(--navbar-border-color);
+    color: var(--mobile-navbar-scrolled-text-color);
 }
 
 .root[data-scrolled="true"] .desktopPrimaryCta {
-  background-color: var(--desktop-navbar-scrolled-bg);
-  color: var(--desktop-navbar-scrolled-text-col);
-  border-color: var(--desktop-navbar-scrolled-text-col);
+    background-color: var(--desktop-navbar-scrolled-bg);
+    color: var(--desktop-navbar-scrolled-text-col);
+    border-color: var(--desktop-navbar-scrolled-text-col);
 }
 
 .root[data-scrolled="true"] .desktopPrimaryCta:hover {
-  background-color: var(--mobile-navbar-scrolled-text-color);
-  color: var(--mobile-navbar-scrolled-bg);
+    background-color: var(--mobile-navbar-scrolled-text-color);
+    color: var(--mobile-navbar-scrolled-bg);
 }
 
 @media (max-width: 1023px) {
-  .desktopRoot {
-    display: none;
-  }
+    .desktopRoot {
+        display: none;
+    }
 
-  .mobileRoot {
-    display: flex;
-  }
+    .mobileRoot {
+        display: flex;
+    }
 
-  .brandLogo {
-    padding: 12px;
-  }
+    .brandLogo {
+        padding: 12px;
+    }
 }
