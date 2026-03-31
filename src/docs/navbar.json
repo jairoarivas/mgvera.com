@@ -5,6 +5,10 @@
     },
     "menuItems": [
         {
+            "label": "Home",
+            "href": "/"
+        },
+        {
             "label": "Services",
             "items": [
                 {

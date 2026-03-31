@@ -10,6 +10,7 @@
   "categories": [
     {
       "name": "Surveying & Mapping",
+      "slug": "surveying-mapping",
       "icon": "#surveying",
       "cta": {
         "label": "More surveying & mapping",
@@ -18,24 +19,29 @@
       "services": [
         {
           "name": "Geodetic & Control Surveying",
+          "icon": "#surveying",
           "description": "Comprehensive boundary surveys meeting ALTA/NSPS standards for real estate transactions, title insurance, and development."
         },
         {
           "name": "Right-of-Way Surveys and Mapping",
+          "icon": "#surveying",
           "description": "Detailed mapping of terrain, utilities, and site features to support engineering design and permitting."
         },
         {
           "name": "Topographic / As-built / 3D (DTM) Surveys",
+          "icon": "#surveying",
           "description": "Establish geodetic control networks using GNSS and conventional methods to ensure project-wide accuracy."
         },
         {
           "name": "Bridge Surveys",
+          "icon": "#surveying",
           "description": "Define transportation corridors, easements, and acquisition parcels for infrastructure projects."
         }
       ]
     },
     {
       "name": "Subsurface Utility Engineering (SUE)",
+      "slug": "sue",
       "icon": "#sue",
       "cta": {
         "label": "More SUE",
@@ -44,24 +50,29 @@
       "services": [
         {
           "name": "Quality Level A (QLA) - Utility Locates",
+          "icon": "#sue",
           "description": "Surface geophysical mapping of underground utilities in accordance with ASCE 38 standards."
         },
         {
           "name": "Quality Level B (QLB) – Utility Designates",
+          "icon": "#sue",
           "description": "Vacuum excavation to expose and verify utility depth and position."
         },
         {
           "name": "Quality Level C (QLC)  – Correlated Records to Surveyed Features",
+          "icon": "#sue",
           "description": "Subsurface imaging to detect non-conductive utilities and underground anomalies."
         },
         {
           "name": "Quality Level D (QLD) – Existing Records",
+          "icon": "#sue",
           "description": "Detection of metallic and conductive utilities using active and passive EM methods."
         }
       ]
     },
     {
       "name": "Utility Coordination (UC)",
+      "slug": "uc",
       "icon": "#uc",
       "cta": {
         "label": "More UC",
@@ -70,24 +81,29 @@
       "services": [
         {
           "name": "Utility Identification and Coordination",
+          "icon": "#uc",
           "description": "Identify and document conflicts between proposed improvements and existing utilities."
         },
         {
           "name": "Management of Relocations and Adjustments",
+          "icon": "#uc",
           "description": "Coordinate with utility owners to plan relocations and minimize project impacts."
         },
         {
           "name": "Permit Coordination Services",
+          "icon": "#uc",
           "description": "Serve as primary communication point between project teams and utility providers."
         },
         {
           "name": "Regulatory Compliance (Federal, State, and Local)",
+          "icon": "#uc",
           "description": "Assist with joint-use agreements, relocation agreements, and regulatory approvals."
         }
       ]
     },
     {
       "name": "3D Laser Scanning (LiDAR)",
+      "slug": "lidar",
       "icon": "#lidar",
       "cta": {
         "label": "More LiDAR",
@@ -96,24 +112,29 @@
       "services": [
         {
           "name": "Static LiDar (Topo/DTM)",
+          "icon": "#lidar",
           "description": "High-resolution airborne LiDAR data acquisition for large-area terrain modeling."
         },
         {
           "name": "Mobile LiDAR (Topo/DTM)",
+          "icon": "#lidar",
           "description": "Vehicle-mounted LiDAR for roadway, corridor, and infrastructure documentation."
         },
         {
           "name": "Point Cloud Modeling (TopoDOT)",
+          "icon": "#lidar",
           "description": "Ground-based 3D scanning for structures, facilities, and complex environments."
         },
         {
           "name": "Aerial-Drones",
+          "icon": "#lidar",
           "description": "Generate DTM and DSM deliverables from LiDAR datasets."
         }
       ]
     },
     {
       "name": "Construction",
+      "slug": "construction",
       "icon": "#construction",
       "cta": {
         "label": "More construction",
@@ -122,24 +143,29 @@
       "services": [
         {
           "name": "Construction Layout & Staking",
+          "icon": "#construction",
           "description": "Provide precise field staking for grading, utilities, foundations, and structures."
         },
         {
           "name": "As-Built Surveys",
+          "icon": "#construction",
           "description": "Develop 3D models for GPS-guided grading and heavy equipment systems."
         },
         {
           "name": "Settlement Monitoring",
+          "icon": "#construction",
           "description": "Track earthwork volumes and project progress through periodic surveys."
         },
         {
           "name": "Earthwork Calculations",
+          "icon": "#construction",
           "description": "Monitor settlement, movement, and structural integrity during construction."
         }
       ]
     },
     {
       "name": "Residential/Commercial",
+      "slug": "residential-commercial",
       "icon": "#residential",
       "cta": {
         "label": "More residential & commercial",
@@ -148,18 +174,22 @@
       "services": [
         {
           "name": "Boundary Survey and Elevation (FEMA) Certificate",
+          "icon": "#residential",
           "description": "Determine improvements relative to property boundaries for lending purposes."
         },
         {
           "name": "Platting Survey",
+          "icon": "#residential",
           "description": "Establish property corners and lot dimensions within platted subdivisions."
         },
         {
           "name": "ALTA/NSPS Land Title Survey",
+          "icon": "#residential",
           "description": "Provide FEMA-compliant elevation data for flood insurance requirements."
         },
         {
           "name": "FDEP / Mean High Water Survey",
+          "icon": "#residential",
           "description": "Support commercial development with existing conditions and utility mapping."
         }
       ]

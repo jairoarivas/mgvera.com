@@ -13,6 +13,8 @@ import { HomeNavbar } from './components/HomeNavbar';
 import { InteriorNavbar } from './components/InteriorNavbar';
 
 import * as navbarContent from "../src/docs/navbar.json";
+import * as servicesContent from "../src/docs/services.json";
+import { ServicePage } from './pages/ServicePage';
 
 function LandingPage() {
     return (
@@ -48,7 +50,15 @@ createRoot(document.getElementById('root')!).render(
                     <Route path="/" element={<HomePage />} />
                 </Route>
                 <Route element={<InteriorPages />}>
-                    <Route path="/surveying-mapping" element={<HomePage />} />
+                    {servicesContent.categories.map((serviceCategory) => {
+                        return <Route path={`/${serviceCategory.slug}`} element={
+                            <ServicePage 
+                                name={serviceCategory.name}
+                                cta={{label: "call dude", href: ""}}
+                                services={serviceCategory.services}
+                            />} 
+                        />
+                    })}
                 </Route>
             </Routes>
         </BrowserRouter>

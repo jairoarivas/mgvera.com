@@ -1,0 +1,17 @@
+.spacer {
+    width: 100%;
+    display: block;
+    flex: 0 0 100%;
+}
+
+.sm {
+    min-height: 4rem;
+}
+
+.md {
+    min-height: 6rem;
+}
+
+.lg {
+    min-height: 12rem;
+}

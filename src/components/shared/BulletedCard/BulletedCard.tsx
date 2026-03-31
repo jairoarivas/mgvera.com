@@ -1,18 +1,17 @@
-import { Button } from "../shared/Button/Button";
-import styles from "./ServiceCardBulleted.module.css";
+import { Button } from "../Button/Button";
+import styles from "./BulletedCard.module.css";
 
-type ServiceCardBulletedProps = {
+export type BulletedCardProps = {
     name: string;
     icon: string;
-    services?: string[];
+    bullets?: string[];
     cta?: {
         label: string;
         href: string;
-        icon?: string;
     },
 }
 
-export function ServiceCardBulleted(props: ServiceCardBulletedProps) {
+export function BulletedCard(props: BulletedCardProps) {
     return(
         <div className={styles.root}>
             <div className={styles.col}>
@@ -26,11 +25,11 @@ export function ServiceCardBulleted(props: ServiceCardBulletedProps) {
                         {props.name}
                     </h1>
                 </div>
-                {props.services && props.services.length > 0 && (
+                {props.bullets && props.bullets.length > 0 && (
                     <ul className={styles.serviceList}>
-                        {props.services.slice(0, 4).map((service) => (
-                            <li key={service} className={styles.serviceItem}>
-                                {service}
+                        {props.bullets.slice(0, 4).map((bullet) => (
+                            <li key={bullet} className={styles.serviceItem}>
+                                {bullet}
                             </li>
                         ))}
                     </ul>
@@ -38,7 +37,6 @@ export function ServiceCardBulleted(props: ServiceCardBulletedProps) {
                 {props.cta && <Button className={styles.button}
                     label={props.cta.label}
                     href={props.cta.href}
-                    icon={props.cta.icon}
                 />}
             </div>
         </div>

@@ -1,6 +1,6 @@
 import { About } from "../components/About/About";
 import { Hero } from "../components/Hero/Hero";
-import { Services } from "../components/Services/Services";
+import { Services } from "../sections/Services/Services";
 import { SocialProof } from "../components/SocialProof/SocialProof";
 import { TrustBadges } from "../components/TrustBadges/TrustBadges";
 

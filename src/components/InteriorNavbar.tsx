@@ -18,7 +18,7 @@ export function InteriorNavbar({ content }: { content: NavbarContent }) {
             menuItems={content.menuItems}
             primaryCta={content.primaryCta}
             logoSprite="#logo-full"
-            logoHref="#hero"
+            logoHref="/"
             scrolled={false}
             logoVisible={true}
             logoInteractive={true}
