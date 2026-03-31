@@ -161,7 +161,10 @@ export function Footer({content}: {content?: FooterContent}) {
                                 <a className={styles.footerMenuLink} href="/residential-commercial">Residential·Commercial</a>
                             </li>
                             <li className={styles.footerMenuListItem}>
-                                <a className={styles.footerMenuLink} href="/meet-the-team">About</a>
+                                <a className={styles.footerMenuLink} href="/meet-the-team">Meet the Team</a>
+                            </li>
+                            <li className={styles.footerMenuListItem}>
+                                <a className={styles.footerMenuLink} href="/our-legacy">Our Legacy</a>
                             </li>
                             <li className={styles.footerMenuListItem}>
                                 <a className={styles.footerMenuLink} href="/projects">Projects</a>
