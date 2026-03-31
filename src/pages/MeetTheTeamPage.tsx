@@ -1,38 +1,30 @@
-import { CardHolder } from "../components/shared/CardHolder/CardHolder";
+import { PeopleCardHolder } from "../components/shared/PeopleCard/PeopleCardHolder";
 import { Section } from "../components/shared/Section/Section";
 import { SectionTopper } from "../components/shared/Section/SectionTopper";
 import { Spacer } from "../components/shared/Spacer/Spacer";
+import aboutPeople from "../docs/about.json";
 
-type ServicePageProps = {
+type MeetTheTeamPageProps = {
   name: string;
   subheading: string;
-  cardHeading: string;
   cta: {
     label: string;
     href: string;
   };
-  services: {
-    name: string;
-    icon: string;
-    bullets: string[];
-  }[];
 };
 
-export function ServicePage(props: ServicePageProps) {
+export function MeetTheTeamPage(props: MeetTheTeamPageProps) {
     return (
-        <>  
+        <>
             <Spacer/>
             <Section>
                 <SectionTopper
-                    name="services"
+                    name="about"
                     heading={props.name}
                     subheading={props.subheading}
                     cta={props.cta}
                 />
-                <CardHolder 
-                    heading={props.cardHeading}
-                    items={props.services}
-                />
+                <PeopleCardHolder items={aboutPeople} />
             </Section>
         </>
     );

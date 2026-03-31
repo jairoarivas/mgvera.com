@@ -249,6 +249,8 @@ a.phoneLine:focus-visible {
     font-size: clamp(.62rem,.19vw + .58rem, .85rem);
     text-transform: uppercase;
     cursor: pointer;
+    color: var(--color-light);
+    opacity: 60%;
 }
 
 .footerMenuLink:hover {

@@ -36,7 +36,7 @@ export function About (){
             imageFallbackJpg: "/images/about/family.jpg",
             cta: {
                 label: "Meet the Team",
-                href: "",
+                href: "/meet-the-team",
             },
             body: (
                 <>

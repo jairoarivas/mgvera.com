@@ -14,12 +14,14 @@ type ServicesContent = {
     categories: {
         name: string;
         slug: string;
+        pageSubheading: string;
+        pageCardHeading: string;
         icon: string;
         cta: {label: string, href: string}
         services: {
             name: string;
             icon: string;
-            description: string;
+            bullets: string[];
         }[]
     }[]
 }
@@ -35,7 +37,12 @@ export function Services ({content}: {content: ServicesContent}){
             />
             <CardHolder
                 heading={content.secondaryHeader}
-                items={content.categories}
+                items={content.categories.map(category => ({
+                    name: category.name,
+                    icon: category.icon,
+                    bullets: category.services.map(service => service.name),
+                    cta: category.cta
+                }))}
             />
         </Section>
     );

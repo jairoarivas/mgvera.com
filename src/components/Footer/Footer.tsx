@@ -143,31 +143,31 @@ export function Footer({content}: {content?: FooterContent}) {
                         <div className={styles.footerMenuTopLine}></div>
                         <ul className={styles.footerMenuList}>
                             <li className={styles.footerMenuListItem}>
-                                <a className={styles.footerMenuLink}>Surveying·Mapping</a>
+                                <a className={styles.footerMenuLink} href="/surveying-mapping">Surveying·Mapping</a>
                             </li>
                             <li className={styles.footerMenuListItem}>
-                                <a className={styles.footerMenuLink}>SUE</a>
+                                <a className={styles.footerMenuLink} href="/sue">SUE</a>
                             </li>
                             <li className={styles.footerMenuListItem}>
-                                <a className={styles.footerMenuLink}>UC</a>
+                                <a className={styles.footerMenuLink} href="/uc">UC</a>
                             </li>
                             <li className={styles.footerMenuListItem}>
-                                <a className={styles.footerMenuLink}>Lidar</a>
+                                <a className={styles.footerMenuLink} href="/lidar">Lidar</a>
                             </li>
                             <li className={styles.footerMenuListItem}>
-                                <a className={styles.footerMenuLink}>Construction</a>
+                                <a className={styles.footerMenuLink} href="/construction">Construction</a>
                             </li>
                             <li className={styles.footerMenuListItem}>
-                                <a className={styles.footerMenuLink}>Residential·Commercial</a>
+                                <a className={styles.footerMenuLink} href="/residential-commercial">Residential·Commercial</a>
                             </li>
                             <li className={styles.footerMenuListItem}>
-                                <a className={styles.footerMenuLink}>About</a>
+                                <a className={styles.footerMenuLink} href="/meet-the-team">About</a>
                             </li>
                             <li className={styles.footerMenuListItem}>
-                                <a className={styles.footerMenuLink}>Projects</a>
+                                <a className={styles.footerMenuLink} href="/projects">Projects</a>
                             </li>
                             <li className={styles.footerMenuListItem}>
-                                <a className={styles.footerMenuLink}>News</a>
+                                <a className={styles.footerMenuLink} href="/news">News</a>
                             </li>
                         </ul>
                         <div className={styles.footerMenuBottomLine}></div>

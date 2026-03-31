@@ -1,0 +1,30 @@
+.content {
+    width: min(100%, 72ch);
+    display: grid;
+    gap: 2rem;
+}
+
+.block {
+    display: grid;
+    gap: 0.65rem;
+}
+
+.subheading {
+    font-family: var(--font-mono);
+    font-size: clamp(.85rem,.38vw + .76rem, 1.1rem);
+    letter-spacing: var(--ls-cta);
+    text-transform: uppercase;
+    color: var(--color-dark);
+    margin: 0;
+}
+
+.content p {
+    word-break: normal;
+    font-size: clamp(.75rem,.38vw + .66rem, 1rem);
+    line-height: 1.8;
+    letter-spacing: 0.01em;
+    text-wrap: pretty;
+    max-width: 70ch;
+    opacity: 1;
+    margin: 0;
+}

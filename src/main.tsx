@@ -15,6 +15,8 @@ import { InteriorNavbar } from './components/InteriorNavbar';
 import * as navbarContent from "../src/docs/navbar.json";
 import * as servicesContent from "../src/docs/services.json";
 import { ServicePage } from './pages/ServicePage';
+import { MeetTheTeamPage } from './pages/MeetTheTeamPage';
+import { LegacyPage } from './pages/LegacyPage';
 
 function LandingPage() {
     return (
@@ -54,11 +56,27 @@ createRoot(document.getElementById('root')!).render(
                         return <Route path={`/${serviceCategory.slug}`} element={
                             <ServicePage 
                                 name={serviceCategory.name}
-                                cta={{label: "call dude", href: ""}}
+                                subheading={serviceCategory.pageSubheading}
+                                cardHeading={serviceCategory.pageCardHeading}
+                                cta={{label: "Get in Touch", href: "mailto:cbustos@mgvera.com"}}
                                 services={serviceCategory.services}
                             />} 
                         />
                     })}
+                    <Route path={"/meet-the-team"} element={
+                        <MeetTheTeamPage
+                            name={"Meet The Team"}
+                            subheading={"The team that carries our legacy forward"}
+                            cta={{label: "Get in Touch", href: "mailto:cbustos@mgvera.com"}}
+                        />
+                    }/>
+                    <Route path={"/our-legacy"} element={
+                        <LegacyPage
+                            name={"Our Legacy"}
+                            subheading={"The history, growth, and values that shaped MGV over the decades."}
+                            cta={{label: "Get in Touch", href: "mailto:cbustos@mgvera.com"}}
+                        />
+                    }/>
                 </Route>
             </Routes>
         </BrowserRouter>

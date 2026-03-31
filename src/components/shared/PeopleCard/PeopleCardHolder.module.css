@@ -1,0 +1,31 @@
+.root {
+    row-gap: clamp(2rem,3.05vw + 1.26rem, 4rem);
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    display: flex;
+}
+
+.inner {
+    row-gap: 1.5rem;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.actions {
+    justify-content: center;
+    display: flex;
+}
+
+.loadMoreButton {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    border-color: var(--color-dark);
+    text-transform: uppercase;
+}
+
+.loadMoreButton:hover {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    border-color: var(--color-dark);
+}
