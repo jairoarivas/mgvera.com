@@ -18,7 +18,7 @@ export function About (){
             imageFallbackJpg: "/images/about/history.jpg",
             cta: {
                 label: "Learn More",
-                href: "",
+                href: "/our-legacy",
             },
             body: (
                 <>
