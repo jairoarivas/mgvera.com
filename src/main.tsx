@@ -64,6 +64,7 @@ createRoot(document.getElementById('root')!).render(
                                 imageWebpSrcSet={serviceCategory.pageImageWebpSrcSet}
                                 imageFallbackJpg={serviceCategory.pageImageFallbackJpg}
                                 imagePosition={serviceCategory.pageImagePosition}
+                                imageBrightness={serviceCategory.pageImageBrightness}
                                 cta={{label: "Get in Touch", href: "mailto:cbustos@mgvera.com"}}
                                 services={serviceCategory.services}
                             />} 
