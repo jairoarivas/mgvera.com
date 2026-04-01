@@ -1,8 +1,13 @@
+.imageWrap {
+    --image-brightness: 1;
+}
+
 .image {
     width: 100%;
     height: clamp(20rem, 36vw, 31rem);
     display: block;
     object-fit: cover;
+    filter: brightness(var(--image-brightness));
 }
 
 @media (max-width: 1024px) {

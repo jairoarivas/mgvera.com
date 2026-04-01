@@ -14,6 +14,7 @@ type ServicePageProps = {
   imageWebpSrcSet: string;
   imageFallbackJpg: string;
   imagePosition: string;
+  imageBrightness: number;
   cta: {
     label: string;
     href: string;
@@ -36,7 +37,7 @@ export function ServicePage(props: ServicePageProps) {
                     subheading={props.subheading}
                     cta={props.cta}
                 />
-                <div>
+                <div className={styles.imageWrap} style={{ "--image-brightness": props.imageBrightness } as React.CSSProperties}>
                     <Image
                         className={styles.image}
                         avifSrcSet={props.imageAvifSrcSet}

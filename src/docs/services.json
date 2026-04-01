@@ -18,6 +18,7 @@
       "pageImageWebpSrcSet": "/images/services/surveying-mapping-480.webp 480w, /images/services/surveying-mapping-960.webp 960w, /images/services/surveying-mapping-1440.webp 1440w",
       "pageImageFallbackJpg": "/images/services/surveying-mapping.jpeg",
       "pageImagePosition": "50% 50%",
+      "pageImageBrightness": 0.90,
       "icon": "#surveying",
       "cta": {
         "label": "More surveying & mapping",
@@ -72,6 +73,7 @@
       "pageImageWebpSrcSet": "/images/services/sue-480.webp 480w, /images/services/sue-960.webp 960w, /images/services/sue-1440.webp 1440w",
       "pageImageFallbackJpg": "/images/services/sue.JPG",
       "pageImagePosition": "50% 30%",
+      "pageImageBrightness": 0.90,
       "icon": "#sue",
       "cta": {
         "label": "More SUE",
@@ -126,6 +128,7 @@
       "pageImageWebpSrcSet": "/images/services/uc-480.webp 480w, /images/services/uc-960.webp 960w, /images/services/uc-1440.webp 1440w",
       "pageImageFallbackJpg": "/images/services/uc.jpeg",
       "pageImagePosition": "50% 0%",
+      "pageImageBrightness": 1.0,
       "icon": "#uc",
       "cta": {
         "label": "More UC",
@@ -180,6 +183,7 @@
       "pageImageWebpSrcSet": "/images/services/lidar-480.webp 480w, /images/services/lidar-960.webp 960w, /images/services/lidar-1440.webp 1440w",
       "pageImageFallbackJpg": "/images/services/lidar.jpg",
       "pageImagePosition": "50% 50%",
+      "pageImageBrightness": 1.0,
       "icon": "#lidar",
       "cta": {
         "label": "More LiDAR",
@@ -234,6 +238,7 @@
       "pageImageWebpSrcSet": "/images/services/construction-480.webp 480w, /images/services/construction-960.webp 960w, /images/services/construction-1440.webp 1440w",
       "pageImageFallbackJpg": "/images/services/construction.jpg",
       "pageImagePosition": "50% 50%",
+      "pageImageBrightness": 0.90,
       "icon": "#construction",
       "cta": {
         "label": "More construction",
@@ -288,6 +293,7 @@
       "pageImageWebpSrcSet": "/images/services/residential-commercial-480.webp 480w, /images/services/residential-commercial-960.webp 960w, /images/services/residential-commercial-1440.webp 1440w",
       "pageImageFallbackJpg": "/images/services/residential-commercial.jpg",
       "pageImagePosition": "50% 0%",
+      "pageImageBrightness": 0.90,
       "icon": "#residential",
       "cta": {
         "label": "More residential & commercial",
