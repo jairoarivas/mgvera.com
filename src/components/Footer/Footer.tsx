@@ -2,21 +2,54 @@ import { Button } from "../shared/Button/Button";
 import { Section } from "../shared/Section/Section";
 import styles from "./Footer.module.css";
 
-type FooterContent = {}
+type FooterLink = {
+    label: string;
+    href: string;
+};
 
-export function Footer({content}: {content?: FooterContent}) {
+type FooterAddress = {
+    href: string;
+    lines: string[];
+};
+
+type FooterLocation = {
+    name: string;
+    phone?: FooterLink;
+    email?: FooterLink;
+    address?: FooterAddress;
+    placeholder?: string;
+};
+
+type FooterSocialLink = FooterLink & {
+    icon: string;
+};
+
+type FooterContent = {
+    topCta: {
+        heading: string;
+        button: FooterLink;
+    };
+    locationsIntro: string;
+    locations: FooterLocation[];
+    menuItems: FooterLink[];
+    socialLinks: FooterSocialLink[];
+    credit: FooterLink;
+    copyright: string;
+};
+
+export function Footer({content}: {content: FooterContent}) {
     return (
         <Section className={styles.root}>
             <div>
                 <div className={styles.footerTop}>
                     <div className={styles.footerTopRow}>
                         <div className={styles.footerTopColBg}>
-                            <h2 className={styles.footerTopHeading}>The right team makes a difference</h2>
+                            <h2 className={styles.footerTopHeading}>{content.topCta.heading}</h2>
                         </div>
                         <div className={styles.footerTopColSm}>
                             <Button 
-                                label={"Partner With Us"} 
-                                href={"mailto:cbustos@mgvera.com"}
+                                label={content.topCta.button.label} 
+                                href={content.topCta.button.href}
                                 size="lg"
                             />
                         </div>
@@ -34,188 +67,94 @@ export function Footer({content}: {content?: FooterContent}) {
                     <div className={styles.locations}>
                         <div className={styles.locationsBox}>
                             <p className={styles.locationText}>
-                                Proudly serving Florida statewide.
+                                {content.locationsIntro}
                             </p>
                         </div>
-                        <div className={styles.locationsBox}>
-                            <div className={styles.locationCard}>
-                                <h3>Miami (Corporate)</h3>
-                                <address>
-                                    <a className={styles.phoneLine} href="tel:3052216210">
-                                        <svg className={styles.phoneIcon}>
-                                            <use href="#phone"/>
-                                        </svg>
-                                        (305) 221-6210
-                                    </a>
-                                    <a className={styles.emailLine} href="mailto:cbustos@mgvera.com">
-                                        <svg className={styles.emailIcon}>
-                                            <use href="#email" />
-                                        </svg>
-                                        cbustos@mgvera.com
-                                    </a>
-                                    <a
-                                        className={styles.addressLink}
-                                        href="https://www.google.com/maps/search/?api=1&query=13960%20SW%2047%20Street%2C%20Suite%204404%2C%20Miami%2C%20FL%2033175"
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
-                                        <span className={styles.addressLine}>
-                                            <svg className={styles.mapPinIcon}>
-                                                <use href="#location-pin" />
-                                            </svg>
-                                            13960 SW 47 Street
-                                        </span>
-                                        <span className={styles.addressSubline}>Miami, Florida  33175</span>
-                                    </a>
-                                </address>
+                        {content.locations.map((location) => (
+                            <div className={styles.locationsBox} key={location.name}>
+                                <div className={styles.locationCard}>
+                                    <h3>{location.name}</h3>
+                                    <address>
+                                        {location.phone ? (
+                                            <a className={styles.phoneLine} href={location.phone.href}>
+                                                <svg className={styles.phoneIcon}>
+                                                    <use href="#phone"/>
+                                                </svg>
+                                                {location.phone.label}
+                                            </a>
+                                        ) : null}
+                                        {location.email ? (
+                                            <a className={styles.emailLine} href={location.email.href}>
+                                                <svg className={styles.emailIcon}>
+                                                    <use href="#email" />
+                                                </svg>
+                                                {location.email.label}
+                                            </a>
+                                        ) : null}
+                                        {location.address ? (
+                                            <a
+                                                className={styles.addressLink}
+                                                href={location.address.href}
+                                                target="_blank"
+                                                rel="noreferrer"
+                                            >
+                                                <span className={styles.addressLine}>
+                                                    <svg className={styles.mapPinIcon}>
+                                                        <use href="#location-pin" />
+                                                    </svg>
+                                                    {location.address.lines[0]}
+                                                </span>
+                                                {location.address.lines.slice(1).map((line) => (
+                                                    <span className={styles.addressSubline} key={line}>{line}</span>
+                                                ))}
+                                            </a>
+                                        ) : null}
+                                        {location.placeholder ? (
+                                            <span className={styles.addressLine}>
+                                                <svg className={styles.mapPinIcon} aria-hidden="true">
+                                                    <use href="#location-pin"/>
+                                                </svg>
+                                                <span className={styles.phonePlaceholder}>{location.placeholder}</span>
+                                            </span>
+                                        ) : null}
+                                    </address>
+                                </div>
                             </div>
-                        </div>
-                        <div className={styles.locationsBox}>
-                            <div className={styles.locationCard}>
-                                <h3>Jupiter</h3>
-                                <address>
-                                    <a className={styles.phoneLine} href="tel:5612032704">
-                                        <svg className={styles.phoneIcon}>
-                                            <use href="#phone"/>
-                                        </svg>
-                                        (561) 203-2704
-                                    </a>
-                                    <a
-                                        className={styles.addressLink}
-                                        href="https://www.google.com/maps/search/?api=1&query=1562%20Park%20Lane%20South%2C%20Suite%20400%2C%20Jupiter%2C%20FL%2033458"
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
-                                        <span className={styles.addressLine}>
-                                            <svg className={styles.mapPinIcon}>
-                                                <use href="#location-pin" />
-                                            </svg>
-                                            1562 Park Lane South
-                                        </span>
-                                        <span className={styles.addressSubline}>Suite 400</span>
-                                        <span className={styles.addressSubline}>Jupiter, Florida  33458</span>
-                                    </a>
-                                </address>
-                            </div>
-                        </div>
-                        <div className={styles.locationsBox}>
-                            <div className={styles.locationCard}>
-                                <h3>Orlando</h3>
-                                <address>
-                                    <a className={styles.phoneLine} href="tel:4078785409">
-                                        <svg className={styles.phoneIcon}>
-                                            <use href="#phone"/>
-                                        </svg>
-                                        (407) 878-5409
-                                    </a>
-                                    <a
-                                        className={styles.addressLink}
-                                        href="https://www.google.com/maps/search/?api=1&query=1414%20Lexington%20Green%20Lane%2C%20Sanford%2C%20FL%2032771"
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
-                                        <span className={styles.addressLine}>
-                                            <svg className={styles.mapPinIcon}>
-                                                <use href="#location-pin" />
-                                            </svg>
-                                            1414 Lexington Green Lane
-                                        </span>
-                                        <span className={styles.addressSubline}>Sanford, Florida  32771</span>
-                                    </a>
-                                </address>
-                            </div>
-                        </div>
-                        <div className={styles.locationsBox}>
-                            <div className={styles.locationCard}>
-                                <h3>Jacksonville</h3>
-                                <address>
-                                    <span className={styles.addressLine}>
-                                        <svg className={styles.mapPinIcon} aria-hidden="true">
-                                            <use href="#location-pin"/>
-                                        </svg>
-                                        <span className={styles.phonePlaceholder}>Coming Soon!</span>
-                                    </span>
-                                </address>
-                            </div>
-                        </div>
+                        ))}
                     </div>
                     <div className={styles.footerMenuBox}>
                         <div className={styles.footerMenuTopLine}></div>
                         <ul className={styles.footerMenuList}>
-                            <li className={styles.footerMenuListItem}>
-                                <a className={styles.footerMenuLink} href="/surveying-mapping">Surveying·Mapping</a>
-                            </li>
-                            <li className={styles.footerMenuListItem}>
-                                <a className={styles.footerMenuLink} href="/sue">SUE</a>
-                            </li>
-                            <li className={styles.footerMenuListItem}>
-                                <a className={styles.footerMenuLink} href="/uc">UC</a>
-                            </li>
-                            <li className={styles.footerMenuListItem}>
-                                <a className={styles.footerMenuLink} href="/lidar">Lidar</a>
-                            </li>
-                            <li className={styles.footerMenuListItem}>
-                                <a className={styles.footerMenuLink} href="/construction">Construction</a>
-                            </li>
-                            <li className={styles.footerMenuListItem}>
-                                <a className={styles.footerMenuLink} href="/residential-commercial">Residential·Commercial</a>
-                            </li>
-                            <li className={styles.footerMenuListItem}>
-                                <a className={styles.footerMenuLink} href="/meet-the-team">Meet the Team</a>
-                            </li>
-                            <li className={styles.footerMenuListItem}>
-                                <a className={styles.footerMenuLink} href="/our-legacy">Our Legacy</a>
-                            </li>
-                            <li className={styles.footerMenuListItem}>
-                                <a className={styles.footerMenuLink} href="/projects">Projects</a>
-                            </li>
-                            <li className={styles.footerMenuListItem}>
-                                <a className={styles.footerMenuLink} href="/news">News</a>
-                            </li>
+                            {content.menuItems.map((item) => (
+                                <li className={styles.footerMenuListItem} key={item.href}>
+                                    <a className={styles.footerMenuLink} href={item.href}>{item.label}</a>
+                                </li>
+                            ))}
                         </ul>
                         <div className={styles.footerMenuBottomLine}></div>
                     </div>
                     <div className={styles.copyrightBox}>
                         <div className={styles.copyright}>
-                            <p>© M.G. Vera & Associates 2026</p>
+                            <p>{content.copyright}</p>
                         </div>
                         <div className={styles.socialLinks}>
-                            <a
-                                className={styles.socialLink}
-                                href="https://www.facebook.com/MGVera.inc/"
-                                target="_blank"
-                                rel="noreferrer"
-                                aria-label="M.G. Vera on Facebook"
-                            >
-                                <svg className={styles.socialIcon}>
-                                    <use href="#facebook" />
-                                </svg>
-                            </a>
-                            <a
-                                className={styles.socialLink}
-                                href="https://www.instagram.com/mgvera_survey/"
-                                target="_blank"
-                                rel="noreferrer"
-                                aria-label="M.G. Vera on Instagram"
-                            >
-                                <svg className={styles.socialIcon}>
-                                    <use href="#instagram" />
-                                </svg>
-                            </a>
-                            <a
-                                className={styles.socialLink}
-                                href="https://www.linkedin.com/company/mgvera"
-                                target="_blank"
-                                rel="noreferrer"
-                                aria-label="M.G. Vera on LinkedIn"
-                            >
-                                <svg className={styles.socialIcon}>
-                                    <use href="#linkedin" />
-                                </svg>
-                            </a>
+                            {content.socialLinks.map((link) => (
+                                <a
+                                    className={styles.socialLink}
+                                    href={link.href}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    aria-label={link.label}
+                                    key={link.href}
+                                >
+                                    <svg className={styles.socialIcon}>
+                                        <use href={link.icon} />
+                                    </svg>
+                                </a>
+                            ))}
                         </div>
                         <div className={styles.credLink}>
-                            <a>Site by JR Forge Studios</a>
+                            <a href={content.credit.href || undefined}>{content.credit.label}</a>
                         </div>
                     </div>
                 </div>

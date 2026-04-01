@@ -52,11 +52,11 @@
         },
         {
             "label": "Projects",
-            "href": "/projects"
+            "href": ""
         },
         {
           "label": "News",
-          "href": "/news"
+          "href": ""
         }
     ]
 }

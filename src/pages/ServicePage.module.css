@@ -1,0 +1,18 @@
+.image {
+    width: 100%;
+    height: clamp(20rem, 36vw, 31rem);
+    display: block;
+    object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+    .image {
+        height: clamp(18rem, 52vw, 26rem);
+    }
+}
+
+@media (max-width: 640px) {
+    .image {
+        height: clamp(15rem, 58vw, 22rem);
+    }
+}

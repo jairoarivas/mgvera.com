@@ -2,86 +2,120 @@
   {
     "name": "Ava Thompson",
     "role": "Managing Director",
-    "image": "/images/about/headshots/headshotplaceholder.png"
+    "imageAvifSrcSet": "/images/about/headshots/headshotplaceholder-480.avif 480w, /images/about/headshots/headshotplaceholder-960.avif 960w, /images/about/headshots/headshotplaceholder-1440.avif 1440w",
+    "imageWebpSrcSet": "/images/about/headshots/headshotplaceholder-480.webp 480w, /images/about/headshots/headshotplaceholder-960.webp 960w, /images/about/headshots/headshotplaceholder-1440.webp 1440w",
+    "imageFallbackJpg": "/images/about/headshots/headshotplaceholder.png"
   },
   {
     "name": "Marcus Lee",
     "role": "Operations Lead",
-    "image": "/images/about/headshots/headshotplaceholder.png"
+    "imageAvifSrcSet": "/images/about/headshots/headshotplaceholder-480.avif 480w, /images/about/headshots/headshotplaceholder-960.avif 960w, /images/about/headshots/headshotplaceholder-1440.avif 1440w",
+    "imageWebpSrcSet": "/images/about/headshots/headshotplaceholder-480.webp 480w, /images/about/headshots/headshotplaceholder-960.webp 960w, /images/about/headshots/headshotplaceholder-1440.webp 1440w",
+    "imageFallbackJpg": "/images/about/headshots/headshotplaceholder.png"
   },
   {
     "name": "Sofia Ramirez",
     "role": "Client Success Manager",
-    "image": "/images/about/headshots/headshotplaceholder.png"
+    "imageAvifSrcSet": "/images/about/headshots/headshotplaceholder-480.avif 480w, /images/about/headshots/headshotplaceholder-960.avif 960w, /images/about/headshots/headshotplaceholder-1440.avif 1440w",
+    "imageWebpSrcSet": "/images/about/headshots/headshotplaceholder-480.webp 480w, /images/about/headshots/headshotplaceholder-960.webp 960w, /images/about/headshots/headshotplaceholder-1440.webp 1440w",
+    "imageFallbackJpg": "/images/about/headshots/headshotplaceholder.png"
   },
   {
     "name": "Daniel Brooks",
     "role": "Senior Consultant",
-    "image": "/images/about/headshots/headshotplaceholder.png"
+    "imageAvifSrcSet": "/images/about/headshots/headshotplaceholder-480.avif 480w, /images/about/headshots/headshotplaceholder-960.avif 960w, /images/about/headshots/headshotplaceholder-1440.avif 1440w",
+    "imageWebpSrcSet": "/images/about/headshots/headshotplaceholder-480.webp 480w, /images/about/headshots/headshotplaceholder-960.webp 960w, /images/about/headshots/headshotplaceholder-1440.webp 1440w",
+    "imageFallbackJpg": "/images/about/headshots/headshotplaceholder.png"
   },
   {
     "name": "Priya Patel",
     "role": "Finance Director",
-    "image": "/images/about/headshots/headshotplaceholder.png"
+    "imageAvifSrcSet": "/images/about/headshots/headshotplaceholder-480.avif 480w, /images/about/headshots/headshotplaceholder-960.avif 960w, /images/about/headshots/headshotplaceholder-1440.avif 1440w",
+    "imageWebpSrcSet": "/images/about/headshots/headshotplaceholder-480.webp 480w, /images/about/headshots/headshotplaceholder-960.webp 960w, /images/about/headshots/headshotplaceholder-1440.webp 1440w",
+    "imageFallbackJpg": "/images/about/headshots/headshotplaceholder.png"
   },
   {
     "name": "Elena Foster",
     "role": "Strategy Analyst",
-    "image": "/images/about/headshots/headshotplaceholder.png"
+    "imageAvifSrcSet": "/images/about/headshots/headshotplaceholder-480.avif 480w, /images/about/headshots/headshotplaceholder-960.avif 960w, /images/about/headshots/headshotplaceholder-1440.avif 1440w",
+    "imageWebpSrcSet": "/images/about/headshots/headshotplaceholder-480.webp 480w, /images/about/headshots/headshotplaceholder-960.webp 960w, /images/about/headshots/headshotplaceholder-1440.webp 1440w",
+    "imageFallbackJpg": "/images/about/headshots/headshotplaceholder.png"
   },
   {
     "name": "Noah Bennett",
     "role": "Business Development Manager",
-    "image": "/images/about/headshots/headshotplaceholder.png"
+    "imageAvifSrcSet": "/images/about/headshots/headshotplaceholder-480.avif 480w, /images/about/headshots/headshotplaceholder-960.avif 960w, /images/about/headshots/headshotplaceholder-1440.avif 1440w",
+    "imageWebpSrcSet": "/images/about/headshots/headshotplaceholder-480.webp 480w, /images/about/headshots/headshotplaceholder-960.webp 960w, /images/about/headshots/headshotplaceholder-1440.webp 1440w",
+    "imageFallbackJpg": "/images/about/headshots/headshotplaceholder.png"
   },
   {
     "name": "Maya Collins",
     "role": "Project Coordinator",
-    "image": "/images/about/headshots/headshotplaceholder.png"
+    "imageAvifSrcSet": "/images/about/headshots/headshotplaceholder-480.avif 480w, /images/about/headshots/headshotplaceholder-960.avif 960w, /images/about/headshots/headshotplaceholder-1440.avif 1440w",
+    "imageWebpSrcSet": "/images/about/headshots/headshotplaceholder-480.webp 480w, /images/about/headshots/headshotplaceholder-960.webp 960w, /images/about/headshots/headshotplaceholder-1440.webp 1440w",
+    "imageFallbackJpg": "/images/about/headshots/headshotplaceholder.png"
   },
   {
     "name": "Julian Kim",
     "role": "Creative Lead",
-    "image": "/images/about/headshots/headshotplaceholder.png"
+    "imageAvifSrcSet": "/images/about/headshots/headshotplaceholder-480.avif 480w, /images/about/headshots/headshotplaceholder-960.avif 960w, /images/about/headshots/headshotplaceholder-1440.avif 1440w",
+    "imageWebpSrcSet": "/images/about/headshots/headshotplaceholder-480.webp 480w, /images/about/headshots/headshotplaceholder-960.webp 960w, /images/about/headshots/headshotplaceholder-1440.webp 1440w",
+    "imageFallbackJpg": "/images/about/headshots/headshotplaceholder.png"
   },
   {
     "name": "Grace Nguyen",
     "role": "Communications Specialist",
-    "image": "/images/about/headshots/headshotplaceholder.png"
+    "imageAvifSrcSet": "/images/about/headshots/headshotplaceholder-480.avif 480w, /images/about/headshots/headshotplaceholder-960.avif 960w, /images/about/headshots/headshotplaceholder-1440.avif 1440w",
+    "imageWebpSrcSet": "/images/about/headshots/headshotplaceholder-480.webp 480w, /images/about/headshots/headshotplaceholder-960.webp 960w, /images/about/headshots/headshotplaceholder-1440.webp 1440w",
+    "imageFallbackJpg": "/images/about/headshots/headshotplaceholder.png"
   },
   {
     "name": "Ethan Walker",
     "role": "Technical Advisor",
-    "image": "/images/about/headshots/headshotplaceholder.png"
+    "imageAvifSrcSet": "/images/about/headshots/headshotplaceholder-480.avif 480w, /images/about/headshots/headshotplaceholder-960.avif 960w, /images/about/headshots/headshotplaceholder-1440.avif 1440w",
+    "imageWebpSrcSet": "/images/about/headshots/headshotplaceholder-480.webp 480w, /images/about/headshots/headshotplaceholder-960.webp 960w, /images/about/headshots/headshotplaceholder-1440.webp 1440w",
+    "imageFallbackJpg": "/images/about/headshots/headshotplaceholder.png"
   },
   {
     "name": "Chloe Harris",
     "role": "Community Partnerships Lead",
-    "image": "/images/about/headshots/headshotplaceholder.png"
+    "imageAvifSrcSet": "/images/about/headshots/headshotplaceholder-480.avif 480w, /images/about/headshots/headshotplaceholder-960.avif 960w, /images/about/headshots/headshotplaceholder-1440.avif 1440w",
+    "imageWebpSrcSet": "/images/about/headshots/headshotplaceholder-480.webp 480w, /images/about/headshots/headshotplaceholder-960.webp 960w, /images/about/headshots/headshotplaceholder-1440.webp 1440w",
+    "imageFallbackJpg": "/images/about/headshots/headshotplaceholder.png"
   },
   {
     "name": "Liam Carter",
     "role": "Program Manager",
-    "image": "/images/about/headshots/headshotplaceholder.png"
+    "imageAvifSrcSet": "/images/about/headshots/headshotplaceholder-480.avif 480w, /images/about/headshots/headshotplaceholder-960.avif 960w, /images/about/headshots/headshotplaceholder-1440.avif 1440w",
+    "imageWebpSrcSet": "/images/about/headshots/headshotplaceholder-480.webp 480w, /images/about/headshots/headshotplaceholder-960.webp 960w, /images/about/headshots/headshotplaceholder-1440.webp 1440w",
+    "imageFallbackJpg": "/images/about/headshots/headshotplaceholder.png"
   },
   {
     "name": "Isabella Reed",
     "role": "Marketing Strategist",
-    "image": "/images/about/headshots/headshotplaceholder.png"
+    "imageAvifSrcSet": "/images/about/headshots/headshotplaceholder-480.avif 480w, /images/about/headshots/headshotplaceholder-960.avif 960w, /images/about/headshots/headshotplaceholder-1440.avif 1440w",
+    "imageWebpSrcSet": "/images/about/headshots/headshotplaceholder-480.webp 480w, /images/about/headshots/headshotplaceholder-960.webp 960w, /images/about/headshots/headshotplaceholder-1440.webp 1440w",
+    "imageFallbackJpg": "/images/about/headshots/headshotplaceholder.png"
   },
   {
     "name": "Owen Murphy",
     "role": "Field Operations Supervisor",
-    "image": "/images/about/headshots/headshotplaceholder.png"
+    "imageAvifSrcSet": "/images/about/headshots/headshotplaceholder-480.avif 480w, /images/about/headshots/headshotplaceholder-960.avif 960w, /images/about/headshots/headshotplaceholder-1440.avif 1440w",
+    "imageWebpSrcSet": "/images/about/headshots/headshotplaceholder-480.webp 480w, /images/about/headshots/headshotplaceholder-960.webp 960w, /images/about/headshots/headshotplaceholder-1440.webp 1440w",
+    "imageFallbackJpg": "/images/about/headshots/headshotplaceholder.png"
   },
   {
     "name": "Natalie Price",
     "role": "People Operations Manager",
-    "image": "/images/about/headshots/headshotplaceholder.png"
+    "imageAvifSrcSet": "/images/about/headshots/headshotplaceholder-480.avif 480w, /images/about/headshots/headshotplaceholder-960.avif 960w, /images/about/headshots/headshotplaceholder-1440.avif 1440w",
+    "imageWebpSrcSet": "/images/about/headshots/headshotplaceholder-480.webp 480w, /images/about/headshots/headshotplaceholder-960.webp 960w, /images/about/headshots/headshotplaceholder-1440.webp 1440w",
+    "imageFallbackJpg": "/images/about/headshots/headshotplaceholder.png"
   },
   {
     "name": "Caleb Stewart",
     "role": "Senior Project Analyst",
-    "image": "/images/about/headshots/headshotplaceholder.png"
+    "imageAvifSrcSet": "/images/about/headshots/headshotplaceholder-480.avif 480w, /images/about/headshots/headshotplaceholder-960.avif 960w, /images/about/headshots/headshotplaceholder-1440.avif 1440w",
+    "imageWebpSrcSet": "/images/about/headshots/headshotplaceholder-480.webp 480w, /images/about/headshots/headshotplaceholder-960.webp 960w, /images/about/headshots/headshotplaceholder-1440.webp 1440w",
+    "imageFallbackJpg": "/images/about/headshots/headshotplaceholder.png"
   }
 ]

@@ -1,0 +1,127 @@
+{
+  "topCta": {
+    "heading": "The right team makes a difference",
+    "button": {
+      "label": "Partner With Us",
+      "href": "mailto:cbustos@mgvera.com"
+    }
+  },
+  "locationsIntro": "Proudly serving Florida statewide.",
+  "locations": [
+    {
+      "name": "Miami (Corporate)",
+      "phone": {
+        "label": "(305) 221-6210",
+        "href": "tel:3052216210"
+      },
+      "email": {
+        "label": "cbustos@mgvera.com",
+        "href": "mailto:cbustos@mgvera.com"
+      },
+      "address": {
+        "href": "https://www.google.com/maps/search/?api=1&query=13960%20SW%2047%20Street%2C%20Suite%204404%2C%20Miami%2C%20FL%2033175",
+        "lines": [
+          "13960 SW 47 Street",
+          "Miami, Florida  33175"
+        ]
+      }
+    },
+    {
+      "name": "Jupiter",
+      "phone": {
+        "label": "(561) 203-2704",
+        "href": "tel:5612032704"
+      },
+      "address": {
+        "href": "https://www.google.com/maps/search/?api=1&query=1562%20Park%20Lane%20South%2C%20Suite%20400%2C%20Jupiter%2C%20FL%2033458",
+        "lines": [
+          "1562 Park Lane South",
+          "Suite 400",
+          "Jupiter, Florida  33458"
+        ]
+      }
+    },
+    {
+      "name": "Orlando",
+      "phone": {
+        "label": "(407) 878-5409",
+        "href": "tel:4078785409"
+      },
+      "address": {
+        "href": "https://www.google.com/maps/search/?api=1&query=1414%20Lexington%20Green%20Lane%2C%20Sanford%2C%20FL%2032771",
+        "lines": [
+          "1414 Lexington Green Lane",
+          "Sanford, Florida  32771"
+        ]
+      }
+    },
+    {
+      "name": "Jacksonville",
+      "placeholder": "Coming Soon!"
+    }
+  ],
+  "menuItems": [
+    {
+      "label": "Surveying·Mapping",
+      "href": "/surveying-mapping"
+    },
+    {
+      "label": "SUE",
+      "href": "/sue"
+    },
+    {
+      "label": "UC",
+      "href": "/uc"
+    },
+    {
+      "label": "Lidar",
+      "href": "/lidar"
+    },
+    {
+      "label": "Construction",
+      "href": "/construction"
+    },
+    {
+      "label": "Residential·Commercial",
+      "href": "/residential-commercial"
+    },
+    {
+      "label": "Meet the Team",
+      "href": "/meet-the-team"
+    },
+    {
+      "label": "Our Legacy",
+      "href": "/our-legacy"
+    },
+    {
+      "label": "Projects",
+      "href": ""
+    },
+    {
+      "label": "News",
+      "href": ""
+    }
+  ],
+  "socialLinks": [
+    {
+      "label": "M.G. Vera on Facebook",
+      "href": "https://www.facebook.com/MGVera.inc/",
+      "icon": "#facebook"
+    },
+    {
+      "label": "M.G. Vera on Instagram",
+      "href": "https://www.instagram.com/mgvera_survey/",
+      "icon": "#instagram"
+    },
+    {
+      "label": "M.G. Vera on LinkedIn",
+      "href": "https://www.linkedin.com/company/mgvera",
+      "icon": "#linkedin"
+    }
+  ],
+  "credit": {
+    "label": "Site by JR Forge Studios",
+    "href": ""
+  },
+  "copyright": "\u00a9 M.G. Vera & Associates 2026"
+}

@@ -26,7 +26,9 @@ export function PeopleCardHolder (props: PeopleHolderProps){
                         key={item.name}
                         name={item.name}
                         role={item.role}
-                        image={item.image}
+                        imageAvifSrcSet={item.imageAvifSrcSet}
+                        imageWebpSrcSet={item.imageWebpSrcSet}
+                        imageFallbackJpg={item.imageFallbackJpg}
                     />
                 )}
             </div>

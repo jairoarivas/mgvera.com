@@ -13,6 +13,7 @@ import { HomeNavbar } from './components/HomeNavbar';
 import { InteriorNavbar } from './components/InteriorNavbar';
 
 import * as navbarContent from "../src/docs/navbar.json";
+import * as footerContent from "../src/docs/footer.json";
 import * as servicesContent from "../src/docs/services.json";
 import { ServicePage } from './pages/ServicePage';
 import { MeetTheTeamPage } from './pages/MeetTheTeamPage';
@@ -26,7 +27,7 @@ function LandingPage() {
             <LogoSprites/>
             <HomeNavbar content={navbarContent}/>
             <Outlet />
-            <Footer/>
+            <Footer content={footerContent}/>
         </>
     );
 }
@@ -39,7 +40,7 @@ function InteriorPages() {
             <LogoSprites/>
             <InteriorNavbar content={navbarContent}/>
             <Outlet />
-            <Footer/>
+            <Footer content={footerContent}/>
         </>
     );
 }
@@ -58,6 +59,11 @@ createRoot(document.getElementById('root')!).render(
                                 name={serviceCategory.name}
                                 subheading={serviceCategory.pageSubheading}
                                 cardHeading={serviceCategory.pageCardHeading}
+                                imageAlt={serviceCategory.pageImageAlt}
+                                imageAvifSrcSet={serviceCategory.pageImageAvifSrcSet}
+                                imageWebpSrcSet={serviceCategory.pageImageWebpSrcSet}
+                                imageFallbackJpg={serviceCategory.pageImageFallbackJpg}
+                                imagePosition={serviceCategory.pageImagePosition}
                                 cta={{label: "Get in Touch", href: "mailto:cbustos@mgvera.com"}}
                                 services={serviceCategory.services}
                             />} 
