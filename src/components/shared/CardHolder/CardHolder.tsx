@@ -3,6 +3,7 @@ import styles from "./CardHolder.module.css";
 
 export type CardHolderProps = {
     heading?: string;
+    subheading?: string;
     items: BulletedCardProps[]
 }
 
@@ -11,6 +12,7 @@ export function CardHolder (props: CardHolderProps){
         <div className={styles.root}>
             <div className={styles.miniHeaderBox}>
                 {props.heading && <h2 className={styles.miniHeader}>{props.heading}</h2>}
+                {props.subheading && <p className={styles.miniSubheading}>{props.subheading}</p>}
             </div>
             {props.items.map(item => 
                 <BulletedCard

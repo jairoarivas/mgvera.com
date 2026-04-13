@@ -27,38 +27,47 @@
       "services": [
         {
           "name": "Geodetic & Control Surveying",
-          "icon": "#surveying",
+          "icon": "#geodetic-control",
           "bullets": [
-            "Establishes precise horizontal and vertical control across the project site.",
-            "Supports consistent positioning for mapping, design, and construction work.",
-            "Uses GNSS and conventional survey methods to maintain project-wide accuracy."
+            "Set primary and secondary horizontal and vertical control using GPS/GNSS and conventional methods to ensure project-wide accuracy.",
+            "Provide geodetic positioning tied to state plane coordinates and vertical datums for consistent, reliable survey data.",
+            "Support design, construction, and monitoring with dependable control that meets FDOT and industry standards."
           ]
         },
         {
           "name": "Right-of-Way Surveys and Mapping",
           "icon": "#surveying",
           "bullets": [
-            "Defines corridor limits, easements, and parcel boundaries.",
-            "Supports roadway and infrastructure planning with mapped ownership impacts.",
-            "Provides documentation for acquisition, design, and permitting needs."
+            "Research deeds, plats, and records to accurately define existing right-of-way and property boundaries.",
+            "Prepare detailed right-of-way maps showing parcels, easements, and ownership information to support acquisition and design.",
+            "Assist with right-of-way acquisition processes while ensuring compliance with FDOT and local requirements."
           ]
         },
         {
           "name": "Topographic / As-built / 3D (DTM) Surveys",
-          "icon": "#surveying",
+          "icon": "#topographic-3d",
           "bullets": [
-            "Captures terrain, utilities, and visible site features in detail.",
-            "Documents existing conditions and completed work for design validation.",
-            "Generates 3D surface models to support engineering and planning."
+            "Capture existing ground features, elevations, and site conditions to create an accurate representation of the project area.",
+            "Generate precise 3D surface models from survey data to support design, grading, and analysis.",
+            "Provide reliable topo and DTM data aligned with FDOT and local standards for planning, drainage, and construction."
           ]
         },
         {
-          "name": "Bridge Surveys",
-          "icon": "#surveying",
+          "name": "Bridge Survey",
+          "icon": "#bridge-survey",
           "bullets": [
-            "Measures bridge geometry, elevations, and surrounding conditions.",
-            "Supports rehabilitation, expansion, and replacement design efforts.",
-            "Provides accurate field data for structural and roadway coordination."
+            "Perform thorough bridge surveys to document geometry, structural elements, and existing conditions.",
+            "Capture elevations, clearances, and critical measurements to support design, inspection, and rehabilitation efforts.",
+            "Deliver survey data aligned with FDOT and industry standards to ensure safe, compliant, and efficient project development."
+          ]
+        },
+        {
+          "name": "Drainage",
+          "icon": "#drainage",
+          "bullets": [
+            "Conduct detailed drainage surveys to evaluate existing systems, identify deficiencies, and document site conditions.",
+            "Gather accurate elevation data, pipe conditions, and flow patterns to support design and improve system performance.",
+            "Provide insights aligned with FDOT and local standards to support drainage design, maintenance planning, and regulatory compliance."
           ]
         }
       ]
@@ -68,6 +77,7 @@
       "slug": "sue",
       "pageSubheading": "Reliable subsurface utility engineering services that reduce risk and improve design confidence.",
       "pageCardHeading": "Comprehensive SUE Solutions",
+      "pageCardSubheading": "All quality levels are defined in accordance with ASCE 38-22, Standard Guideline for Investigating and Documenting Existing Utilities.",
       "pageImageAlt": "Subsurface utility engineering crew locating underground utilities",
       "pageImageAvifSrcSet": "/images/services/sue-480.avif 480w, /images/services/sue-960.avif 960w, /images/services/sue-1440.avif 1440w",
       "pageImageWebpSrcSet": "/images/services/sue-480.webp 480w, /images/services/sue-960.webp 960w, /images/services/sue-1440.webp 1440w",
@@ -84,26 +94,26 @@
           "name": "Quality Level A (QLA) - Utility Locates",
           "icon": "#sue",
           "bullets": [
-            "Confirms utility location through direct exposure at specific points.",
-            "Verifies depth, size, and material where exact data is required.",
-            "Helps reduce design risk in critical conflict areas."
+            "Confirms Utility Locates/ Possible Conflicts through direct exposure at specific points.",
+            "Verifies depth, size, material, and survey accuracies (Horizontal & Vertical) where exact data is required.",
+            "Helps reduce design/construction risk in critical conflict areas."
           ]
         },
         {
           "name": "Quality Level B (QLB) – Utility Designates",
           "icon": "#sue",
           "bullets": [
-            "Uses surface geophysics to designate existing underground utilities.",
-            "Maps horizontal utility positions without full exposure.",
-            "Supports design decisions in accordance with ASCE 38 practices."
+            "Uses surface geophysics to Utility Designate existing underground utilities.",
+            "Maps horizontal utility positions without full exposure using Electromagnetic Detection/ Ground Penetrating Radar (GPR).",
+            "Supports design decisions."
           ]
         },
         {
           "name": "Quality Level C (QLC)  – Correlated Records to Surveyed Features",
           "icon": "#sue",
           "bullets": [
-            "Correlates utility records with visible site features.",
-            "Improves the usefulness of existing owner data through field survey.",
+            "Correlates Utility Records to Surveyed Features.",
+            "Improves the usefulness of existing owner data through field surveys.",
             "Provides a practical planning-level view of underground conditions."
           ]
         },
@@ -111,7 +121,7 @@
           "name": "Quality Level D (QLD) – Existing Records",
           "icon": "#sue",
           "bullets": [
-            "Compiles utility information from existing records and verbal sources.",
+            "Compiles utility information from Existing Records and verbal sources.",
             "Provides an early understanding of potential underground infrastructure.",
             "Best suited for preliminary planning before higher-confidence investigation."
           ]
@@ -136,39 +146,37 @@
       },
       "services": [
         {
-          "name": "Utility Identification and Coordination",
+          "name": "Utility Coordination",
           "icon": "#uc",
           "bullets": [
-            "Identifies existing utility owners, systems, and likely conflict points.",
-            "Documents how proposed improvements interact with current infrastructure.",
-            "Keeps project teams informed as utility issues are discovered."
+            "We assist FDOT, local agencies, contractors, and engineers to deliver projects on time by identifying utility conflicts early and coordinating solutions efficiently.",
+            "We offer utility conflict identification, review Utility Work Schedules (UWS), coordinate with utility providers, assist with permitting and compliance, and construction phase support.",
+            "Experienced with FDOT requirements, including UAM, CPAM, FDOT Design Manual, UWHC, and SUE integration, keeping your project compliant and moving forward."
           ]
         },
         {
           "name": "Management of Relocations and Adjustments",
           "icon": "#uc",
           "bullets": [
-            "Coordinates relocation planning with utility owners and stakeholders.",
-            "Tracks required adjustments to reduce schedule and construction impacts.",
-            "Helps align utility work with the broader project timeline."
+            "We coordinate utility relocations and adjustments for projects with FDOT and local agencies on behalf of utility owners, ensuring all utility work is planned, scheduled, and completed without delaying construction.",
+            "Services include utility relocation planning and scheduling, adjustment coordination during roadway construction, Utility Work Schedule (UWS) management, and coordination with utility owners and contractors.",
+            "Experienced with FDOT processes including Utility Work by Highway Contractor (UWHC), right-of-way coordination, and construction phasing, ensuring relocations align with project timelines.",
+            "Uncoordinated relocations can delay projects, increase costs, and disrupt construction flow. We ensure utility work is completed at the right time before it becomes a problem."
           ]
         },
         {
-          "name": "Permit Coordination Services",
+          "name": "Keep Utility Work Aligned with Construction",
           "icon": "#uc",
-          "bullets": [
-            "Manages permit-related communication between project teams and providers.",
-            "Helps collect utility requirements, submittals, and review responses.",
-            "Reduces delays by keeping approval workflows organized."
-          ]
+          "bullets": []
         },
         {
-          "name": "Regulatory Compliance (Federal, State, and Local)",
+          "name": "Environmental Permitting Coordination",
           "icon": "#uc",
           "bullets": [
-            "Supports compliance with utility, transportation, and local agency requirements.",
-            "Assists with agreements, approvals, and required coordination documents.",
-            "Helps projects move forward with fewer regulatory surprises."
+            "We support the Florida Department of Transportation, local agencies, and contractors with efficient environmental permitting coordination, keeping projects compliant and moving forward.",
+            "Services include environmental permit coordination and tracking, agency coordination (state and federal), wetland and surface permitting support, and NEPA documentation coordination.",
+            "Experienced with the Florida Department of Environmental Protection, U.S. Army Corps of Engineers, and water management districts across Florida, we help navigate complex requirements and streamline approvals.",
+            "Projects often impact wetlands, floodplains, and protected resources. Delays in permitting can significantly impact schedules and costs, so we help ensure permits are secured efficiently and correctly the first time."
           ]
         }
       ]
@@ -192,34 +200,34 @@
       "services": [
         {
           "name": "Static LiDar (Topo/DTM)",
-          "icon": "#lidar",
+          "icon": "#static-lidar",
           "bullets": [
-            "Captures dense, high-accuracy scan data from fixed ground positions.",
-            "Works well for topography, structures, and detailed site documentation.",
-            "Produces reliable geometry for modeling and analysis."
+            "Captures dense, high accuracy laser scan data from fixed ground positions in a time efficient manner.",
+            "Ideal for use on bridges, roadways, interior and exterior structures, and a wide array of as-built surveys.",
+            "Produces highly detailed data that can be used for measurements, design, modeling and analysis."
           ]
         },
         {
           "name": "Mobile LiDAR (Topo/DTM)",
-          "icon": "#lidar",
+          "icon": "#mobile-lidar",
           "bullets": [
-            "Collects LiDAR data from vehicle-mounted systems along active corridors.",
-            "Efficiently documents roads, utilities, and surrounding infrastructure.",
-            "Reduces field time while capturing large linear assets."
+            "Collects LiDAR data from vehicle mounted systems along roadway, railway or maritime corridors.",
+            "Efficiently captures roadways, utilities and surrounding infrastructure with high accuracy and detail.",
+            "Greatly reduces field time and overall project costs."
           ]
         },
         {
           "name": "Point Cloud Modeling (TopoDOT)",
           "icon": "#lidar",
           "bullets": [
-            "Transforms raw point clouds into usable mapped features and models.",
-            "Extracts curb lines, pavement, utilities, and structural detail.",
+            "Transforms point clouds into clear and usable drawings and 3D models.",
+            "Extracts all visible components of the job site to provide a complete and detailed view.",
             "Supports design teams with clean deliverables from complex scan data."
           ]
         },
         {
           "name": "Aerial-Drones",
-          "icon": "#lidar",
+          "icon": "#aerial-lidar",
           "bullets": [
             "Uses drones to capture aerial imagery and site-wide elevation data.",
             "Supports terrain modeling, progress tracking, and visual documentation.",
@@ -237,8 +245,8 @@
       "pageImageAvifSrcSet": "/images/services/construction-480.avif 480w, /images/services/construction-960.avif 960w, /images/services/construction-1440.avif 1440w",
       "pageImageWebpSrcSet": "/images/services/construction-480.webp 480w, /images/services/construction-960.webp 960w, /images/services/construction-1440.webp 1440w",
       "pageImageFallbackJpg": "/images/services/construction.jpg",
-      "pageImagePosition": "50% 50%",
-      "pageImageBrightness": 0.90,
+      "pageImagePosition": "50% 48%",
+      "pageImageBrightness": 0.95,
       "icon": "#construction",
       "cta": {
         "label": "More construction",
@@ -304,7 +312,7 @@
           "name": "Boundary Survey and Elevation (FEMA) Certificate",
           "icon": "#residential",
           "bullets": [
-            "Locates property lines and key site improvements with precision.",
+            "Establish boundary lines and key site improvements with accuracy and precision.",
             "Provides elevation information needed for FEMA-related documentation.",
             "Helps owners, lenders, and insurers understand site conditions."
           ]
@@ -314,8 +322,9 @@
           "icon": "#residential",
           "bullets": [
             "Creates or retraces lot layouts for subdivision and land development.",
-            "Defines parcel dimensions, corners, and related rights-of-way.",
-            "Supports entitlement, recordation, and future property transfer."
+            "Defines parcel dimensions, corners, and related right-of-way to meet zoning requirements.",
+            "Supports entitlement, recordation, and future property transfer.",
+            "Provides compliance with municipal and county regulations."
           ]
         },
         {
@@ -333,7 +342,8 @@
           "bullets": [
             "Determines shoreline or jurisdictional water-related survey limits.",
             "Supports permitting and environmental coordination requirements.",
-            "Provides defensible data for coastal and waterfront projects."
+            "Provides defensible data for coastal and waterfront projects.",
+            "We handle FDEP approvals and filings of MHW Surveys to ensure compliance of the project."
           ]
         }
       ]

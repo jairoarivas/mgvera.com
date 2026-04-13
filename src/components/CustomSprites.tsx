@@ -128,6 +128,147 @@ export function CustomSprites() {
                     <path d="M17 15l0 .01" />
                 </g>
             </symbol>
+            <symbol
+                id="geodetic-control"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth=".75"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+            >
+                {/* Shared badge */}
+                <rect x="3" y="3" width="18" height="18" rx="1" />
+
+                <g transform="translate(3 3) scale(0.75)">
+                    <path d="M17 20a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                    <path d="M17 20h-2" />
+                    <path d="M7 4a2 2 0 1 1 -4 0a2 2 0 0 1 4 0" />
+                    <path d="M7 4h2" />
+                    <path d="M14 4h-2" />
+                    <path d="M12 20h-2" />
+                    <path d="M3 20c8 0 10 -16 18 -16" />
+                </g>
+            </symbol>
+            <symbol
+                id="topographic-3d"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth=".75"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+            >
+                {/* Shared badge */}
+                <rect x="3" y="3" width="18" height="18" rx="1" />
+
+                <g transform="translate(3 3) scale(0.75)">
+                    <path d="M14 12l6 -3l-8 -4l-8 4l6 3" />
+                    <path d="M10 12l-6 3l8 4l8 -4l-6 -3l-2 1l-2 -1" fill="currentColor" />
+                </g>
+            </symbol>
+            <symbol
+                id="bridge-survey"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth=".75"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+            >
+                {/* Shared badge */}
+                <rect x="3" y="3" width="18" height="18" rx="1" />
+
+                <g transform="translate(3 3) scale(0.75)">
+                    <path d="M18 6a3 3 0 0 1 3 3v9a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2v-2a3 3 0 0 0 -6 0v2a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2v-9a3 3 0 0 1 3 -3z" />
+                </g>
+            </symbol>
+            <symbol
+                id="drainage"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth=".75"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+            >
+                {/* Shared badge */}
+                <rect x="3" y="3" width="18" height="18" rx="1" />
+
+                <g transform="translate(3 3) scale(0.75)">
+                    <path d="M3 4h8" />
+                    <path d="M4 4v5a6 6 0 0 0 6 6h3a1 1 0 0 1 1 1v4" />
+                    <path d="M10 4v4a1 1 0 0 0 1 1h3a6 6 0 0 1 6 6v5" />
+                    <path d="M13 20h8" />
+                    <path d="M12 9v6" />
+                </g>
+            </symbol>
+            <symbol
+                id="static-lidar"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth=".75"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+            >
+                {/* Shared badge */}
+                <rect x="3" y="3" width="18" height="18" rx="1" />
+
+                <g transform="translate(3 3) scale(0.75)">
+                    <path d="M8 9a5 5 0 1 0 10 0a5 5 0 0 0 -10 0" />
+                    <path d="M9 6h-4a2 2 0 0 0 -2 2v8a2 2 0 0 0 2 2h14a2 2 0 0 0 2 -2v-8a2 2 0 0 0 -2 -2h-2" />
+                    <path d="M6 15h1" />
+                    <path d="M7 18l-1 2" />
+                    <path d="M18 18l1 2" />
+                </g>
+            </symbol>
+            <symbol
+                id="mobile-lidar"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth=".75"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+            >
+                {/* Shared badge */}
+                <rect x="3" y="3" width="18" height="18" rx="1" />
+
+                <g transform="translate(3 3) scale(0.75)">
+                    <path d="M5 17a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                    <path d="M15 17a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                    <path d="M9 17h6" />
+                    <path d="M19 17h1a1 1 0 0 0 1 -1v-4.528a2 2 0 0 0 -.211 -.894l-.96 -1.92a3 3 0 0 0 -2.683 -1.658h-11.146a3 3 0 0 0 -3 3v6a1 1 0 0 0 1 1h1" />
+                    <path d="M3 12h18" />
+                    <path d="M15 12v-5" />
+                    <path d="M6 5.5a1.5 1.5 0 0 1 1.5 -1.5h7a1.5 1.5 0 0 1 1.5 1.5a1.5 1.5 0 0 1 -1.5 1.5h-7a1.5 1.5 0 0 1 -1.5 -1.5" />
+                </g>
+            </symbol>
+            <symbol
+                id="aerial-lidar"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth=".75"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+            >
+                {/* Shared badge */}
+                <rect x="3" y="3" width="18" height="18" rx="1" />
+
+                <g transform="translate(3 3) scale(0.75)">
+                    <path d="M10 10h4v4h-4z" />
+                    <path d="M10 10l-3.5 -3.5" />
+                    <path d="M9.96 6a3.5 3.5 0 1 0 -3.96 3.96" />
+                    <path d="M14 10l3.5 -3.5" />
+                    <path d="M18 9.96a3.5 3.5 0 1 0 -3.96 -3.96" />
+                    <path d="M14 14l3.5 3.5" />
+                    <path d="M14.04 18a3.5 3.5 0 1 0 3.96 -3.96" />
+                    <path d="M10 14l-3.5 3.5" />
+                    <path d="M6 14.04a3.5 3.5 0 1 0 3.96 3.96" />
+                </g>
+            </symbol>
         </svg>
     );
 }

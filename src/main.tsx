@@ -59,6 +59,7 @@ createRoot(document.getElementById('root')!).render(
                                 name={serviceCategory.name}
                                 subheading={serviceCategory.pageSubheading}
                                 cardHeading={serviceCategory.pageCardHeading}
+                                cardSubheading={serviceCategory.pageCardSubheading}
                                 imageAlt={serviceCategory.pageImageAlt}
                                 imageAvifSrcSet={serviceCategory.pageImageAvifSrcSet}
                                 imageWebpSrcSet={serviceCategory.pageImageWebpSrcSet}

@@ -9,6 +9,7 @@ type ServicePageProps = {
   name: string;
   subheading: string;
   cardHeading: string;
+  cardSubheading?: string;
   imageAlt: string;
   imageAvifSrcSet: string;
   imageWebpSrcSet: string;
@@ -49,6 +50,7 @@ export function ServicePage(props: ServicePageProps) {
                     />
                     <CardHolder 
                         heading={props.cardHeading}
+                        subheading={props.cardSubheading}
                         items={props.services}
                     />
                 </div>

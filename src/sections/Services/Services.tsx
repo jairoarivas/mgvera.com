@@ -16,6 +16,7 @@ type ServicesContent = {
         slug: string;
         pageSubheading: string;
         pageCardHeading: string;
+        pageCardSubheading?: string;
         icon: string;
         cta: {label: string, href: string}
         services: {
