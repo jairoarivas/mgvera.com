@@ -1,0 +1,145 @@
+{
+  "feature": {
+    "eyebrow": "Featured Story",
+    "date": "April 18, 2026",
+    "title": "Project stories, team milestones, and field updates.",
+    "summary": "This featured slot is ready for the lead story on the page. Use it for a major announcement, project spotlight, or anything you want visitors to notice first.",
+    "slug": "project-stories-team-milestones-field-updates",
+    "href": "/news/project-stories-team-milestones-field-updates",
+    "ctaLabel": "Read More",
+    "image": "/images/services/construction.jpg",
+    "imageAlt": "Construction surveying team on an active project site",
+    "imageAvifSrcSet": "/images/services/construction-480.avif 480w, /images/services/construction-960.avif 960w, /images/services/construction-1440.avif 1440w",
+    "imageWebpSrcSet": "/images/services/construction-480.webp 480w, /images/services/construction-960.webp 960w, /images/services/construction-1440.webp 1440w",
+    "imagePosition": "50% 48%",
+    "author": "MG Vera Team",
+    "authorTitle": "News and Updates",
+    "body": [
+      "This featured story area is designed for the kind of update visitors should see first: a major project milestone, a company announcement, or a field story that shows the work behind the deliverable.",
+      "As the news page grows, this article can become a more detailed recap with project context, team notes, and images that help clients understand how MG Vera approaches complex work across Florida.",
+      "Use this page for the full story, while the news landing page can stay focused on quick scanning and discovery."
+    ]
+  },
+  "articles": [
+    {
+      "eyebrow": "Project Highlight",
+      "date": "April 10, 2026",
+      "title": "Survey field notes can become a short project recap here.",
+      "summary": "Use this card for a recent site visit, completed deliverable, or a milestone worth sharing with clients and partners.",
+      "slug": "survey-field-notes-project-recap",
+      "href": "/news/survey-field-notes-project-recap",
+      "image": "/images/services/lidar.jpg",
+      "imageAlt": "LiDAR scanning equipment capturing site conditions",
+      "imageAvifSrcSet": "/images/services/lidar-480.avif 480w, /images/services/lidar-960.avif 960w, /images/services/lidar-1440.avif 1440w",
+      "imageWebpSrcSet": "/images/services/lidar-480.webp 480w, /images/services/lidar-960.webp 960w, /images/services/lidar-1440.webp 1440w",
+      "imagePosition": "50% 50%",
+      "author": "MG Vera Team",
+      "authorTitle": "Project Updates",
+      "body": [
+        "Field notes are often where the story of a project starts. This article space can turn a recent site visit, scan, or completed deliverable into a short recap for clients and partners.",
+        "The goal is to keep the update practical: what was completed, why it mattered, and how the team approached the work in the field.",
+        "Over time, these recaps can become a useful record of the range of environments, scopes, and technical challenges MG Vera supports."
+      ]
+    },
+    {
+      "eyebrow": "Company Update",
+      "date": "March 29, 2026",
+      "title": "Team announcements and internal wins can live in this stream.",
+      "summary": "This could become a space for hiring updates, certifications, anniversaries, or recognitions across the company.",
+      "slug": "team-announcements-internal-wins",
+      "href": "/news/team-announcements-internal-wins",
+      "image": "/images/about/family.jpg",
+      "imageAlt": "MG Vera team and family gathering",
+      "imageAvifSrcSet": "/images/about/family-480.avif 480w, /images/about/family-960.avif 960w, /images/about/family-1440.avif 1440w",
+      "imageWebpSrcSet": "/images/about/family-480.webp 480w, /images/about/family-960.webp 960w, /images/about/family-1440.webp 1440w",
+      "imagePosition": "50% 50%",
+      "author": "MG Vera Team",
+      "authorTitle": "Company News",
+      "body": [
+        "Company updates give visitors a look at the people and momentum behind the work. This post can be used for hiring news, certifications, anniversaries, and recognitions.",
+        "A strong update does not need to be long. A few clear paragraphs can explain what happened, who was involved, and why it matters for the firm or its clients.",
+        "These stories help make the news page feel active while keeping the focus on the company culture that supports the technical work."
+      ]
+    },
+    {
+      "eyebrow": "In The Field",
+      "date": "March 15, 2026",
+      "title": "A third story card gives you room for regular publishing rhythm.",
+      "summary": "Keep this section flexible for quick notes, press mentions, or a rotating list of recent news items as the page grows.",
+      "slug": "regular-publishing-rhythm",
+      "href": "/news/regular-publishing-rhythm",
+      "image": "/images/services/surveying-mapping.jpg",
+      "imageAlt": "Surveying and mapping team working in the field",
+      "imageAvifSrcSet": "/images/services/surveying-mapping-480.avif 480w, /images/services/surveying-mapping-960.avif 960w, /images/services/surveying-mapping-1440.avif 1440w",
+      "imageWebpSrcSet": "/images/services/surveying-mapping-480.webp 480w, /images/services/surveying-mapping-960.webp 960w, /images/services/surveying-mapping-1440.webp 1440w",
+      "imagePosition": "50% 50%",
+      "author": "MG Vera Team",
+      "authorTitle": "Field Notes",
+      "body": [
+        "This article template is flexible enough for quick field notes, press mentions, and short updates that should have a permanent place on the site.",
+        "Regular publishing does not have to mean long-form writing every time. Short, useful updates can show consistency and give visitors a reason to return.",
+        "As the archive grows, the news page can become a timeline of projects, milestones, and team activity."
+      ]
+    },
+    {
+      "eyebrow": "Recognition",
+      "date": "March 1, 2026",
+      "title": "Awards, certifications, and new capabilities can be added as short stories.",
+      "summary": "This item works well for quick wins that still deserve a permanent place on the site and are easy for visitors to scan.",
+      "slug": "awards-certifications-new-capabilities",
+      "href": "/news/awards-certifications-new-capabilities",
+      "image": "/images/services/uc.jpeg",
+      "imageAlt": "Utility coordination field work and infrastructure review",
+      "imageAvifSrcSet": "/images/services/uc-480.avif 480w, /images/services/uc-960.avif 960w, /images/services/uc-1440.avif 1440w",
+      "imageWebpSrcSet": "/images/services/uc-480.webp 480w, /images/services/uc-960.webp 960w, /images/services/uc-1440.webp 1440w",
+      "imagePosition": "50% 0%",
+      "author": "MG Vera Team",
+      "authorTitle": "Recognition",
+      "body": [
+        "Recognition posts are useful for awards, certifications, new service capabilities, and other milestones that clients may want to know about.",
+        "This format keeps the story easy to scan while still giving enough detail to explain the achievement and its practical value.",
+        "When these updates accumulate, they help communicate steady progress without turning the page into a dense press release archive."
+      ]
+    },
+    {
+      "eyebrow": "Client News",
+      "date": "February 19, 2026",
+      "title": "Milestones with partners can become another kind of article entry.",
+      "summary": "Use this card to highlight project phases, partnership announcements, or meaningful work completed with clients across Florida.",
+      "slug": "partner-milestones-article-entry",
+      "href": "/news/partner-milestones-article-entry",
+      "image": "/images/about/history.jpg",
+      "imageAlt": "Historic M.G. Vera surveying image",
+      "imageAvifSrcSet": "/images/about/history-480.avif 480w, /images/about/history-960.avif 960w, /images/about/history-1440.avif 1440w",
+      "imageWebpSrcSet": "/images/about/history-480.webp 480w, /images/about/history-960.webp 960w, /images/about/history-1440.webp 1440w",
+      "imagePosition": "0% 50%",
+      "author": "MG Vera Team",
+      "authorTitle": "Client News",
+      "body": [
+        "Partner milestones can become another useful category for the news archive. These updates can highlight project phases, collaboration, or meaningful work completed with clients.",
+        "The article page gives the story room to explain the context while the landing page keeps the item easy to discover.",
+        "This is also a good place to connect present work back to the long relationships and history that shape MG Vera."
+      ]
+    },
+    {
+      "eyebrow": "Company Culture",
+      "date": "February 2, 2026",
+      "title": "The archive can grow into a fuller timeline of what the company has been doing.",
+      "summary": "As you write more articles, this layout can become a simple backlog of stories that visitors can progressively reveal.",
+      "slug": "company-archive-timeline",
+      "href": "/news/company-archive-timeline",
+      "image": "/images/services/residential-commercial.jpg",
+      "imageAlt": "Residential and commercial surveying at a developed property",
+      "imageAvifSrcSet": "/images/services/residential-commercial-480.avif 480w, /images/services/residential-commercial-960.avif 960w, /images/services/residential-commercial-1440.avif 1440w",
+      "imageWebpSrcSet": "/images/services/residential-commercial-480.webp 480w, /images/services/residential-commercial-960.webp 960w, /images/services/residential-commercial-1440.webp 1440w",
+      "imagePosition": "50% 0%",
+      "author": "MG Vera Team",
+      "authorTitle": "Company Culture",
+      "body": [
+        "The archive can grow into a fuller timeline of what the company has been doing, from project work to internal milestones and community presence.",
+        "This format gives each story a dedicated place without requiring the news landing page to carry every detail at once.",
+        "As more stories are added, the detail pages can become a lightweight but polished publishing system for MG Vera."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,320 @@
+.hero {
+    position: relative;
+    min-height: clamp(38rem, 78vh, 54rem);
+    display: flex;
+    align-items: stretch;
+    overflow: hidden;
+    padding:
+        calc(var(--desktop-navbar-h) + clamp(3rem, 6vw, 5rem))
+        var(--gutter)
+        clamp(1.5rem, 3vw, 2.75rem);
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background:
+        linear-gradient(
+            180deg,
+            rgba(31, 35, 38, 0.76) 0%,
+            rgba(31, 35, 38, 0.68) 5%,
+            rgba(14, 14, 14, 0.54) 9%,
+            rgba(14, 14, 14, 0.28) 16%,
+            rgba(15, 47, 51, 0.06) 23%,
+            rgba(15, 47, 51, 0) 30%,
+            rgba(15, 47, 51, 0) 100%
+        ),
+        linear-gradient(
+            180deg,
+            rgba(15, 47, 51, 0) 0%,
+            rgba(15, 47, 51, 0) 48%,
+            rgba(15, 47, 51, 0.08) 58%,
+            rgba(14, 14, 14, 0.42) 70%,
+            rgba(14, 14, 14, 0.82) 82%,
+            rgba(31, 35, 38, 0.94) 90%,
+            rgba(31, 35, 38, 0.96) 100%
+        );
+}
+
+.hero picture {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    display: block;
+}
+
+.heroImage {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.navSentinel {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    width: 1px;
+    height: 1px;
+}
+
+.heroInner {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 90rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: auto auto;
+    align-content: end;
+    align-items: end;
+    color: var(--color-light);
+}
+
+.heroMeta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.85rem;
+}
+
+.heroFeature {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: end;
+    gap: clamp(1.5rem, 4vw, 4rem);
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.heroFeatureText {
+    display: grid;
+    gap: 0.35rem;
+}
+
+.heroFeatureDate {
+    margin: 0;
+    font-family: var(--font-mono);
+    font-size: clamp(.8rem, .25vw + .75rem, 1rem);
+    letter-spacing: var(--ls-cta);
+    text-transform: uppercase;
+    color: color-mix(in srgb, var(--color-primary) 82%, transparent);
+}
+
+.heroFeatureTitle {
+    margin: 0;
+    max-width: none;
+    font-size: clamp(1.65rem, 2.65vw, 3rem);
+    line-height: 1.05;
+    text-wrap: balance;
+}
+
+.heroFeatureLink {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    width: fit-content;
+    margin-top: 1.75rem;
+    color: rgba(246, 245, 242, 0.82);
+    text-decoration: none;
+    font-family: var(--font-mono);
+    font-size: 1rem;
+    letter-spacing: var(--ls-cta);
+    text-transform: uppercase;
+    transition: color .12s ease-out;
+}
+
+.heroFeatureLinkIcon {
+    width: 1.15rem;
+    height: 1.15rem;
+    flex: none;
+}
+
+.heroFeatureLink:hover {
+    color: var(--color-primary);
+}
+
+.heroFeature:hover .heroFeatureLink {
+    color: var(--color-primary);
+}
+
+.layout {
+    display: grid;
+    gap: clamp(1.5rem, 3vw, 3rem);
+}
+
+.cardMeta {
+    display: flex;
+    gap: 0.9rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.panel {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+}
+
+.panelHeader {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.eyebrow {
+    margin: 0;
+    font-family: var(--font-mono);
+    font-size: clamp(.8rem, .2vw + .75rem, 0.95rem);
+    letter-spacing: var(--ls-cta);
+    text-transform: uppercase;
+    color: var(--color-brand-dark);
+}
+
+.panelTitle,
+.card h4 {
+    margin: 0;
+}
+
+.cardLink {
+    display: inline-flex;
+    width: fit-content;
+    align-items: center;
+    text-decoration: none;
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    letter-spacing: var(--ls-cta);
+    text-transform: uppercase;
+}
+
+.cardGrid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    border: 1px solid var(--color-border-muted);
+    background-color: var(--color-dark);
+    overflow: hidden;
+    min-height: clamp(25rem, 34vw, 30rem);
+}
+
+.cardLinkWrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+    background-color: var(--color-dark);
+}
+
+.cardLinkWrap::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background: linear-gradient(
+        180deg,
+        rgba(15, 47, 51, 0) 0%,
+        rgba(15, 47, 51, 0.18) 42%,
+        rgba(14, 14, 14, 0.58) 58%,
+        rgba(14, 14, 14, 0.88) 70%,
+        var(--color-dark) 75%,
+        var(--color-dark) 100%
+    );
+}
+
+.cardLinkWrap:hover .cardImage {
+    transform: scale(1.04);
+}
+
+.cardLinkWrap:hover .cardLink {
+    color: var(--color-primary);
+}
+
+.cardImage {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: clamp(18.5rem, 30vw, 25rem);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform .18s ease-out;
+}
+
+.cardContent {
+    display: grid;
+    align-content: start;
+    gap: 0.85rem;
+    margin-top: clamp(-10rem, -13vw, -7.5rem);
+    padding:
+        clamp(7rem, 10vw, 8rem)
+        clamp(1rem, 2vw, 1.5rem)
+        clamp(1.2rem, 2vw, 1.6rem);
+    position: relative;
+    z-index: 2;
+}
+
+.cardEyebrow {
+    margin: 0;
+    font-family: var(--font-mono);
+    font-size: clamp(.8rem, .2vw + .75rem, 0.95rem);
+    letter-spacing: var(--ls-cta);
+    text-transform: uppercase;
+    color: var(--color-primary);
+}
+
+.card h4 {
+    font-size: clamp(1.1rem, .4vw + 1rem, 1.35rem);
+    color: var(--color-light);
+    line-height: 1.2;
+}
+
+.cardLink {
+    color: rgba(246, 245, 242, 0.78);
+    transition: color .12s ease-out;
+}
+
+.loadMoreButton {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    border-color: var(--color-dark);
+}
+
+.loadMoreButton:hover {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    border-color: var(--color-dark);
+}
+
+@media (max-width: 900px) {
+    .hero {
+        min-height: clamp(38rem, 82vh, 48rem);
+        padding-top: calc(var(--mobile-navbar-h) + clamp(4rem, 12vw, 6rem));
+    }
+
+    .heroHeading {
+        max-width: 100%;
+    }
+
+    .heroFeature {
+        grid-template-columns: 1fr;
+        align-items: start;
+        gap: 1.25rem;
+    }
+
+    .cardGrid {
+        grid-template-columns: 1fr;
+    }
+}

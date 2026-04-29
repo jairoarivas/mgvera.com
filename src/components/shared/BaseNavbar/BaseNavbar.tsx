@@ -22,6 +22,7 @@ export type BaseNavbarProps = {
     logoVisible?: boolean
     logoInteractive?: boolean
     startTransparent?: boolean
+    startMuted?: boolean
 }
 
 export function BaseNavbar({
@@ -29,6 +30,7 @@ export function BaseNavbar({
     logoVisible = true,
     logoInteractive = true,
     startTransparent = true,
+    startMuted = false,
     ...props
 }: BaseNavbarProps) {
   return (
@@ -38,6 +40,7 @@ export function BaseNavbar({
         data-logo-visible={logoVisible ? "true" : "false"}
         data-logo-interactive={logoInteractive ? "true" : "false"}
         data-start-transparent={startTransparent ? "true" : "false"}
+        data-start-muted={startMuted ? "true" : "false"}
     >
       <BaseDesktopNavbar {...props} />
       <BaseMobileNavbar {...props} />

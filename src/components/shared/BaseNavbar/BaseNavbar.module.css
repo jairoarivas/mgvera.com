@@ -250,7 +250,7 @@
     align-self: center;
     align-items: center;
     justify-content: center;
-    gap: 1.5rem;
+    gap: clamp(1.75rem, 2vw, 2.25rem);
     margin: 0;
     padding-left: 0;
 }
@@ -267,8 +267,7 @@
     color: currentColor;
     display: inline-flex;
     align-items: center;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding: 0.5rem 0;
     opacity: var(--navbar-link-opacity);
     text-decoration: none;
     cursor: pointer;
@@ -289,8 +288,7 @@
     display: inline-flex;
     align-items: center;
     gap: 0.35rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding: 0.5rem 0;
     opacity: var(--navbar-link-opacity);
     border: 0;
     background: transparent;
@@ -441,6 +439,12 @@
     color: var(--desktop-navbar-bg);
 }
 
+.root[data-start-transparent="true"] .mobileRoot {
+    background-color: transparent;
+    border-bottom-color: transparent;
+    color: var(--mobile-navbar-bg);
+}
+
 .root[data-start-transparent="true"] .desktopPrimaryCta {
     background-color: transparent;
     border-color: var(--desktop-navbar-bg);
@@ -451,6 +455,30 @@
     background-color: var(--desktop-navbar-bg);
     border-color: var(--desktop-navbar-bg);
     color: var(--desktop-navbar-text-color);
+}
+
+.root[data-start-muted="true"] .desktopRoot {
+    background-color: var(--color-muted-light);
+    border-bottom-color: var(--color-muted-light);
+    color: var(--color-dark);
+}
+
+.root[data-start-muted="true"] .mobileRoot {
+    background-color: var(--color-muted-light);
+    border-bottom-color: var(--color-muted-light);
+    color: var(--color-dark);
+}
+
+.root[data-start-muted="true"] .desktopPrimaryCta {
+    background-color: var(--color-muted-light);
+    border-color: var(--color-dark);
+    color: var(--color-dark);
+}
+
+.root[data-start-muted="true"] .desktopPrimaryCta:hover {
+    background-color: var(--color-dark);
+    border-color: var(--color-dark);
+    color: var(--color-light);
 }
 
 /* resolved presentation state: scrolled */
@@ -468,8 +496,8 @@
 
 .root[data-scrolled="true"] .desktopPrimaryCta {
     background-color: var(--desktop-navbar-scrolled-bg);
-    color: var(--desktop-navbar-scrolled-text-col);
-    border-color: var(--desktop-navbar-scrolled-text-col);
+    color: var(--desktop-navbar-scrolled-text-color);
+    border-color: var(--desktop-navbar-scrolled-text-color);
 }
 
 .root[data-scrolled="true"] .desktopPrimaryCta:hover {

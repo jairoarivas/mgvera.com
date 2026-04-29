@@ -115,6 +115,18 @@ export function CommonSprites() {
                 <path d="M18.707 15.707a1 1 0 0 1 -1.414 0l-5.293 -5.293l-5.293 5.293a1 1 0 0 1 -1.414 -1.414l6 -6a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414" />
             </symbol>
             <symbol
+                id="chevron-right"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+            >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M9 6l6 6l-6 6" />
+            </symbol>
+            <symbol
                 id="facebook"
                 viewBox="0 0 24 24"
                 fill="none"

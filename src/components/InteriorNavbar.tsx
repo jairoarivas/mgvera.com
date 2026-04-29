@@ -1,4 +1,6 @@
 import { BaseNavbar } from "./shared/BaseNavbar/BaseNavbar";
+import { useNavbarScrolled } from "./hooks/useNavbarScrolled";
+import { useLocation } from "react-router-dom";
 
 type NavbarContent = {
     primaryCta: { label: string; href: string }
@@ -13,16 +15,22 @@ type NavbarContent = {
 }
 
 export function InteriorNavbar({ content }: { content: NavbarContent }) {
+    const { pathname } = useLocation();
+    const usesTransparentHeader = pathname === "/news";
+    const usesMutedHeader = pathname.startsWith("/news/") || pathname === "/our-legacy";
+    const scrolled = useNavbarScrolled();
+
     return (
         <BaseNavbar
             menuItems={content.menuItems}
             primaryCta={content.primaryCta}
             logoSprite="#logo-full"
             logoHref="/"
-            scrolled={false}
+            scrolled={usesTransparentHeader || usesMutedHeader ? scrolled : false}
             logoVisible={true}
             logoInteractive={true}
-            startTransparent={false}
+            startTransparent={usesTransparentHeader}
+            startMuted={usesMutedHeader}
         />
     )
 }

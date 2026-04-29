@@ -1,0 +1,23 @@
+.eyebrow {
+    margin: 0;
+    font-family: var(--font-mono);
+    font-size: clamp(.8rem, .2vw + .75rem, 0.95rem);
+    letter-spacing: var(--ls-cta);
+    text-transform: uppercase;
+}
+
+.notFound {
+    width: calc(100% - var(--gutter) * 2);
+    max-width: 90rem;
+    min-height: 50vh;
+    margin: 0 auto;
+    display: grid;
+    align-content: center;
+    justify-items: start;
+    gap: 1.5rem;
+}
+
+.notFound h1 {
+    margin: 0;
+    font-size: clamp(2.5rem, 5vw, 5rem);
+}

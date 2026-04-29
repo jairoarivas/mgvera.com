@@ -18,6 +18,8 @@ import * as servicesContent from "../src/docs/services.json";
 import { ServicePage } from './pages/ServicePage';
 import { MeetTheTeamPage } from './pages/MeetTheTeamPage';
 import { LegacyPage } from './pages/LegacyPage';
+import { NewsPage } from './pages/NewsPage';
+import { NewsArticlePage } from './pages/NewsArticlePage';
 
 function LandingPage() {
     return (
@@ -85,6 +87,14 @@ createRoot(document.getElementById('root')!).render(
                             cta={{label: "Get in Touch", href: "mailto:cbustos@mgvera.com"}}
                         />
                     }/>
+                    <Route path={"/news"} element={
+                        <NewsPage
+                            name={"Latest from MG Vera"}
+                            subheading={"Project updates, company news, and stories from the field."}
+                            cta={{label: "Get in Touch", href: "mailto:cbustos@mgvera.com"}}
+                        />
+                    }/>
+                    <Route path={"/news/:slug"} element={<NewsArticlePage />}/>
                 </Route>
             </Routes>
         </BrowserRouter>
