@@ -40,7 +40,7 @@ export function NewsArticlePage() {
                 alt: article.imageAlt,
                 position: article.imagePosition,
             }}
-            eyebrow={article.date}
+            eyebrow="News"
             title={article.title}
             byline={{
                 initials: "MG",
@@ -58,7 +58,7 @@ export function NewsArticlePage() {
                     <RelatedLinks
                         eyebrow="More News"
                         links={relatedArticles.map((item) => ({
-                            eyebrow: item.date,
+                            eyebrow: "News",
                             label: item.title,
                             href: item.href,
                         }))}

@@ -7,7 +7,7 @@ export function TrustBadges (){
     return(
         <section className={styles.section}>
             <div className={styles.trustLeadIn} data-scrolled={scrolled ? "true" : "false"}>
-                <h4>Experience That Moves Projects Forward</h4>
+                <h4>Serving FDOT Districts 1,2,3,4,5,6,7 and Florida Turnpike Enterprises</h4>
             </div>
             <div className={styles.statGrid} data-scrolled={scrolled ? "true" : "false"}>
                 <div className={styles.statGridItem}>

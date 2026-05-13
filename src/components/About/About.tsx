@@ -16,6 +16,7 @@ export function About (){
             imageAvifSrcSet: "/images/about/history-480.avif 480w, /images/about/history-960.avif 960w, /images/about/history-1440.avif 1440w",
             imageWebpSrcSet: "/images/about/history-480.webp 480w, /images/about/history-960.webp 960w, /images/about/history-1440.webp 1440w",
             imageFallbackJpg: "/images/about/history.jpg",
+            imageFit: "cover",
             cta: {
                 label: "Learn More",
                 href: "/our-legacy",
@@ -34,6 +35,7 @@ export function About (){
             imageAvifSrcSet: "/images/about/family-480.avif 480w, /images/about/family-960.avif 960w, /images/about/family-1440.avif 1440w",
             imageWebpSrcSet: "/images/about/family-480.webp 480w, /images/about/family-960.webp 960w, /images/about/family-1440.webp 1440w",
             imageFallbackJpg: "/images/about/family.jpg",
+            imageFit: "cover",
             cta: {
                 label: "Meet the Team",
                 href: "/meet-the-team",
@@ -42,6 +44,25 @@ export function About (){
                 <>
                     <p>Manuel G. Vera Sr. first learned the principles and practices of surveying while serving in the United States Air Force during the Vietnam War. Following his military service, he carried forward the discipline, precision, and leadership he developed in the Air Force and founded M.G. Vera & Associates in 1973. Today, the company is led by his children, Maria Vera and Manny Vera Jr., who proudly continue their father’s legacy. Under their leadership, the firm has grown into the largest survey-only company in the State of Florida, built on a foundation of integrity, expertise, and dedication to the surveying profession.</p>
                     <p>Meet the rest of the team who carry that legacy forward.</p>
+                </>
+            ),
+        },
+        {
+            heading: "State-Wide Presence",
+            index: "03",
+            imageAlt: "Map of Florida FDOT districts",
+            imageAvifSrcSet: "/images/about/state-wide-presence-480.avif 480w, /images/about/state-wide-presence-960.avif 960w, /images/about/state-wide-presence-1440.avif 1440w",
+            imageWebpSrcSet: "/images/about/state-wide-presence-480.webp 480w, /images/about/state-wide-presence-960.webp 960w, /images/about/state-wide-presence-1440.webp 1440w",
+            imageFallbackJpg: "/images/about/state-wide-presence.png",
+            imageFit: "contain",
+            cta: {
+                label: "Get in Touch",
+                href: "mailto:cbustos@mgvera.com",
+            },
+            body: (
+                <>
+                    <p>MG Vera maintains a strong state-wide presence, working diligently with the Florida Department of Transportation (FDOT) across all districts—1, 2, 3, 4, 5, 6, 7, and the Turnpike—providing comprehensive surveying services to meet the needs of each region. With strategically located offices in Miami, Jupiter, and Orlando, and a fourth office coming soon in Jacksonville, MG Vera is uniquely positioned to seamlessly access and support every district.</p>
+                    <p>This geographic reach, combined with a commitment to precision, efficiency, and responsiveness, allows the firm to deliver consistent, high-quality results that support transportation and infrastructure projects across the entire state of Florida.</p>
                 </>
             ),
         },
@@ -98,7 +119,7 @@ export function About (){
                 </div>
                 <div className={styles.tabImagePane}>
                     <Image
-                        className={styles.tabImage}
+                        className={`${styles.tabImage} ${tabs[selectedTab].imageFit === "contain" ? styles.tabImageContain : ""}`}
                         avifSrcSet={tabs[selectedTab].imageAvifSrcSet}
                         webpSrcSet={tabs[selectedTab].imageWebpSrcSet}
                         fallbackJpg={tabs[selectedTab].imageFallbackJpg}

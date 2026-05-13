@@ -39,9 +39,6 @@ export function NewsPage(props: NewsPageProps) {
                 <div className={styles.heroInner}>
                     <a className={styles.heroFeature} href={newsContent.feature.href}>
                         <div className={styles.heroFeatureText}>
-                            <div className={styles.heroMeta}>
-                                <p className={styles.heroFeatureDate}>{newsContent.feature.date}</p>
-                            </div>
                             <h2 className={styles.heroFeatureTitle}>{newsContent.feature.title}</h2>
                             <span className={styles.heroFeatureLink}>
                                 <span>Read More</span>
@@ -59,20 +56,21 @@ export function NewsPage(props: NewsPageProps) {
                     <section className={styles.panel}>
                         <div className={styles.panelHeader}>
                             <p className={styles.eyebrow}>Recent Articles</p>
-                            <h3 className={styles.panelTitle}>A growing archive of updates from the field and office</h3>
+                            <h3 className={styles.panelTitle}>Updates from the field and office</h3>
                         </div>
 
                         <div className={styles.cardGrid}>
                             {visibleArticles.map((article) => (
-                                <article className={styles.card} key={`${article.date}-${article.title}`}>
+                                <article className={styles.card} key={article.slug}>
                                     <a className={styles.cardLinkWrap} href={article.href}>
                                         <div
                                             className={styles.cardImage}
-                                            style={{ backgroundImage: `url(${article.image})` }}
+                                            style={{
+                                                backgroundImage: `url(${article.image})`,
+                                                "--card-image-fit": article.cardImageFit ?? "cover",
+                                            } as React.CSSProperties}
                                         />
                                         <div className={styles.cardContent}>
-                                            <p className={styles.cardEyebrow}>{article.date}</p>
-
                                             <h4>{article.title}</h4>
 
                                             <span className={styles.cardLink}>

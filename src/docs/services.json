@@ -189,8 +189,8 @@
       "pageImageAlt": "LiDAR scanning equipment capturing site conditions",
       "pageImageAvifSrcSet": "/images/services/lidar-480.avif 480w, /images/services/lidar-960.avif 960w, /images/services/lidar-1440.avif 1440w",
       "pageImageWebpSrcSet": "/images/services/lidar-480.webp 480w, /images/services/lidar-960.webp 960w, /images/services/lidar-1440.webp 1440w",
-      "pageImageFallbackJpg": "/images/services/lidar.jpg",
-      "pageImagePosition": "50% 50%",
+      "pageImageFallbackJpg": "/images/services/lidar.png",
+      "pageImagePosition": "50% 67%",
       "pageImageBrightness": 1.0,
       "icon": "#lidar",
       "cta": {
@@ -244,7 +244,7 @@
       "pageImageAlt": "Construction surveying team on an active project site",
       "pageImageAvifSrcSet": "/images/services/construction-480.avif 480w, /images/services/construction-960.avif 960w, /images/services/construction-1440.avif 1440w",
       "pageImageWebpSrcSet": "/images/services/construction-480.webp 480w, /images/services/construction-960.webp 960w, /images/services/construction-1440.webp 1440w",
-      "pageImageFallbackJpg": "/images/services/construction.jpg",
+      "pageImageFallbackJpg": "/images/services/construction.JPG",
       "pageImagePosition": "50% 48%",
       "pageImageBrightness": 0.95,
       "icon": "#construction",
@@ -257,36 +257,36 @@
           "name": "Construction Layout & Staking",
           "icon": "#construction",
           "bullets": [
-            "Places field control points for grading, utilities, and structural work.",
-            "Translates design plans into accurate on-site construction layout.",
-            "Helps crews build to the intended line and grade."
+            "Establish primary and secondary horizontal and vertical control across the project site.",
+            "Perform stakeout of key points, including offsets and elevations, in accordance with design plans.",
+            "Prepare elevation certificates and conduct form board surveys for construction verification."
           ]
         },
         {
           "name": "As-Built Surveys",
           "icon": "#construction",
           "bullets": [
-            "Documents completed construction in its installed location.",
-            "Compares built conditions against design intent and project records.",
-            "Supports closeout, verification, and future maintenance needs."
+            "Prepare detailed as-built surveys documenting existing site conditions.",
+            "Compare as-built conditions against design plans to identify discrepancies.",
+            "Produce clear survey drawings highlighting deviations and field adjustments."
           ]
         },
         {
           "name": "Settlement Monitoring",
           "icon": "#construction",
           "bullets": [
-            "Monitors movement over time in soil, structures, or infrastructure.",
-            "Identifies settlement trends early so teams can respond quickly.",
-            "Supports risk management during and after construction."
+            "Prepare a settlement monitoring plan outlining methodology and frequency.",
+            "Establish project vertical control and install monitoring points on nearby structures.",
+            "Conduct periodic elevation monitoring in accordance with the approved plan."
           ]
         },
         {
           "name": "Earthwork Calculations",
           "icon": "#construction",
           "bullets": [
-            "Calculates cut, fill, and material quantities from survey data.",
-            "Tracks earthwork progress throughout the life of the project.",
-            "Helps improve budgeting, haul planning, and production control."
+            "Collect and record survey data before, during, and after earthwork activities.",
+            "Develop a Digital Terrain Model (DTM) for accurate volume calculations.",
+            "Compare proposed design surfaces with existing conditions to quantify and report cut and fill volumes."
           ]
         }
       ]

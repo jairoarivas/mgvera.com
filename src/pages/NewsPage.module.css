@@ -249,7 +249,7 @@
     height: clamp(18.5rem, 30vw, 25rem);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: var(--card-image-fit, cover);
     transition: transform .18s ease-out;
 }
 
