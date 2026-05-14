@@ -1,3 +1,5 @@
+import type { CSSProperties } from "react";
+
 type ImageProps = {
     alt?: string;
     avifSrcSet: string;
@@ -6,6 +8,7 @@ type ImageProps = {
     sizes: string;
     position?: string;
     className?: string;
+    style?: CSSProperties;
 };
 
 export function Image({
@@ -16,6 +19,7 @@ export function Image({
     sizes,
     position = "50% 50%",
     className,
+    style,
 }: ImageProps) {
     return (
         <picture>
@@ -27,7 +31,7 @@ export function Image({
                 loading="eager"
                 fetchPriority="high"
                 decoding="async"
-                style={{ objectPosition: position }}
+                style={{ ...style, objectPosition: position }}
                 className={className}
             />
         </picture>

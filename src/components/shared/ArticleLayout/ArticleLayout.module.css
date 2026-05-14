@@ -40,7 +40,7 @@
     width: 100%;
     height: 100%;
     max-height: 50vh;
-    object-fit: cover;
+    object-fit: var(--article-image-fit, cover);
 }
 
 .headingBlock {

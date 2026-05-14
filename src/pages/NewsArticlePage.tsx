@@ -31,6 +31,13 @@ export function NewsArticlePage() {
         );
     }
 
+    const articleImageFit =
+        "articleImageFit" in article && typeof article.articleImageFit === "string"
+            ? article.articleImageFit
+            : "cardImageFit" in article && typeof article.cardImageFit === "string"
+                ? article.cardImageFit
+                : undefined;
+
     return (
         <ArticleLayout
             image={{
@@ -39,6 +46,7 @@ export function NewsArticlePage() {
                 fallbackJpg: article.image,
                 alt: article.imageAlt,
                 position: article.imagePosition,
+                fit: articleImageFit,
             }}
             eyebrow="News"
             title={article.title}

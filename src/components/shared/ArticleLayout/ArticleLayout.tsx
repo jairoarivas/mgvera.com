@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import type { CSSProperties, ReactNode } from "react";
 import { Button } from "../Button/Button";
 import { Image } from "../Image";
 import { useNavbarScrolled } from "../../hooks/useNavbarScrolled";
@@ -10,6 +10,7 @@ type ArticleImage = {
     fallbackJpg: string;
     alt: string;
     position?: string;
+    fit?: string;
 };
 
 type ArticleLayoutProps = {
@@ -66,6 +67,7 @@ export function ArticleLayout({
                         alt={image.alt}
                         sizes="(max-width: 1024px) 100vw, 90rem"
                         position={image.position}
+                        style={{ "--article-image-fit": image.fit ?? "cover" } as CSSProperties}
                     />
                 </div>
 
