@@ -29,6 +29,7 @@ export function PeopleCardHolder (props: PeopleHolderProps){
                         imageAvifSrcSet={item.imageAvifSrcSet}
                         imageWebpSrcSet={item.imageWebpSrcSet}
                         imageFallbackJpg={item.imageFallbackJpg}
+                        imagePosition={item.imagePosition}
                     />
                 )}
             </div>

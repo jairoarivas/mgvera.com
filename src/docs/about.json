@@ -4,7 +4,8 @@
     "role": "CEO/Chief Surveyor",
     "imageAvifSrcSet": "/images/about/headshots/manuel-g-vera-jr-480.avif 480w, /images/about/headshots/manuel-g-vera-jr-960.avif 960w, /images/about/headshots/manuel-g-vera-jr-1440.avif 1440w",
     "imageWebpSrcSet": "/images/about/headshots/manuel-g-vera-jr-480.webp 480w, /images/about/headshots/manuel-g-vera-jr-960.webp 960w, /images/about/headshots/manuel-g-vera-jr-1440.webp 1440w",
-    "imageFallbackJpg": "/images/about/headshots/manuel-g-vera-jr.jpg"
+    "imageFallbackJpg": "/images/about/headshots/manuel-g-vera-jr.jpg",
+    "imagePosition": "50% 80%"
   },
   {
     "name": "Maria T. Vera",

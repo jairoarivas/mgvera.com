@@ -7,6 +7,7 @@ export type PeopleCardProps = {
     imageAvifSrcSet: string
     imageWebpSrcSet: string
     imageFallbackJpg: string
+    imagePosition?: string
 }
 
 export function PeopleCard (props: PeopleCardProps){
@@ -20,7 +21,7 @@ export function PeopleCard (props: PeopleCardProps){
                     fallbackJpg={props.imageFallbackJpg}
                     alt={props.name}
                     sizes="(max-width: 599px) 100vw, (max-width: 899px) 50vw, (max-width: 1199px) 33vw, 25vw"
-                    position="50% 0%"
+                    position={props.imagePosition ?? "50% 0%"}
                 />
                 <div className={styles.textBox}>
                     <h3 className={styles.name}>{props.name}</h3>
