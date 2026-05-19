@@ -1,25 +1,47 @@
 {
   "feature": {
-    "_date": "April 22, 2026",
-    "title": "Miami-Dade County Public Schools Contract",
-    "summary": "MGV has been selected as one of the firms awarded RFQ-204 for Land Surveying and Mapping Services with Miami-Dade County Public Schools.",
-    "slug": "miami-dade-county-public-schools-contract",
-    "href": "/news/miami-dade-county-public-schools-contract",
+    "_date": "December 12, 2025",
+    "title": "DRV PNK Stadium",
+    "summary": "MGV served as the surveying consultant for the development of DRV PNK Stadium, supporting a fast-paced, highly coordinated project for Inter Miami CF.",
+    "slug": "drv-pnk-stadium",
+    "href": "/news/drv-pnk-stadium",
     "ctaLabel": "Read More",
-    "image": "/images/news/miami-dade-public-schools-contract.jpg",
-    "imageAlt": "Miami-Dade County Public Schools contract announcement",
-    "imageAvifSrcSet": "/images/news/miami-dade-public-schools-contract-480.avif 480w, /images/news/miami-dade-public-schools-contract-960.avif 960w, /images/news/miami-dade-public-schools-contract-1440.avif 1440w",
-    "imageWebpSrcSet": "/images/news/miami-dade-public-schools-contract-480.webp 480w, /images/news/miami-dade-public-schools-contract-960.webp 960w, /images/news/miami-dade-public-schools-contract-1440.webp 1440w",
-    "imagePosition": "50% 50%",
+    "image": "/images/news/drv-pnk-stadium.JPG",
+    "imageAlt": "Construction surveying team on an active project site",
+    "imageAvifSrcSet": "/images/news/drv-pnk-stadium-480.avif 480w, /images/news/drv-pnk-stadium-960.avif 960w, /images/news/drv-pnk-stadium-1440.avif 1440w",
+    "imageWebpSrcSet": "/images/news/drv-pnk-stadium-480.webp 480w, /images/news/drv-pnk-stadium-960.webp 960w, /images/news/drv-pnk-stadium-1440.webp 1440w",
+    "imagePosition": "50% 48%",
     "author": "MG Vera Team",
-    "authorTitle": "Company News",
+    "authorTitle": "Project Highlights",
     "body": [
-      "Manuel G. Vera & Associates, Inc. (MGV) has been selected by Miami-Dade County Public Schools as one of the firms awarded Contract RFQ-204 for Land Surveying and Mapping Services.",
-      "Miami-Dade County Public Schools is the fourth-largest school district in the United States, serving over 330,000 students across more than 500 schools and educational centers. Through this contract, MGV will support the district's ongoing and future projects by providing accurate, reliable surveying and mapping services in accordance with industry standards.",
-      "This selection reflects MGV's continued commitment to delivering high-quality services and supporting essential infrastructure and educational facilities throughout South Florida."
+      "Manuel G. Vera & Associates, Inc. (MGV) played a vital role as the surveying consultant for the development of DRV PNK Stadium, home of Inter Miami CF.",
+      "Built on the historic site of the former Lockhart Stadium in Fort Lauderdale, the project marked the launch of Inter Miami CF into Major League Soccer. With an aggressive schedule leading up to the 2020 inaugural season, the stadium was delivered through a fast-paced, highly coordinated effort that brought together multiple disciplines and teams working toward a common goal.",
+      "MGV was part of that effort every step of the way, collaborating closely with engineers, contractors, and stakeholders from initial planning through final construction. Our team provided critical surveying and mapping services, including control surveys, topographic mapping, and construction layout, helping keep the project accurate, aligned, and on schedule.",
+      "Delivering a stadium under tight timelines requires precision, coordination, and adaptability, and this project checked every box.",
+      "From the first stake in the ground to game day, MGV is proud to have contributed to a landmark venue that brings people together, uniting the community through the passion and energy of soccer in South Florida."
     ]
   },
   "articles": [
+    {
+      "_date": "April 22, 2026",
+      "title": "Miami-Dade County Public Schools Contract",
+      "summary": "MGV has been selected as one of the firms awarded RFQ-204 for Land Surveying and Mapping Services with Miami-Dade County Public Schools.",
+      "slug": "miami-dade-county-public-schools-contract",
+      "href": "/news/miami-dade-county-public-schools-contract",
+      "image": "/images/news/miami-dade-public-schools-contract.jpg",
+      "imageAlt": "Miami-Dade County Public Schools contract announcement",
+      "imageAvifSrcSet": "/images/news/miami-dade-public-schools-contract-480.avif 480w, /images/news/miami-dade-public-schools-contract-960.avif 960w, /images/news/miami-dade-public-schools-contract-1440.avif 1440w",
+      "imageWebpSrcSet": "/images/news/miami-dade-public-schools-contract-480.webp 480w, /images/news/miami-dade-public-schools-contract-960.webp 960w, /images/news/miami-dade-public-schools-contract-1440.webp 1440w",
+      "cardImageFit": "contain",
+      "imagePosition": "50% 50%",
+      "author": "MG Vera Team",
+      "authorTitle": "Company News",
+      "body": [
+        "Manuel G. Vera & Associates, Inc. (MGV) has been selected by Miami-Dade County Public Schools as one of the firms awarded Contract RFQ-204 for Land Surveying and Mapping Services.",
+        "Miami-Dade County Public Schools is the fourth-largest school district in the United States, serving over 330,000 students across more than 500 schools and educational centers. Through this contract, MGV will support the district's ongoing and future projects by providing accurate, reliable surveying and mapping services in accordance with industry standards.",
+        "This selection reflects MGV's continued commitment to delivering high-quality services and supporting essential infrastructure and educational facilities throughout South Florida."
+      ]
+    },
     {
       "_date": "March 18, 2026",
       "title": "Islamorada Contract",
@@ -78,27 +100,6 @@
         "Manuel G. Vera & Associates, Inc. (MGV) has been awarded a contract with the Florida Department of Transportation District 2.",
         "This award highlights MGV's ability to support complex transportation projects by providing accurate surveying, mapping, and Subsurface Utility Engineering (SUE) services tailored to district needs.",
         "MGV appreciates the opportunity to support FDOT District 2 and looks forward to contributing to the successful delivery of future projects."
-      ]
-    },
-    {
-      "_date": "December 12, 2025",
-      "title": "DRV PNK Stadium",
-      "summary": "MGV served as the surveying consultant for the development of DRV PNK Stadium, supporting a fast-paced, highly coordinated project for Inter Miami CF.",
-      "slug": "drv-pnk-stadium",
-      "href": "/news/drv-pnk-stadium",
-      "image": "/images/news/drv-pnk-stadium.JPG",
-      "imageAlt": "Construction surveying team on an active project site",
-      "imageAvifSrcSet": "/images/news/drv-pnk-stadium-480.avif 480w, /images/news/drv-pnk-stadium-960.avif 960w, /images/news/drv-pnk-stadium-1440.avif 1440w",
-      "imageWebpSrcSet": "/images/news/drv-pnk-stadium-480.webp 480w, /images/news/drv-pnk-stadium-960.webp 960w, /images/news/drv-pnk-stadium-1440.webp 1440w",
-      "imagePosition": "50% 48%",
-      "author": "MG Vera Team",
-      "authorTitle": "Project Highlights",
-      "body": [
-        "Manuel G. Vera & Associates, Inc. (MGV) played a vital role as the surveying consultant for the development of DRV PNK Stadium, home of Inter Miami CF.",
-        "Built on the historic site of the former Lockhart Stadium in Fort Lauderdale, the project marked the launch of Inter Miami CF into Major League Soccer. With an aggressive schedule leading up to the 2020 inaugural season, the stadium was delivered through a fast-paced, highly coordinated effort that brought together multiple disciplines and teams working toward a common goal.",
-        "MGV was part of that effort every step of the way, collaborating closely with engineers, contractors, and stakeholders from initial planning through final construction. Our team provided critical surveying and mapping services, including control surveys, topographic mapping, and construction layout, helping keep the project accurate, aligned, and on schedule.",
-        "Delivering a stadium under tight timelines requires precision, coordination, and adaptability, and this project checked every box.",
-        "From the first stake in the ground to game day, MGV is proud to have contributed to a landmark venue that brings people together, uniting the community through the passion and energy of soccer in South Florida."
       ]
     },
     {

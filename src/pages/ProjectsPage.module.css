@@ -1,0 +1,292 @@
+.section {
+    padding-top: clamp(1.5rem, 3vw, 3rem);
+}
+
+.projectNumber,
+.projectLocation,
+.detailLocation,
+.ctaEyebrow,
+.socialProofHeading {
+    font-family: var(--font-mono);
+    letter-spacing: var(--ls-cta);
+    text-transform: uppercase;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: minmax(17rem, 0.34fr) minmax(0, 1fr);
+    gap: clamp(1rem, 2.5vw, 2rem);
+    align-items: start;
+    min-height: clamp(54rem, 94vh, 72rem);
+}
+
+.projectRail {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    max-height: clamp(50rem, 92vh, 68rem);
+    overflow-y: auto;
+    padding-right: 0.35rem;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-accent) rgba(31, 35, 38, 0.12);
+}
+
+.projectButton {
+    appearance: none;
+    display: grid;
+    grid-template-columns: 2.25rem minmax(0, 1fr);
+    gap: 0.9rem;
+    width: 100%;
+    min-height: 6.8rem;
+    padding: 1rem;
+    border: 1px solid var(--color-border-muted);
+    border-radius: var(--control-radius);
+    background: rgba(246, 245, 242, 0.72);
+    color: var(--color-dark);
+    text-align: left;
+    cursor: pointer;
+    transition:
+        background-color .14s ease-out,
+        border-color .14s ease-out,
+        color .14s ease-out;
+}
+
+.projectButton:hover,
+.projectButton:focus-visible {
+    /* border-color: var(--color-brand-light); */
+    background: var(--color-muted-light);
+}
+
+.projectButton:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+.selected {
+    background: var(--color-muted-dark);
+    border-color: var(--color-muted-dark);
+    color: var(--color-light);
+}
+
+.selected:hover,
+.selected:focus-visible {
+    background: var(--color-muted-dark);
+    color: var(--color-light);
+}
+
+.projectNumber {
+    padding-top: 0.15rem;
+    color: var(--color-brand-dark);
+    font-size: 0.8rem;
+}
+
+.selected .projectNumber {
+    color: var(--color-primary);
+}
+
+.projectButtonText {
+    display: grid;
+    gap: 0.55rem;
+    min-width: 0;
+}
+
+.projectTitle {
+    font-size: clamp(1.1rem, .35vw + 1rem, 1.35rem);
+    font-weight: 600;
+    line-height: 1.08;
+}
+
+.projectLocation {
+    color: color-mix(in srgb, currentColor 68%, transparent);
+    font-size: 0.78rem;
+}
+
+.detail {
+    display: block;
+    min-height: clamp(50rem, 92vh, 68rem);
+    max-height: clamp(50rem, 92vh, 68rem);
+    border: 1px solid var(--color-border-muted);
+    background: var(--color-muted-light);
+    color: var(--color-dark);
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-accent) rgba(31, 35, 38, 0.12);
+}
+
+.imageWrap {
+    position: relative;
+    min-height: clamp(20rem, 42vw, 34rem);
+    overflow: hidden;
+    background: var(--color-muted-light);
+}
+
+.imageWrap picture {
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: var(--project-image-fit, cover);
+}
+
+.detailContent {
+    display: grid;
+    gap: 0.85rem;
+    align-content: start;
+    padding: clamp(1.25rem, 2.2vw, 2rem);
+}
+
+.detailLocation {
+    color: var(--color-brand-dark);
+    font-size: clamp(.8rem, .2vw + .75rem, 0.95rem);
+}
+
+.detailTitle {
+    margin: 0;
+    font-size: clamp(1.7rem, 2.7vw, 3.2rem);
+    text-wrap: balance;
+}
+
+.body {
+    display: grid;
+    gap: 0.85rem;
+    max-width: 58rem;
+}
+
+.description {
+    max-width: 58rem;
+    color: color-mix(in srgb, var(--color-dark) 76%, transparent);
+    font-size: clamp(1rem, .25vw + .95rem, 1.15rem);
+}
+
+.cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: clamp(1.25rem, 3vw, 3rem);
+    padding: clamp(1.25rem, 2.5vw, 2rem);
+    border: 1px solid var(--color-border-muted);
+    background: var(--color-muted-dark);
+    color: var(--color-light);
+}
+
+.ctaText {
+    display: grid;
+    gap: 0.4rem;
+    max-width: 54rem;
+}
+
+.ctaEyebrow {
+    color: var(--color-primary);
+    font-size: 0.82rem;
+}
+
+.ctaHeading {
+    margin: 0;
+    font-size: clamp(1.35rem, 2vw, 2.35rem);
+    text-wrap: balance;
+}
+
+.ctaButton {
+    flex: none;
+}
+
+.socialProof {
+    display: grid;
+    gap: clamp(1rem, 1.6vw, 1.5rem);
+    padding: clamp(1.5rem, 3vw, 3rem) 0;
+    background: var(--color-muted-light);
+}
+
+.socialProofHeading {
+    color: color-mix(in srgb, var(--color-dark) 68%, transparent);
+    font-size: 0.82rem;
+    text-align: center;
+}
+
+.logoStrip {
+    --logo-row-h: clamp(5.5rem, 7vw, 7rem);
+
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    grid-auto-columns: clamp(11rem, 14vw, 16rem);
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-inline: var(--gutter);
+    scroll-snap-type: x proximity;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-accent) rgba(31, 35, 38, 0.12);
+    -webkit-overflow-scrolling: touch;
+}
+
+.logoItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: var(--logo-row-h);
+    padding: clamp(1rem, 2vw, 2rem);
+    scroll-snap-align: start;
+}
+
+.logoItem img {
+    display: block;
+    width: auto;
+    max-width: 6rem;
+    max-height: 100%;
+    object-fit: contain;
+    opacity: 0.55;
+}
+
+@media (max-width: 900px) {
+    .layout {
+        grid-template-columns: 1fr;
+        min-height: 0;
+    }
+
+    .projectRail {
+        max-height: 22rem;
+    }
+
+    .detail {
+        min-height: 0;
+        max-height: none;
+        overflow-y: visible;
+    }
+
+    .imageWrap {
+        min-height: clamp(18rem, 62vw, 28rem);
+    }
+
+    .cta {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .ctaButton {
+        width: 100%;
+    }
+
+    .logoStrip {
+        --logo-row-h: 6rem;
+
+        grid-auto-flow: row;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-rows: none;
+        grid-auto-columns: auto;
+        max-height: calc(var(--logo-row-h) * 3);
+        overflow-x: hidden;
+        overflow-y: auto;
+        scroll-snap-type: y proximity;
+    }
+}
+
+@media (max-width: 599px) {
+    .logoStrip {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}

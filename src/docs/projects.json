@@ -1,0 +1,247 @@
+{
+  "projects": [
+    {
+      "id": "biscayne-corridor-survey",
+      "title": "Biscayne Corridor Survey",
+      "location": {
+        "label": "Miami, FL",
+        "coordinates": {
+          "latitude": 25.7617,
+          "longitude": -80.1918
+        }
+      },
+      "description": "A corridor-wide survey package supporting roadway, drainage, and utility coordination work across a dense urban stretch of Miami.",
+      "body": [
+        "This corridor assignment focused on building a dependable survey foundation for design teams working through a dense urban environment. The project area included active roadways, adjoining parcels, visible utility features, drainage structures, and access conditions that needed to be documented with care before the next phase of work could move forward.",
+        "Field crews coordinated around traffic, site constraints, and changing access windows while maintaining the level of precision required for roadway and infrastructure planning. The resulting deliverables gave engineers a clearer view of existing conditions and helped reduce uncertainty early in the design process.",
+        "The work reflects the kind of quiet, technical effort that makes larger public improvements possible: accurate control, consistent documentation, and clean mapping that multiple disciplines can trust."
+      ],
+      "photo": {
+        "image": "/images/services/surveying-mapping.jpg",
+        "imageAlt": "Survey equipment set up near an active roadway",
+        "imageAvifSrcSet": "/images/services/surveying-mapping-480.avif 480w, /images/services/surveying-mapping-960.avif 960w, /images/services/surveying-mapping-1440.avif 1440w",
+        "imageWebpSrcSet": "/images/services/surveying-mapping-480.webp 480w, /images/services/surveying-mapping-960.webp 960w, /images/services/surveying-mapping-1440.webp 1440w",
+        "imagePosition": "50% 50%"
+      }
+    },
+    {
+      "id": "palm-avenue-utility-mapping",
+      "title": "Palm Avenue Utility Mapping",
+      "location": {
+        "label": "Hialeah, FL",
+        "coordinates": {
+          "latitude": 25.8576,
+          "longitude": -80.2781
+        }
+      },
+      "description": "A subsurface utility mapping effort built to clarify existing underground conditions before design teams advanced the next phase of improvements.",
+      "body": [
+        "This utility mapping effort was designed to help the project team understand what was happening below the surface before major design decisions were locked in. Existing utility records gave the team a starting point, but field verification was needed to identify conflicts, confirm alignments, and document visible evidence across the project limits.",
+        "Crews collected utility markings, surface features, and related site observations so that designers could compare field conditions against available records. That extra clarity is especially valuable in built-out corridors where small unknowns can become expensive construction issues later.",
+        "The final package supported a more coordinated design process by turning scattered underground information into a usable project reference."
+      ],
+      "photo": {
+        "image": "/images/services/sue.JPG",
+        "imageAlt": "Utility engineering work taking place near pavement markings",
+        "imageAvifSrcSet": "/images/services/sue-480.avif 480w, /images/services/sue-960.avif 960w, /images/services/sue-1440.avif 1440w",
+        "imageWebpSrcSet": "/images/services/sue-480.webp 480w, /images/services/sue-960.webp 960w, /images/services/sue-1440.webp 1440w",
+        "imagePosition": "50% 50%"
+      }
+    },
+    {
+      "id": "islamorada-waterfront-control",
+      "title": "Islamorada Waterfront Control",
+      "location": {
+        "label": "Islamorada, FL",
+        "coordinates": {
+          "latitude": 24.9243,
+          "longitude": -80.6278
+        }
+      },
+      "description": "A coastal control and mapping assignment documenting site conditions along a sensitive waterfront project area in the Florida Keys.",
+      "body": [
+        "The waterfront setting made this project heavily dependent on careful control, clean documentation, and respect for sensitive coastal conditions. The assignment included mapping existing site features and tying observations back to a reliable framework that could support future planning work.",
+        "Florida Keys projects often require extra attention to access, environmental context, and local constraints. The field approach was shaped around those realities so that the resulting information could be useful without disrupting the site more than necessary.",
+        "The finished survey record gave the project team a practical baseline for understanding the property, evaluating improvements, and coordinating future design activity."
+      ],
+      "photo": {
+        "image": "/images/news/islamorada-contract.jpg",
+        "imageAlt": "Islamorada project announcement graphic",
+        "imageAvifSrcSet": "/images/news/islamorada-contract-480.avif 480w, /images/news/islamorada-contract-960.avif 960w, /images/news/islamorada-contract-1440.avif 1440w",
+        "imageWebpSrcSet": "/images/news/islamorada-contract-480.webp 480w, /images/news/islamorada-contract-960.webp 960w, /images/news/islamorada-contract-1440.webp 1440w",
+        "imagePosition": "50% 50%",
+        "imageFit": "contain"
+      }
+    },
+    {
+      "id": "airport-lidar-capture",
+      "title": "Airport LiDAR Capture",
+      "location": {
+        "label": "Miami International Airport, FL",
+        "coordinates": {
+          "latitude": 25.7959,
+          "longitude": -80.2870
+        }
+      },
+      "description": "A laser scanning package capturing high-detail existing conditions for terminal-area coordination, field verification, and model production.",
+      "body": [
+        "This LiDAR capture was structured around the need for dense, high-confidence existing conditions in an active airport environment. The work supported coordination where traditional documentation alone would not provide enough detail for the pace and complexity of the project.",
+        "Scanning workflows helped preserve field conditions in a format that could be revisited by designers, modelers, and project managers without requiring repeated site visits for every question. That is especially useful in secure, operational, or tightly scheduled areas.",
+        "The resulting point cloud and supporting documentation gave the team a detailed spatial reference for coordination, verification, and downstream production."
+      ],
+      "photo": {
+        "image": "/images/services/lidar.png",
+        "imageAlt": "Laser scanning equipment capturing site conditions",
+        "imageAvifSrcSet": "/images/services/lidar-480.avif 480w, /images/services/lidar-960.avif 960w, /images/services/lidar-1440.avif 1440w",
+        "imageWebpSrcSet": "/images/services/lidar-480.webp 480w, /images/services/lidar-960.webp 960w, /images/services/lidar-1440.webp 1440w",
+        "imagePosition": "50% 50%"
+      }
+    },
+    {
+      "id": "stadium-construction-layout",
+      "title": "Stadium Construction Layout",
+      "location": {
+        "label": "Fort Lauderdale, FL",
+        "coordinates": {
+          "latitude": 26.1935,
+          "longitude": -80.1601
+        }
+      },
+      "description": "A fast-moving construction layout effort supporting field teams with control, stakeout, and documentation during a major sports venue build.",
+      "body": [
+        "This construction layout effort supported a fast-paced venue project where field decisions needed to be backed by accurate control and timely staking. The work required close coordination with contractors, designers, and project managers as construction activity moved across different parts of the site.",
+        "Crews provided layout support and field documentation that helped keep work aligned with design intent. On a project with many moving pieces, the survey team’s role was both technical and logistical: be precise, communicate clearly, and respond quickly when the schedule shifted.",
+        "The project is a useful example of how construction surveying sits inside the daily rhythm of a build, connecting plans, crews, and physical site conditions."
+      ],
+      "photo": {
+        "image": "/images/news/drv-pnk-stadium.JPG",
+        "imageAlt": "Construction surveying team on an active project site",
+        "imageAvifSrcSet": "/images/news/drv-pnk-stadium-480.avif 480w, /images/news/drv-pnk-stadium-960.avif 960w, /images/news/drv-pnk-stadium-1440.avif 1440w",
+        "imageWebpSrcSet": "/images/news/drv-pnk-stadium-480.webp 480w, /images/news/drv-pnk-stadium-960.webp 960w, /images/news/drv-pnk-stadium-1440.webp 1440w",
+        "imagePosition": "50% 48%"
+      }
+    },
+    {
+      "id": "downtown-transit-control",
+      "title": "Downtown Transit Control",
+      "location": {
+        "label": "Downtown Miami, FL",
+        "coordinates": {
+          "latitude": 25.7743,
+          "longitude": -80.1937
+        }
+      },
+      "description": "A control and mapping package for a transit-adjacent improvement area, giving design teams a reliable base for civil and utility coordination.",
+      "body": [
+        "The transit-adjacent setting required a mapping package that could support multiple disciplines at once. The work focused on establishing reliable control, documenting visible conditions, and organizing the information in a way that civil and utility teams could use without ambiguity.",
+        "Because the project area sat near active transportation infrastructure, field planning had to account for access, safety, and coordination with surrounding activity. The survey record needed to be both technically accurate and easy for project partners to interpret.",
+        "By giving the team a clear base map early, the project reduced the amount of guesswork normally associated with improvements in constrained urban corridors."
+      ],
+      "photo": {
+        "image": "/images/services/construction.jpg",
+        "imageAlt": "Construction field work near roadway infrastructure",
+        "imageAvifSrcSet": "/images/services/construction-480.avif 480w, /images/services/construction-960.avif 960w, /images/services/construction-1440.avif 1440w",
+        "imageWebpSrcSet": "/images/services/construction-480.webp 480w, /images/services/construction-960.webp 960w, /images/services/construction-1440.webp 1440w",
+        "imagePosition": "50% 50%"
+      }
+    },
+    {
+      "id": "bayfront-redevelopment-survey",
+      "title": "Bayfront Redevelopment Survey",
+      "location": {
+        "label": "Miami Beach, FL",
+        "coordinates": {
+          "latitude": 25.7907,
+          "longitude": -80.1300
+        }
+      },
+      "description": "A waterfront redevelopment survey documenting existing site features, boundaries, and access conditions ahead of design development.",
+      "body": [
+        "This redevelopment survey captured the existing waterfront conditions needed before design could proceed with confidence. The scope included visible improvements, site features, boundary-related information, and practical access considerations that would shape later decisions.",
+        "Waterfront sites tend to bring together regulatory, environmental, and constructability questions. A thorough survey record helps the project team see those issues earlier and coordinate the next phase with fewer assumptions.",
+        "The deliverable served as a common reference point for owners, consultants, and design partners evaluating how the site could evolve."
+      ],
+      "photo": {
+        "image": "/images/about/state-wide-presence.jpg",
+        "imageAlt": "Florida map and statewide presence graphic",
+        "imageAvifSrcSet": "/images/about/state-wide-presence-480.avif 480w, /images/about/state-wide-presence-960.avif 960w, /images/about/state-wide-presence-1440.avif 1440w",
+        "imageWebpSrcSet": "/images/about/state-wide-presence-480.webp 480w, /images/about/state-wide-presence-960.webp 960w, /images/about/state-wide-presence-1440.webp 1440w",
+        "imagePosition": "50% 50%",
+        "imageFit": "contain"
+      }
+    },
+    {
+      "id": "school-campus-mapping",
+      "title": "School Campus Mapping",
+      "location": {
+        "label": "Doral, FL",
+        "coordinates": {
+          "latitude": 25.8195,
+          "longitude": -80.3553
+        }
+      },
+      "description": "A campus mapping effort supporting facilities planning, site documentation, and future improvements across a busy educational property.",
+      "body": [
+        "This campus mapping effort supported facilities planning across a property with everyday activity and long-term improvement needs. The work documented existing conditions in a way that could be used by administrators, designers, and consultants as future projects were prioritized.",
+        "Campus environments often require field crews to work around students, staff, events, and limited access windows. The survey approach emphasized coordination and efficiency while still producing a complete record of relevant site features.",
+        "The resulting mapping package helped turn a busy, lived-in site into organized project information that could support planning, maintenance, and design conversations."
+      ],
+      "photo": {
+        "image": "/images/news/miami-dade-public-schools-contract.jpg",
+        "imageAlt": "Miami-Dade County Public Schools contract announcement",
+        "imageAvifSrcSet": "/images/news/miami-dade-public-schools-contract-480.avif 480w, /images/news/miami-dade-public-schools-contract-960.avif 960w, /images/news/miami-dade-public-schools-contract-1440.avif 1440w",
+        "imageWebpSrcSet": "/images/news/miami-dade-public-schools-contract-480.webp 480w, /images/news/miami-dade-public-schools-contract-960.webp 960w, /images/news/miami-dade-public-schools-contract-1440.webp 1440w",
+        "imagePosition": "50% 50%",
+        "imageFit": "contain"
+      }
+    },
+    {
+      "id": "turnpike-sue-package",
+      "title": "Turnpike SUE Package",
+      "location": {
+        "label": "Homestead, FL",
+        "coordinates": {
+          "latitude": 25.4687,
+          "longitude": -80.4776
+        }
+      },
+      "description": "A subsurface utility engineering package created to reduce uncertainty around conflicts, crossings, and constructability along a transportation corridor.",
+      "body": [
+        "This SUE package focused on reducing uncertainty along a transportation corridor where underground conditions could directly affect design and construction decisions. The project combined available utility information with field observations to help identify areas requiring closer attention.",
+        "By clarifying utility locations, crossings, and potential conflict zones, the work gave the broader team a better basis for evaluating constructability. That kind of information can influence alignments, sequencing, and risk conversations before crews are in the ground.",
+        "The final documentation supported a more informed design process and helped project partners coordinate around underground infrastructure with greater confidence."
+      ],
+      "photo": {
+        "image": "/images/services/uc.jpeg",
+        "imageAlt": "Utility coordination field equipment and roadway conditions",
+        "imageAvifSrcSet": "/images/services/uc-480.avif 480w, /images/services/uc-960.avif 960w, /images/services/uc-1440.avif 1440w",
+        "imageWebpSrcSet": "/images/services/uc-480.webp 480w, /images/services/uc-960.webp 960w, /images/services/uc-1440.webp 1440w",
+        "imagePosition": "50% 50%"
+      }
+    },
+    {
+      "id": "residential-boundary-work",
+      "title": "Residential Boundary Work",
+      "location": {
+        "label": "Coral Gables, FL",
+        "coordinates": {
+          "latitude": 25.7215,
+          "longitude": -80.2684
+        }
+      },
+      "description": "A boundary and site survey for residential improvements, balancing precise field documentation with clear deliverables for owners and consultants.",
+      "body": [
+        "This residential boundary assignment centered on clear, precise documentation for a property owner and consultant team preparing for improvements. The work included field observations, boundary research, and site information needed to support design decisions at a smaller but still detail-sensitive scale.",
+        "Residential and commercial site work often depends on making technical information understandable to a wider set of stakeholders. The survey deliverable needed to be accurate enough for consultants while remaining clear enough for practical decision-making.",
+        "The project shows how the same professional standards used on large infrastructure assignments also matter on individual properties, where small measurements can carry real consequences."
+      ],
+      "photo": {
+        "image": "/images/services/residential-commercial.jpg",
+        "imageAlt": "Residential and commercial surveying field scene",
+        "imageAvifSrcSet": "/images/services/residential-commercial-480.avif 480w, /images/services/residential-commercial-960.avif 960w, /images/services/residential-commercial-1440.avif 1440w",
+        "imageWebpSrcSet": "/images/services/residential-commercial-480.webp 480w, /images/services/residential-commercial-960.webp 960w, /images/services/residential-commercial-1440.webp 1440w",
+        "imagePosition": "50% 50%"
+      }
+    }
+  ]
+}

@@ -72,9 +72,9 @@
   {
     "name": "Garth Thompson",
     "role": "Utility Coordination Division Director",
-    "imageAvifSrcSet": "/images/about/headshots/headshotplaceholder-480.avif 480w, /images/about/headshots/headshotplaceholder-960.avif 960w, /images/about/headshots/headshotplaceholder-1440.avif 1440w",
-    "imageWebpSrcSet": "/images/about/headshots/headshotplaceholder-480.webp 480w, /images/about/headshots/headshotplaceholder-960.webp 960w, /images/about/headshots/headshotplaceholder-1440.webp 1440w",
-    "imageFallbackJpg": "/images/about/headshots/headshotplaceholder.png"
+    "imageAvifSrcSet": "/images/about/headshots/garth-thompson-480.avif 480w, /images/about/headshots/garth-thompson-960.avif 960w, /images/about/headshots/garth-thompson-1440.avif 1440w",
+    "imageWebpSrcSet": "/images/about/headshots/garth-thompson-480.webp 480w, /images/about/headshots/garth-thompson-960.webp 960w, /images/about/headshots/garth-thompson-1440.webp 1440w",
+    "imageFallbackJpg": "/images/about/headshots/garth-thompson.png"
   },
   {
     "name": "Javier Alonso, PSMIT",

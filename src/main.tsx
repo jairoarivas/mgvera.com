@@ -20,6 +20,7 @@ import { MeetTheTeamPage } from './pages/MeetTheTeamPage';
 import { LegacyPage } from './pages/LegacyPage';
 import { NewsPage } from './pages/NewsPage';
 import { NewsArticlePage } from './pages/NewsArticlePage';
+import { ProjectsPage } from './pages/ProjectsPage';
 
 function LandingPage() {
     return (
@@ -94,6 +95,7 @@ createRoot(document.getElementById('root')!).render(
                             cta={{label: "Get in Touch", href: "mailto:cbustos@mgvera.com"}}
                         />
                     }/>
+                    <Route path={"/projects"} element={<ProjectsPage />}/>
                     <Route path={"/news/:slug"} element={<NewsArticlePage />}/>
                 </Route>
             </Routes>
