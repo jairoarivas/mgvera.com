@@ -91,7 +91,7 @@ createRoot(document.getElementById('root')!).render(
                     <Route path={"/news"} element={
                         <NewsPage
                             name={"Latest from MG Vera"}
-                            subheading={"Project updates, company news, and stories from the field."}
+                            subheading={"Contract awards, project highlights, and team milestones from across MGV."}
                             cta={{label: "Get in Touch", href: "mailto:cbustos@mgvera.com"}}
                         />
                     }/>

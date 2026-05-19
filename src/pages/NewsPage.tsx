@@ -18,10 +18,13 @@ const INITIAL_VISIBLE_ARTICLES = 3;
 
 export function NewsPage(props: NewsPageProps) {
     const [showAllArticles, setShowAllArticles] = useState(false);
+    const articles = [...newsContent.articles].sort(
+        (a, b) => new Date(b._date).getTime() - new Date(a._date).getTime(),
+    );
     const visibleArticles = showAllArticles
-        ? newsContent.articles
-        : newsContent.articles.slice(0, INITIAL_VISIBLE_ARTICLES);
-    const hasMoreArticles = newsContent.articles.length > INITIAL_VISIBLE_ARTICLES;
+        ? articles
+        : articles.slice(0, INITIAL_VISIBLE_ARTICLES);
+    const hasMoreArticles = articles.length > INITIAL_VISIBLE_ARTICLES;
 
     return (
         <>
@@ -37,11 +40,20 @@ export function NewsPage(props: NewsPageProps) {
                 />
                 <div id="nav-sentinel" className={styles.navSentinel} />
                 <div className={styles.heroInner}>
-                    <a className={styles.heroFeature} href={newsContent.feature.href}>
-                        <div className={styles.heroFeatureText}>
+                    <div className={styles.heroCopy}>
+                        <p className={styles.eyebrow}>News</p>
+                        <h1 className={styles.heroTitle}>{props.name}</h1>
+                        <p className={styles.heroSubheading}>{props.subheading}</p>
+                    </div>
+
+                    <a className={styles.heroFeature} href={newsContent.feature.href} aria-label={`Read more about ${newsContent.feature.title}`}>
+                        <span className={styles.featureLabel}>Featured Story</span>
+                        <div className={styles.featureBody}>
+                            <p className={styles.featureAccent}>{newsContent.feature.authorTitle}</p>
                             <h2 className={styles.heroFeatureTitle}>{newsContent.feature.title}</h2>
-                            <span className={styles.heroFeatureLink}>
-                                <span>Read More</span>
+                            <p className={styles.heroFeatureSummary}>{newsContent.feature.summary}</p>
+                            <span className={styles.textLink}>
+                                <span>{newsContent.feature.ctaLabel}</span>
                                 <svg className={styles.heroFeatureLinkIcon} aria-hidden="true">
                                     <use href="#chevron-right" />
                                 </svg>
@@ -56,7 +68,6 @@ export function NewsPage(props: NewsPageProps) {
                     <section className={styles.panel}>
                         <div className={styles.panelHeader}>
                             <p className={styles.eyebrow}>Recent Articles</p>
-                            <h3 className={styles.panelTitle}>Updates from the field and office</h3>
                         </div>
 
                         <div className={styles.cardGrid}>
@@ -71,10 +82,17 @@ export function NewsPage(props: NewsPageProps) {
                                             } as React.CSSProperties}
                                         />
                                         <div className={styles.cardContent}>
+                                            <div className={styles.cardMeta}>
+                                                <span>{article.authorTitle}</span>
+                                            </div>
                                             <h4>{article.title}</h4>
+                                            <p>{article.summary}</p>
 
-                                            <span className={styles.cardLink}>
-                                                Read More
+                                            <span className={styles.textLink}>
+                                                <span>Read More</span>
+                                                <svg className={styles.heroFeatureLinkIcon} aria-hidden="true">
+                                                    <use href="#chevron-right" />
+                                                </svg>
                                             </span>
                                         </div>
                                     </a>
