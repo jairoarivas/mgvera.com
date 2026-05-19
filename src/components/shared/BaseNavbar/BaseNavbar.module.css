@@ -43,16 +43,20 @@
     color: var(--mobile-navbar-text-color);
     z-index: 10;
     height: var(--mobile-navbar-h);
+    padding-top: env(safe-area-inset-top, 0px);
     display: none;
     flex-flow: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: stretch;
     position: fixed;
-    inset: 0% 0% auto;
+    top: 0;
+    right: 0;
+    left: 0;
     transition: 
         background-color 250ms ease,
         border-bottom-color 250ms ease;
     border-bottom: 1px solid var(--mobile-navbar-bg);
+    transform: translateZ(0);
 }
 
 .inner {
@@ -89,6 +93,7 @@
     place-items: center start;
     position: relative;
     height: var(--mobile-navbar-h);
+    padding-top: env(safe-area-inset-top, 0px);
 }
 
 .overlayContent {
@@ -515,6 +520,13 @@
     }
 
     .brandLogo {
-        padding: 12px;
+        width: 10.75rem;
+        height: var(--mobile-navbar-content-h);
+        padding: 0.65rem;
+    }
+
+    .menuButton {
+        top: 50%;
+        transform: translateY(-50%);
     }
 }

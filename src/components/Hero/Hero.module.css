@@ -127,3 +127,25 @@
   z-index: -1;
   pointer-events: none;
 }
+
+@media (max-width: 700px) {
+  .hero {
+    min-height: 100vh;
+    min-height: 100svh;
+    min-height: 100dvh;
+    padding-top: calc(var(--mobile-navbar-h) + clamp(1.5rem, 8vw, 3rem));
+    padding-bottom: clamp(2rem, 10vw, 4rem);
+  }
+
+  .textContent {
+    gap: var(--space-5);
+  }
+
+  .header {
+    font-size: clamp(2.25rem, 12vw, 3.35rem);
+  }
+
+  .subheading {
+    font-size: 1.05rem;
+  }
+}

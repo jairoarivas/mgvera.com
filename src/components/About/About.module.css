@@ -192,4 +192,36 @@
         aspect-ratio: 16 / 10;
         min-height: clamp(16rem, 60vw, 28rem);
     }
+
+    .tabItem {
+        padding: 1.25rem;
+    }
+
+    .tabItemSelected {
+        gap: 1.15rem;
+    }
+
+    .tabItemSelected .tabItemHeading h3 {
+        transform: none;
+    }
+
+    .tabItemContent p {
+        font-size: 0.98rem;
+        line-height: 1.58;
+    }
+
+    .tabItemContent p + p {
+        padding-top: 0.85rem;
+    }
+
+    .button {
+        min-height: 3rem;
+        padding-top: 0.95rem;
+        padding-bottom: 0.95rem;
+        font-size: 0.82rem;
+    }
+
+    .tabItemSelected a {
+        transform: none;
+    }
 }

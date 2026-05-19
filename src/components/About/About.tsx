@@ -23,8 +23,8 @@ export function About (){
             },
             body: (
                 <>
-                    <p>MG Vera maintains a strong state-wide presence, working diligently with the Florida Department of Transportation (FDOT) across all districts—1, 2, 3, 4, 5, 6, 7, and the Turnpike—providing comprehensive surveying services to meet the needs of each region. With strategically located offices in Miami, Jupiter, and Orlando, and a fourth office coming soon in Jacksonville, MG Vera is uniquely positioned to seamlessly access and support every district.</p>
-                    <p>Explore selected work that reflects our reach across Florida.</p>
+                    <p>MG Vera maintains a strong state-wide presence, supporting the Florida Department of Transportation across Districts 1, 2, 3, 4, 5, 6, 7, and the Turnpike.</p>
+                    <p>With offices in Miami, Jupiter, and Orlando, plus a fourth office coming soon in Jacksonville, the firm is positioned to support projects across every region of Florida.</p>
                 </>
             ),
         },
@@ -42,8 +42,9 @@ export function About (){
             },
             body: (
                 <>
-                    <p>Manuel G. Vera & Associates, Inc. (MGV) has provided trusted Surveying and Mapping services since 1977. Over the past 45+ years, our firm has grown to include more than 80 experienced professionals and senior personnel, many with 10 to over 45 years of industry expertise. This depth of experience has enabled us to expand beyond traditional surveying to include Subsurface Utility Engineering (SUE), Utility Coordination (UC), and permitting services—allowing us to deliver comprehensive solutions for surveying and infrastructure needs throughout the State of Florida.</p>
-                    <p>Learn how our experience drives project success.</p>
+                    <p>Manuel G. Vera & Associates, Inc. (MGV) has provided trusted Surveying and Mapping services since 1977.</p>
+                    <p>Over the past 45+ years, our firm has grown to include more than 80 experienced professionals and senior personnel, many with 10 to over 45 years of industry expertise.</p>
+                    <p>This depth of experience has enabled us to expand beyond traditional surveying to include Subsurface Utility Engineering (SUE), Utility Coordination (UC), and permitting services throughout Florida.</p>
                 </>
             ),
         },
@@ -61,8 +62,9 @@ export function About (){
             },
             body: (
                 <>
-                    <p>Manuel G. Vera Sr. first learned the principles and practices of surveying while serving in the United States Air Force during the Vietnam War. Following his military service, he carried forward the discipline, precision, and leadership he developed in the Air Force and founded M.G. Vera & Associates in 1973. Today, the company is led by his children, Maria Vera and Manny Vera Jr., who proudly continue their father’s legacy. Under their leadership, the firm has grown into the largest survey-only company in the State of Florida, built on a foundation of integrity, expertise, and dedication to the surveying profession.</p>
-                    <p>Meet the rest of the team who carry that legacy forward.</p>
+                    <p>Manuel G. Vera Sr. first learned the principles and practices of surveying while serving in the United States Air Force during the Vietnam War.</p>
+                    <p>Following his military service, he carried forward that discipline, precision, and leadership, founding M.G. Vera & Associates in 1973.</p>
+                    <p>Today, the company is led by his children, Maria Vera and Manny Vera Jr., who proudly continue their father’s legacy as the firm has grown into the largest survey-only company in Florida.</p>
                 </>
             ),
         },

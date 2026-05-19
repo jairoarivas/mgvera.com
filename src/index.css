@@ -3,7 +3,8 @@
         Layout (site primitives)
     ------------------------------*/
     --desktop-navbar-h: clamp(3.5rem, 3.43vw + 2.66rem, 5.75rem);
-    --mobile-navbar-h: 3.5rem;
+    --mobile-navbar-content-h: 3.75rem;
+    --mobile-navbar-h: calc(var(--mobile-navbar-content-h) + env(safe-area-inset-top, 0px));
 
     /* -----------------------------
         Typography

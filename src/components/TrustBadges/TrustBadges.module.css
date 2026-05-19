@@ -15,27 +15,34 @@
 }
 
 .trustLeadIn {
-    padding-top: clamp(1.5rem, 3vw, 3rem);
-    padding-bottom: clamp(1.5rem, 3vw, 3rem);
+    padding:
+        clamp(1rem, 2vw, 1.6rem)
+        var(--gutter)
+        clamp(0.85rem, 1.5vw, 1.2rem);
     justify-content: center;
     flex-wrap: wrap;
     display: flex;
-    /* text-transform: uppercase; */
-    opacity: 0.55;
-    background-color: var(--color-light);
-    color: var(--color-dark);
+    background-color: var(--color-muted-dark);
+    color: var(--color-muted-light);
+    border-bottom: 1px solid color-mix(in srgb, var(--color-muted-light) 24%, transparent);
 }
 
 .trustLeadIn h4 {
-    padding-left: calc(var(--gutter)/2);
-    padding-right: calc(var(--gutter)/2);
+    max-width: 64rem;
+    padding-left: calc(var(--gutter) / 2);
+    padding-right: calc(var(--gutter) / 2);
     font-family: var(--font-mono);
+    font-size: clamp(0.78rem, 0.35vw + 0.72rem, 1rem);
+    line-height: 1.35;
+    text-align: center;
+    text-wrap: balance;
+    opacity: 0.38;
+    transition: opacity 450ms ease-out;
 }
 
 
-.trustLeadIn[data-scrolled="true"] {
-  transition: opacity 250ms ease-out;
-  opacity: 1;
+.trustLeadIn[data-scrolled="true"] h4 {
+  opacity: 0.92;
 }
 
 .statGridItem {
@@ -91,10 +98,14 @@
 
 @media (prefers-reduced-motion: reduce) {
   .statGridItem { opacity: 1; transition: none; }
-  .trustLeadIn { opacity: 1; transform: none; transition: none; }
+  .trustLeadIn h4 { opacity: 0.92; transform: none; transition: none; }
 }
 
 @media (max-width: 1023px) {
+    .trustLeadIn h4 {
+        opacity: 0.18;
+    }
+
     .statGrid {
         padding-inline: var(--gutter);
         scroll-snap-type: x proximity;

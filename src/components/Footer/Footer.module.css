@@ -337,12 +337,23 @@ a.phoneLine:focus-visible {
 @media (max-width: 899px) {
     .footerTopRow {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        text-align: center;
     }
 
     .footerTopColBg,
     .footerTopColSm {
         flex: 1 1 auto;
+        width: 100%;
+    }
+
+    .footerTopColSm {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footerTopColSm a {
+        width: min(100%, 18rem);
     }
 
     .footerBottom {
