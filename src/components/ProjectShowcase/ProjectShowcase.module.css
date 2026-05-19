@@ -1,0 +1,178 @@
+.projectNumber,
+.projectLocation,
+.detailLocation {
+    font-family: var(--font-mono);
+    letter-spacing: var(--ls-cta);
+    text-transform: uppercase;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: minmax(17rem, 0.34fr) minmax(0, 1fr);
+    gap: clamp(1rem, 2.5vw, 2rem);
+    align-items: start;
+    min-height: clamp(54rem, 94vh, 72rem);
+}
+
+.projectRail {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    max-height: clamp(50rem, 92vh, 68rem);
+    overflow-y: auto;
+    padding-right: 0.35rem;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-accent) rgba(31, 35, 38, 0.12);
+}
+
+.projectButton {
+    appearance: none;
+    display: grid;
+    grid-template-columns: 2.25rem minmax(0, 1fr);
+    gap: 0.9rem;
+    width: 100%;
+    min-height: 6.8rem;
+    padding: 1rem;
+    border: 1px solid var(--color-border-muted);
+    border-radius: var(--control-radius);
+    background: var(--color-light);
+    color: var(--color-dark);
+    text-align: left;
+    cursor: pointer;
+    transition:
+        background-color .14s ease-out,
+        border-color .14s ease-out,
+        color .14s ease-out;
+}
+
+.projectButton:hover,
+.projectButton:focus-visible {
+    background: var(--color-muted-light);
+}
+
+.projectButton:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+.selected {
+    background: var(--color-muted-dark);
+    border-color: var(--color-muted-dark);
+    color: var(--color-light);
+}
+
+.selected:hover,
+.selected:focus-visible {
+    background: var(--color-muted-dark);
+    color: var(--color-light);
+}
+
+.projectNumber {
+    padding-top: 0.15rem;
+    color: var(--color-brand-dark);
+    font-size: 0.8rem;
+}
+
+.selected .projectNumber {
+    color: var(--color-primary);
+}
+
+.projectButtonText {
+    display: grid;
+    gap: 0.55rem;
+    min-width: 0;
+}
+
+.projectTitle {
+    font-size: clamp(1.1rem, .35vw + 1rem, 1.35rem);
+    font-weight: 600;
+    line-height: 1.08;
+}
+
+.projectLocation {
+    color: color-mix(in srgb, currentColor 68%, transparent);
+    font-size: 0.78rem;
+}
+
+.detail {
+    display: block;
+    min-height: clamp(50rem, 92vh, 68rem);
+    max-height: clamp(50rem, 92vh, 68rem);
+    border: 1px solid var(--color-border-muted);
+    background: var(--color-muted-light);
+    color: var(--color-dark);
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-accent) rgba(31, 35, 38, 0.12);
+}
+
+.imageWrap {
+    position: relative;
+    min-height: clamp(20rem, 42vw, 34rem);
+    overflow: hidden;
+    background: var(--color-muted-light);
+}
+
+.imageWrap picture {
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: var(--project-image-fit, cover);
+}
+
+.detailContent {
+    display: grid;
+    gap: 0.85rem;
+    align-content: start;
+    padding: clamp(1.25rem, 2.2vw, 2rem);
+}
+
+.detailLocation {
+    color: var(--color-brand-dark);
+    font-size: clamp(.8rem, .2vw + .75rem, 0.95rem);
+}
+
+.detailTitle {
+    margin: 0;
+    font-size: clamp(1.7rem, 2.7vw, 3.2rem);
+    text-wrap: balance;
+}
+
+.body {
+    display: grid;
+    gap: 0.85rem;
+    max-width: 58rem;
+}
+
+.description {
+    max-width: 58rem;
+    color: color-mix(in srgb, var(--color-dark) 76%, transparent);
+    font-size: clamp(1rem, .25vw + .95rem, 1.15rem);
+}
+
+@media (max-width: 900px) {
+    .layout {
+        grid-template-columns: 1fr;
+        min-height: 0;
+    }
+
+    .projectRail {
+        max-height: 22rem;
+    }
+
+    .detail {
+        min-height: 0;
+        max-height: none;
+        overflow-y: visible;
+    }
+
+    .imageWrap {
+        min-height: clamp(18rem, 62vw, 28rem);
+    }
+}
