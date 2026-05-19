@@ -22,9 +22,9 @@
     justify-content: center;
     flex-wrap: wrap;
     display: flex;
-    background-color: var(--color-muted-dark);
-    color: var(--color-muted-light);
-    border-bottom: 1px solid color-mix(in srgb, var(--color-muted-light) 24%, transparent);
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    border-bottom: 1px solid var(--color-border-muted);
 }
 
 .trustLeadIn h4 {
