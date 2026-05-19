@@ -10,6 +10,7 @@
     margin-left: auto;
     margin-right: auto;
     display: block;
+    padding-top: clamp(1rem, 1.6vw, 1.5rem);
 }
 
 .column {

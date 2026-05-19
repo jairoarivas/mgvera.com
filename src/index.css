@@ -61,7 +61,7 @@
     ------------------------------*/
     --color-light: var(--ivory-0);
     --color-dark: var(--charcoal-900);
-    --color-muted-light: #ebe9e4;
+    --color-muted-light: color-mix(in srgb, var(--color-light) 96%, var(--color-dark) 4%);
     --color-muted-dark:  #0f2f33;
     --color-border-muted: color-mix(in hsl, var(--ash-400) 100%, var(--color-light));
 

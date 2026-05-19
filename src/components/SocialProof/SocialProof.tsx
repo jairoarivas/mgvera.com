@@ -8,11 +8,11 @@ type SocialProofContent = {
 export function SocialProof({content} : {content: SocialProofContent}){
     return(
         <div className={styles.root}>
+            <div className={styles.headerWrapper}>
+                <h4>{content.heading}</h4>
+            </div>
             <div className={styles.container}>
                 <div className={styles.column}>
-                    <div className={styles.headerWrapper}>
-                        <h4>{content.heading}</h4>
-                    </div>
                     <div className={styles.grid}>
                         {content.logoFileNames.map((logo, index) => {
                             return (
