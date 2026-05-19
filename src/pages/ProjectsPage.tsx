@@ -18,7 +18,7 @@ export function ProjectsPage() {
                 <header className={styles.header}>
                     <div className={styles.headerCopy}>
                         <p className={styles.kicker}>Projects</p>
-                        <h1>State-wide presence, proven in the field.</h1>
+                        <h1>Statewide presence, proven in the field.</h1>
                     </div>
 
                     <div className={styles.headerPanel} aria-label="Project portfolio highlights">

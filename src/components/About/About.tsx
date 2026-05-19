@@ -10,7 +10,7 @@ export function About (){
 
     const tabs = [
         {
-            heading: "State-Wide Presence",
+            heading: "Statewide Presence",
             index: "01",
             imageAlt: "Map of Florida FDOT districts",
             imageAvifSrcSet: "/images/about/state-wide-presence-480.avif 480w, /images/about/state-wide-presence-960.avif 960w, /images/about/state-wide-presence-1440.avif 1440w",
@@ -23,7 +23,7 @@ export function About (){
             },
             body: (
                 <>
-                    <p>MG Vera maintains a strong state-wide presence, supporting the Florida Department of Transportation across Districts 1, 2, 3, 4, 5, 6, 7, and the Turnpike.</p>
+                    <p>MG Vera maintains a strong statewide presence, supporting the Florida Department of Transportation across Districts 1, 2, 3, 4, 5, 6, 7, and the Turnpike.</p>
                     <p>With offices in Miami, Jupiter, and Orlando, plus a fourth office coming soon in Jacksonville, the firm is positioned to support projects across every region of Florida.</p>
                 </>
             ),
